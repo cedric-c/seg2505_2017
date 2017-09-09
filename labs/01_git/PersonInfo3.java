@@ -4,7 +4,7 @@ public class PersonInfo3 {
     public static int studentNo = 8838388;
     public static String description = "the king";
 
-    public static void displayFr() {
+    public static void showFr() {
         String out = SIConstants.GREETING_FR;
         out += " " + firstName + " " + lastName + '.';
         out += SIConstants.STUDENT_NUMBER_FR + studentNo + '.';
@@ -14,7 +14,7 @@ public class PersonInfo3 {
         System.out.println(out);
     }
     
-    public static void displayEn() {
+    public static void showEn() {
         String out = SIConstants.GREETING_EN;
         out += " " + firstName + " " + lastName + '.';
         out += SIConstants.STUDENT_NUMBER_EN + studentNo + '.';
