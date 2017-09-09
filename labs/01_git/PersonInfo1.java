@@ -5,11 +5,11 @@ public class PersonInfo1 {
     public static String description = "les ananas";
 
     public static void displayFr() {
-        String out = SIConstants.GREETING_FR;
-        out += " " + firstName + " " + lastName + '.';
-        out += SIConstants.STUDENT_NUMBER_FR + studentNo + '.';
         out += SIConstants.DESCRIPTION_FR + description + '.';
         out += SIConstants.EOL;
+        out += SIConstants.STUDENT_NUMBER_FR + studentNo + '.';
+        String out = SIConstants.GREETING_FR;
+        out += " " + firstName + " " + lastName + '.';
         
         System.out.println(out);
     }
