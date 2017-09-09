@@ -13,6 +13,7 @@ public class PersonInfo2 {
         
         System.out.println(out);
     }
+
     
     public static void displayEn() {
         String out = SIConstants.GREETING_EN;
