@@ -6,11 +6,11 @@ public class PersonInfo1 {
     public static String description = "Likes to take pictures";
 
     public static void displayFr() {
-        out += SIConstants.DESCRIPTION_FR + description + '.';
-        out += SIConstants.EOL;
-        out += SIConstants.STUDENT_NUMBER_FR + studentNo + '.';
         String out = SIConstants.GREETING_FR;
         out += " " + firstName + " " + lastName + '.';
+        out += SIConstants.STUDENT_NUMBER_FR + studentNo + '.';
+        out += SIConstants.DESCRIPTION_FR + description + '.';
+        out += SIConstants.EOL;
         
         System.out.println(out);
     }
