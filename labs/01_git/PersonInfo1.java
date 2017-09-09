@@ -4,7 +4,6 @@ public class PersonInfo1 {
     public static int studentNo = 88499;
     public static String description = "les ananas";
 
-
     public static void displayFr() {
         out += SIConstants.DESCRIPTION_FR + description + '.';
         out += SIConstants.EOL;
