@@ -13,7 +13,7 @@
 ## Démarche
 1. Un (1) membre de votre équipe fera un _clone_ des branches **master** et **features** trouvé dans ce répertoire.
 2. Les autres membres feront un pull des branches trouvé dans le répertoire (repo) du membre qui a fait le _clone_.
-3. À la fin du laboratoire, le fichier **TheBest.java** doit avoir une sortie similaire à
+3. À la fin du laboratoire, le fichier **TheBest.java** dans la branche **master** doit avoir une sortie similaire à
 
         71 (master) $ j TheBest
         
