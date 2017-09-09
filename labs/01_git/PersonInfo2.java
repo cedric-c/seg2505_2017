@@ -1,26 +1,17 @@
 public class PersonInfo2 {
-    public static String firstName = "Augustus";
-    public static String lastName = "Ceasar";
-    public static int studentNo = 33432;
-    public static String description = "The longest road";
-
     public static void showFr() {
-        String out = SIConstants.GREETING_FR;
-        out += " " + firstName + " " + lastName + '.';
-        out += SIConstants.STUDENT_NUMBER_FR + studentNo + '.';
-        out += SIConstants.DESCRIPTION_FR + description + '.';
-        out += SIConstants.EOL;
-        
+        String out  = "Bonjour, je m'appelle Augustus Ceasar.";
+               out += "\nMon numéro étudiant est 1244123";
+               out += "Un peu sur moi : ";
+               out += "";
         System.out.println(out);
     }
     
     public static void showEn() {
-        String out = SIConstants.GREETING_EN;
-        out += " " + firstName + " " + lastName + '.';
-        out += SIConstants.STUDENT_NUMBER_EN + studentNo + '.';
-        out += SIConstants.DESCRIPTION_EN + description + '.';
-        out += SIConstants.EOL;
-        
+        String out  = "Bonjour, je m'appelle Augustus Ceasar.";
+               out += "\nMy student number is 1244123";
+               out += "\nA little about me: ";
+               out += "";
         System.out.println(out);
     }
 }
