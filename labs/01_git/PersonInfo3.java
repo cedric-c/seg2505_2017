@@ -4,6 +4,7 @@ public class PersonInfo3 {
     public static int studentNo = 338299;
     public static String description = "Likes to take pictures";
 
+    
     public static void displayFr() {
         String out = SIConstants.GREETING_FR;
         out += " " + firstName + " " + lastName + '.';
