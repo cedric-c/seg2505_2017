@@ -1,8 +1,9 @@
 public class PersonInfo1 {
-    public static String firstName = "Alex";
-    public static String lastName = "Moujot";
-    public static int studentNo = 88499;
-    public static String description = "les ananas";
+
+    public static String firstName = "Leisha";
+    public static String lastName = "Baker";
+    public static int studentNo = 338299;
+    public static String description = "Likes to take pictures";
 
     
     public static void displayFr() {
@@ -14,6 +15,8 @@ public class PersonInfo1 {
         
         System.out.println(out);
     }
+    
+    
     
     public static void displayEn() {
         String out = SIConstants.GREETING_EN;
