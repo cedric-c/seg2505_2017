@@ -4,7 +4,6 @@
 ## Consignes
 
 - Vous devez compléter ce laboratoire en groupe de 4-5.
-<!-- - Vous devez faire vos changements à partir de la branche **features** -->
 - **Chaque personne peut que modifier 1 fichier `PersonInfoN`**
 - Il est recommandé d'utiliser que la ligne de commande pour compléter ce laboratoire
 - Chaque membre de l'équipe va devoir faire un merge dans la branche **master**. Rappel: l'objectif est d'apprendre à utiliser l'outil Git.
