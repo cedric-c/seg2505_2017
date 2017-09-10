@@ -28,7 +28,7 @@
 
 Que voyez-vous?
 
-
+## Démonstration
 
 1. Un (1) membre de votre équipe fera un _clone_ de la branche **master** trouvé dans ce répertoire.
 2. Les autres membres feront un pull de cette branche trouvé dans le répertoire (repo) du membre qui a fait le _clone_.
