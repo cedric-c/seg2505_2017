@@ -2,3 +2,5 @@
 
 Git repo pour les laboratoires.
 
+
+Bonjour les étudiants.
