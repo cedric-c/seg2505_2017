@@ -10,8 +10,8 @@
 
 ### ROSE Apache Spark Package
 
-    - Is Cool
-    - Is Really Cool
+- Is Cool
+- Is Really Cool
 
 +++
 
