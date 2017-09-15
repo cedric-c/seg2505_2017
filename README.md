@@ -1,1 +1,6 @@
-# seg2505_2017
+# SEG 2505 Automne 2017
+
+Git repo pour les laboratoires.
+
+
+Bonjour les étudiants.

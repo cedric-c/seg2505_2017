@@ -5,15 +5,34 @@
 ## Consignes:
 
 - Vous devez compléter ce laboratoire en groupe de 4-5.
-- Vous devez faire vos changements à partir de la branche **features**
 - **Chaque personne peut que modifier 1 fichier `PersonInfoN`**
 - Il est recommandé d'utiliser que la ligne de commande pour compléter ce laboratoire
 - Chaque membre de l'équipe va devoir faire un merge dans la branche **master**. Rappel: l'objectif est d'apprendre à utiliser l'outil Git.
-- Optionnelle: complétez le laboratoire en communicant avec votre équipe qu'avec Git / GitHub
+- Optionnelle: complétez le laboratoire en communicant avec votre équipe seulement avec Git / GitHub
 
 ## Démarche
-1. Un (1) membre de votre équipe fera un _clone_ des branches **master** et **features** trouvé dans ce répertoire.
-2. Les autres membres feront un pull des branches trouvé dans le répertoire (repo) du membre qui a fait le _clone_.
+1. Créez votre répertoire de projet.
+2. Tapez `git init`
+3. Clonez le répertoire (repo) `https://github.com/cedric-c/seg2505_2017/`
+4. Modifiez un fichier `PersonInfoN` pour qu'il contienne vos informations
+5. Ajoutez le document à l'état "staging" (`git add`)
+6. Faites un commit dans votre branche **master**
+7. Créez une nouvelle branche avec `git checkout -b newBranch`
+8. Modifiez votre fichier `PersonInfoN`
+9. Ajoutez le document à l'état "staging" (`git add`)
+10. Faites un commit dans votre branche **newBranch**
+11. Changez à votre branche **master**
+12. Modifiez votre fichier `PersonInfoN`, ajoutez d'autres informations à votre description
+13. Ajoutez le document à l'état "staging" (`git add`)
+14. Faites un commit
+15. Dans la branche **master**, faites un `get merge newBranch`
+
+Que voyez-vous?
+
+## Démonstration
+
+1. Un (1) membre de votre équipe fera un _clone_ de la branche **master** trouvé dans ce répertoire.
+2. Les autres membres feront un pull de cette branche trouvé dans le répertoire (repo) du membre qui a fait le _clone_.
 3. À la fin du laboratoire, le fichier **TheBest.java** dans la branche **master** doit avoir une sortie similaire à
 
         71 (master) $ j TheBest
