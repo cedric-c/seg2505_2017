@@ -20,7 +20,13 @@
 <span style="color:grey">An Apache Spark Package</span>
 
 ```
-public class Bill{
-    
+public class UsefullCommands{
+    CREATE TABLE table_name(
+        column1 datatype PRIMARY KEY
+        column2 datatype,
+        column3 datatype,
+        ....
+        columnN datatype,
+    );
 }
 ```
