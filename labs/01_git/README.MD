@@ -1,7 +1,8 @@
 
-# Lab 1
+# Lab 1 
 
-## Consignes
+
+## Consignes:
 
 - Vous devez compléter ce laboratoire en groupe de 4-5.
 - Vous devez faire vos changements à partir de la branche **features**
