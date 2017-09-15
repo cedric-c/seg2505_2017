@@ -11,7 +11,7 @@
 
 ## Erreur typiques
 
-Vous avez essaié de faire un `git push origin master` et vous recevez ceci
+Vous avez essayé un `git push origin master` et vous recevez ceci
 
     ! [rejected]        master -> master (fetch first)
     error: failed to push some refs to 'https://github.com/cedric-c/branche_b/'
