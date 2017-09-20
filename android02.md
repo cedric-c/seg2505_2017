@@ -172,10 +172,153 @@ http://developer.android.com/guide/components/internts-filters.html
 
 ---
 
+# Changer les images
+
+- pour des médias (image, son, etc...) à votre projet vous avez qu'à placer les fichiers dans le répertoire "drawable"
+    - app > res > drawable
+    - right-click > "show in explorer"
+- changez l'image défaut
+    - http://www.firasoft.com.br/UOT/avatars.zip
+    - http://www.firasoft.com.br/UOT/logos.zip
+
+---
+
+---
+
+# Intent explicite et activité externe
+
+- ajoutez la prochaine méthode à votre activité principale (MainActivity.java)
+    - changez la propiété OnClick
+    - cette fonction fait une demande explicite au paquet de Google Maps
 
 
+Notez que vous devez avoir le cadriciel de Google (Google API) dans votre émulateur virtuelle pour que ceci fonctionne
 
+---
 
+# Intent explicite et activité interne
 
+- ajoutez la prochaine fonction à votre activité principale (MainActivity.java)
+    - changez la propriété OnClick de votre ImageView
+    - ceci ouvra une autre activité où nous allons choisir une nouvelle image pour l'équipe
 
+---
 
+- Le constructeur de l'objet Intent a deux paramètre
+    1. le contexte d'application (Application Context) : c'est d'où arrive l'application
+        1.1 Lorsque vous créez une nouvelle activité, une hierarchie est créé et la nouvelle activité a comme parent l'activité qui a fait appelle à sa création
+            - this
+            - getApplicationContext()
+    2. classe Intent : c'est la classe pour laquel le Intent fait demande
+
+---
+
+# Statut présent
+
+- votre application devra être similaire à ce que vous voyez ici
+- ajoutez à la propriété OnClick une valeur de "OnOpenInGoogleMaps"
+- ajoutez à la propriété OnClick du ViewImage une valeur de "OnSetAvatarButton"
+
+---
+
+# Créer une nouvelle activité
+
+Pour créer une nouvelle activité avec Android Studio, "right-click" et sélectionnez "New > ACtivity > Blank Activity"
+
+---
+
+# Créer une nouvelle activité (cont.)
+
+- ajoutez les informations de votre choix et appuyez sur "Finish"
+- lorsque vous créez une activité, Android Studio crée un nouveau fichier Java ainsi qu'un fichier XML pour l'interface d'utilisateur
+
+Parent hiérarchique
+Si votre application implémente la fonctionnalité "UP", vous pouvez déclarer une autre activité come le parent d'une autre
+
+Exemple de fonctionnalité "UP"
+
+---
+
+# Deuxième activité
+
+- créez un deuxième activité qui est l'enfant de votre activité principale (MainActivity). Ceci se fait dans la boite de création.
+- supprimez ce qui se trouve sur l'écran et ajoutez un VerticalLayout
+- ajoutez un GridLayout au VerticalLayout et créez 6 nouveaux ImageViews à l'intérieur du VerticalLayout
+- ajoutez un bouton au VerticalLayout sous le GridLayout
+
+---
+
+# Deuxième activité (cont.)
+
+- Comment puis-je retourner à l'activité principale ?
+- Les activitées sont structuré a pile. Une activité qui termine est "pop-é" de la pile et l'activité principale est rappellée. Notez que les champs locale (dans les activité parents) qui contiennent des informations ne les perdent pas lorsqu'une activité enfant est "pop-é".
+- Lorsqu'on pop une activité, un tue l'instance
+- Vous n'avez pas besoin de créez de bouton retour / back, android fait ceci pour vous
+
+---
+
+# Retour à l'activité principale
+
+- ajoutez la prochaine fonction à votre deuxième fichier d'activité
+    - ceci devrait être la méthode OnClick sur vos images
+    - le code envoie les ID des images qui ont été appuyé
+
+---
+
+# Statut présent (2)
+
+- votre application devra être similaire à ce que vous voyez ici
+- ajoutez à la propriété OnClick de chaque icon la valeur de "SetTeamIconOnClick"
+
+---
+
+# Gérer les résultats
+
+- Ajoutez cette méthode dans votre activité principale (MainActivity.java). Cette méthode manipule les informations qui lui sont retournés dans le "Return Intent".
+- Les information passées dans le "Return Intent" est interprétée et utilisée pour choisir la nouvelle image.
+- Les noms des photos devraient être différent
+
+---
+
+# Statut présent (3)
+
+- Votre application devrait:
+    - montrer et pouvoir mettre à jour les noms d'équipe ainsi que les adresses
+    - monter les adresses sur Google Maps
+    - pouvoir mettre à jour les images d'équipe à partir d'une liste prédéfinie d'images
+- Votre application ne devrait pas encore:
+    - charger les images à partir d'images existante sur le système (optionel)
+
+Notez que charger les images à partir d'images existante sur le système porte quelques contraintes:
+1. des permissions sont requises
+2. des fichier "manifest" doivent être géré
+
+---
+
+# Implicit Intents (intentions implicite)
+
+- fonctionnalité de la caméra avec intention implicite:
+
+        Intent i = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+    
+    - peut ajouter des metas-information (meta-data)
+    - onActivityResult reçoit un hyperlien à une image et décodera l'image
+
+---
+
+---
+
+# Implicit Intents
+
+- fonctionnalité pour sauvegarder des informations
+
+        Intent i = new Intent(Intent.ACTION_PICK);
+    
+    - peut ajouter des metas-informations (meta-data)
+    - onActivityResult reçoit un hyperlien à une fichier et décodera le fichier
+    
+---
+
+---
+
+Pour en apprendre plus : https://developer.android.com/training/index.html
