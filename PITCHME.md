@@ -2,7 +2,7 @@
 
 SEG 2505 - Introduction au génie logiciel – Automne 2017
 
-Présenté par : 
+Présenté par : Cédric Clément
 
 ---
 
