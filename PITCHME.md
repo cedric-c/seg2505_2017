@@ -65,7 +65,7 @@ Ice Cream Sandwich | Jelly Bean | KitKat | Lollipop | Marshmallow | Nougat
 Majeur | Mineur | Majeur | Majeur | Majeur | Majeur
 -->
 
-![version](assets/md/assets/version_table.png)
+![version](assets/slides/version_table.png)
 
 Chaque version d'Android introduit de nouvelles fonctionnalités. Certaines itérations se concentrent sur des optimisations et d'autres sur l'architecture du système.
 
@@ -83,28 +83,31 @@ Chaque version d'Android introduit de nouvelles fonctionnalités. Certaines ité
 
 ### Fonctionnement d'Android
 
-- Android est exécuté sur une couche du Kernel de Linux
-- Les applications Android demeurent, et son exécuté dans leurs propres environnements / machine virtuelle (Sandbox)
-- Depuis la version KitKat (4.4), l'environnement d'Android se sert d’ART (Android RunTime), Dalvik auparavant
-- Les applications Android sont basées sur des Activités
-    - une activité représente une chose que l'on fait, tel qu'une recherche
-    - les applications sont composées de plusieurs activités
+- <span style="font-size:0.6em;color:gray">Android est exécuté sur une couche du Kernel de Linux</span>
+- <span style="font-size:0.6em;color:gray">Les applications Android demeurent, et son exécuté dans leurs <span style="color:#00aa60">propres environnements</span> / machine virtuelle (Sandbox)</span>
+- <span style="font-size:0.6em;color:gray">Depuis la version KitKat (4.4), l'environnement d'Android se sert d’ART (Android RunTime), Dalvik auparavant</span>
+- <span style="font-size:0.6em;color:gray">Les applications Android sont basées sur des <span style="color:#3884b9">Activités</span></span>
+    - <span style="font-size:0.6em;color:gray">une activité représente <span style="color:orange">une chose que l'on fait</span>, tel qu'une recherche</span>
+    - <span style="font-size:0.6em;color:gray">les applications sont composées de <span style="color:#a1617a">plusieurs activités</span></span>
 
 +++
 
 ### Quelques Rappels : Les tests
 
-- Windows
-    - Voir la documentation OEM USB Drivers pour l'installation de composantes nécessaire
-    - MTP : Media Transfer Protocol
-- Mac OS
-    - Android File Manager
-    - PTP : Picture Transfer Protocol
-- Vous devez activer le mode développement sur les mobiles
-    - l'option est cachée par défaut 
-        - Android 3.2  : Settings > Applications > Development
-        - Android 4.0+ : Settings > Developer options
-        - Android 4.2+ : Settings > About phone, tapez sur Build number 7 fois, retournez à l'écran d'avant pour trouver Developer options.
+- <span style="font-size:0.6em;color:gray">Windows</span>
+    - <span style="font-size:0.6em;color:gray">Voir la documentation OEM USB Drivers pour l'installation de composantes nécessaire</span>
+    - <span style="font-size:0.6em;color:gray">MTP : Media Transfer Protocol</span>
+- <span style="font-size:0.6em;color:gray">Mac OS</span>
+    - <span style="font-size:0.6em;color:gray">Android File Manager</span>
+    - <span style="font-size:0.6em;color:gray">PTP : Picture Transfer Protocol</span>
+    
++++
+
+- <span style="font-size:0.6em;color:gray">Vous devez activer le mode développement sur les mobiles</span>
+    - <span style="font-size:0.6em;color:gray">l'option est cachée par défaut </span>
+        - <span style="font-size:0.6em;color:gray">Android 3.2  : Settings > Applications > Development</span>
+        - <span style="font-size:0.6em;color:gray">Android 4.0+ : Settings > Developer options</span>
+        - <span style="font-size:0.6em;color:gray">Android 4.2+ : Settings > About phone, tapez sur Build number 7 fois, retournez à l'écran d'avant pour trouver Developer options.</span>
 
 ---
 
@@ -123,7 +126,7 @@ Chaque version d'Android introduit de nouvelles fonctionnalités. Certaines ité
 <!-- - Sélectionnez votre interface -->
 <!-- - Faites une mise à jour -->
 
-![welcome_install](assets/md/assets/extract-8.png)
+![welcome_install](assets/slides/extract-8.png)
 
 <!-- +++ -->
 
@@ -150,12 +153,12 @@ Chaque version d'Android introduit de nouvelles fonctionnalités. Certaines ité
 <br>
 Sélectionnez "Start a New Android Studio project"
 
-![new_project](assets/md/assets/extract-14.png)
+![new_project](assets/slides/extract-14.png)
 
 
 +++
 
-![new_project_info](assets/md/assets/extract-15.png)
+![new_project_info](assets/slides/extract-15.png)
 
 +++
 Nom du projet
@@ -174,7 +177,7 @@ Vous pouvez modifier le nom du paquet (package name) si nécessaire
 
 +++
 
-![new_project_info_2](assets/md/assets/extract-16.png)
+![new_project_info_2](assets/slides/extract-16.png)
 
 
 Version des outils de développement (Software SDK)
@@ -186,7 +189,7 @@ Après avoir appris la base, vous pouvez développer et publier des applications
 
 #### Gabarit d'activité
 
-![activity_1](assets/md/assets/extract-17.png)
+![activity_1](assets/slides/extract-17.png)
 
 +++
 
@@ -200,7 +203,7 @@ Pour cet exercice, <span style="color:orange">sélectionnez</span> "EMPTY Activi
 
 <span style="color:gray">Vous pouvez configurer le nom de vos activités. Notez que ceci a une influence que sur les aspects de développement et ne sont pas visible aux utilisateurs.</span>
 
-![activity_2](assets/md/assets/extract-18.png)
+![activity_2](assets/slides/extract-18.png)
 
 
 +++
@@ -217,7 +220,7 @@ Note:
 
 #### L'interface graphique d'Android Studio
 
-![ui_1](assets/md/assets/ui_panes.png)
+![ui_1](assets/slides/ui_panes.png)
 
 <!--
 - Gestionnaire de machine virtuelle
@@ -233,7 +236,7 @@ Note:
 
 ### L'interface d'Android Studio 2.2
 
-![ui_2](assets/md/assets/extract-20.png)
+![ui_2](assets/slides/extract-20.png)
 
 
 +++
@@ -248,7 +251,7 @@ Une machine virtuelle Android est une configuration d'émulateur qui vous permet
 
 +++
 
-![ui_2](assets/md/assets/extract-21.png)
+![ui_2](assets/slides/extract-21.png)
 
 +++
 
@@ -261,19 +264,19 @@ Appuyez sur "+" pour créer un nouveau gestionnaire AVD
 
 +++
 
-![ui_3](assets/md/assets/extract-22.png)
+![ui_3](assets/slides/extract-22.png)
 <span style="font-size:0.6em;color:gray">Sélectionnez un système appartenant à la liste ou créez le vôtre en appuyant sur "New Hardware Profile".</span>
 
 +++
 
-![ui_4](assets/md/assets/extract-23.png)
+![ui_4](assets/slides/extract-23.png)
 
 
 +++
 
 ### Gestion d'AVD
 
-![ui_5](assets/md/assets/extract-24.png)
+![ui_5](assets/slides/extract-24.png)
 
 - <span style="font-size:0.6em;color:gray">Sélectionnez Windows > AVD Manager ou appuyer sur l'icône AVD Manager dans la barre d'outils d'Éclipse.</span>
 - <span style="font-size:0.6em;color:gray">Appuyez sur "New" pour créer une nouvelle machine virtuelle</span>
@@ -282,7 +285,7 @@ Appuyez sur "+" pour créer un nouveau gestionnaire AVD
 
 ### Gestion d'AVD (cont.)
 
-![ui_6](assets/md/assets/extract-25.png)
+![ui_6](assets/slides/extract-25.png)
 
 - Remplissez les détails pour votre gestionnaire, appuyez sur "OK"
 - Les systèmes qui ont plus de fonctionnalités sont plus demandant 
@@ -303,7 +306,7 @@ Certains systèmes sont limités en ce qui concerne le pouvoir qu'il vous offre.
 
 ### L'émulateur Android
 
-![emulator](assets/md/assets/emulator.png)
+![emulator](assets/slides/emulator.png)
 
 
 +++
@@ -318,7 +321,7 @@ Certains systèmes sont limités en ce qui concerne le pouvoir qu'il vous offre.
 
 ### Concepts de base 
 
-![ui](assets/md/assets/ui_concepts.png)
+![ui](assets/slides/ui_concepts.png)
 
 
 +++
@@ -344,7 +347,7 @@ Note:
 
 ### La hiérarchie de l'interface usager
 
-![view_hierarchy](assets/md/assets/container_hierarchy.png)
+![view_hierarchy](assets/slides/container_hierarchy.png)
 
 <span style="color:#a1617a">ViewGroups</span> <span style="font-size:0.6em;color:gray">(contenant/invisible) </span>et <span style="color:orange">Views</span> <span style="font-size:0.6em;color:gray">(composante/visible)</span>
 
@@ -360,7 +363,7 @@ Note:
 
 <span style="color:gray">Peuvent être déclarés avec un fichier <span style="color:#a1617a">XML ou avec le code source</span></span>
 
-![layouts](assets/md/assets/layouts.png)
+![layouts](assets/slides/layouts.png)
 
 
 
@@ -381,7 +384,7 @@ Contrôle d'entrées
 - <span style="color:gray">Android vous offre plusieurs sources d'entrée (I/O.)</span>
 - <span style="color:gray">Vous pouvez construire vos propres composantes</span>
 
-![ic](assets/md/assets/input_controls.png)
+![ic](assets/slides/input_controls.png)
 
 
 
@@ -425,7 +428,7 @@ Note:
 
 ### Calculatrice
 
-![ic](assets/md/assets/extract-44.png)
+![ic](assets/slides/extract-44.png)
 
 ---
 
@@ -446,7 +449,7 @@ Note:
 
 +++
 
-![layout](assets/md/assets/extract-46.png)
+![layout](assets/slides/extract-46.png)
 
 
 ---
@@ -473,7 +476,7 @@ Les boutons auront maintenant la même priorité pour l'espace.
 
 +++
 
-![layout](assets/md/assets/extract-47.png)
+![layout](assets/slides/extract-47.png)
 
 <!-- ### Calculatrice simple : résultat de l'étape 02 -->
 
@@ -483,16 +486,16 @@ Les boutons auront maintenant la même priorité pour l'espace.
 
 +++
 
-<span style="color:gray">Si vous remarquez que la prochaine rangée de boutons a aussi des problèmes avec le partage d'espace, changez la valeur de la propriété "layout:weight"  au HorizontalLinearLayout à 1.</span>
+<span style="font-size:0.6em;color:gray">Si vous remarquez que la prochaine rangée de boutons a aussi des problèmes avec le partage d'espace, changez la valeur de la propriété "layout:weight"  au HorizontalLinearLayout à 1.</span>
 
 2. <span style="font-size:0.6em;color:gray">Ajoutez des boutons fonctionnels (+ - = x ...) sous la dernière rangée de HorizontalLinearLayout</span>
 3. <span style="font-size:0.6em;color:gray">Changez la propriété "layout:width" du HorizontalLinearLayout à "fill_parent"</span>
 
-<span style="color:gray">Pour remplir les espaces entre chaque bouton, changez leurs propriétés "layout:height" à "fill_parent".</span>
+<span style="font-size:0.6em;color:gray">Pour remplir les espaces entre chaque bouton, changez leurs propriétés "layout:height" à "fill_parent".</span>
 
 +++
 
-![layout](assets/md/assets/extract-48.png)
+![layout](assets/slides/extract-48.png)
 
 
 <!-- ### Calculatrice simple : résultat de l'étape 03 -->
@@ -501,12 +504,20 @@ Les boutons auront maintenant la même priorité pour l'espace.
 
 +++
 
-![button_symbols](assets/md/assets/button_symbols.png)
+![button_symbols](assets/slides/button_symbols.png)
 
 - <span style="font-size:0.6em;color:gray"><span style="color:orange">Changez</span> les valeurs du texte que présentent les boutons pour qu'ils ressemblent à ce que vous voyez ici</span>
 - <span style="font-size:0.6em;color:gray"><span style="color:orange">Changez</span> les valeurs des ID pour que les boutons suivent une convention telle que `btn00` pour le `0`, `btn01` pour le `1`, etc.</span>
 
++++
 
+### Boutons (extra)
+
+<span style="color:gray">Vos boutons doivent savoir quelle méthode appeler pour fonctionner.</span>
+
+- <span style="font-size:0.6em;color:gray">chaque bouton doit avoir une propriété `onClick`</span>
+    - <span style="font-size:0.6em;color:gray">si vous voulez que le bouton btn01 exécute la méthode `btn01Click()`, la propriété `OnClick` de ce bouton sera `btn01Click`</span>
+    - <span style="font-size:0.6em;color:gray">si vous regardez la déclaration textuelle de l'interface et que vous voyez une entrée similaire à `android:onClick="btn01Click"`, le lien entre bouton et méthode a été créé</span>
 
 ---
 
@@ -532,7 +543,7 @@ Pour séparer les noms d'étiquettes du code source qui contrôle l'emplacement 
 
 +++
 
-![resource_view](assets/md/assets/resource_view.png)
+![resource_view](assets/slides/resource_view.png)
 
 
 +++
@@ -566,12 +577,32 @@ public class MainActivity extends Activity {
     private enum Operator {none, add, minus, multiply, divide};
     private double data1 = 0, data2 = 0;
     private Operator optr = Operator.none;
+    
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+    }
+    
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu; this adds items to the action bar if present
+        getMenuInflater().inflate(R.menu.main, menu);
+        return true;
+    }
+    
+    public void btn00Click(View view) {
+        EditText eText = (EditText) findViewById(R.id.resultEdit);
+        eText.setText(eText.getText() + "0");
+    }
+    
 }
 
 ```
 
 @[1-5](imports)
 @[8-10](nous avons ajouté ces variables)
+@[12-22](cette portion du code est générée automatiquement)
 
 <!-- ### Calculatrice simple : exemple de code 1 -->
 <!--  -->
@@ -580,37 +611,149 @@ public class MainActivity extends Activity {
 
 +++
 
-+++
+```java
+// MainActivity.java
+
+public void btn01Click(View view) {
+    EditText eText = (EditText) findViewById(R.id.resultEdit);
+    eText.setText(eText.getText() + "1");
+}
+
+public void btn02Click(View view) {
+    EditText eText = (EditText) findViewById(R.id.resultEdit);
+    eText.setText(eText.getText() + "2");
+}
+
+// ...
+
+public void btnAddClick(View view) {
+    optr = Operator.add;
+    EditText eText = (EditText) findViewById(R.id.resultEdit);
+}
+
+public void btnMinusClick(View view) {
+    optr = Operator.minus;
+    EditText eText = (EditText) findViewById(R.id.resultEdit);
+    data1 = Double.parseDouble(eText.getText().toString());
+    eText.setText("");
+}
+
+public void btnMultiplyClick(View view){
+    optr = Operator.multiply;
+    EditText eText = (EditText) findViewById(R.id.resultEdit);
+    data1 = Double.parseDouble(eText.getText().toString());
+    eText.setText("");
+}
+
+public void btnDivideClick(View view){
+    optr = Operator.divide;
+    EditText eText = (EditText) findViewById(R.id.resultEdit);
+    data1 = Double.parseDouble(eText.getText().toString());
+    eText.setText("");
+}
+
+public void btnClearClick(View view){
+    EditText eText = (EditText) findViewById(R.id.resultEdit);
+    eText.setText("");
+}
+
+public void btnDotClick(View view){
+    EditText eText = (EditText) findViewById(R.id.resultEdit);
+    eText.setText(eText.getText() + ".");
+}
+
+public void btnResultClick(View view) {
+    if(optr != Operator.none){
+        EditText eText = (EditText) findViewById(R.id.resultEdit);
+        data2 = Double.parseDouble(eText.getText().toString());
+        double result = 0;
+        if(optr == Operator.add) {
+            result = data1 + data2;
+        } else if (optr == Operator.minus) {
+            result = data1 - data2;
+        } else if (optr == Operator.multiply) {
+            result = data1 * data2;
+        } else if (optr == Operator.divide) {
+            result = data1 / data2;
+        }
+        optr = Operator.none;
+        data1 = result;
+        if((result - (int) result) != 0)
+            eText.setText( String.valueOf(result) );
+        else
+            eText.setText( String.valueOf( (int) result ) );
+    }
+}
+
+public void onClickNumericalButton (View view) {
+    int pressID = view.getId();
+
+    TextView curText = (TextView) findViewById(R.id.resultEdit);
+
+    switch (pressID) {
+        case R.id.btn00:
+            curText.setText(curText.getText() + "0");
+            break;
+        case R.id.btn01:
+            curText.setText(curText.getText() + "1");
+            break;
+        case R.id.btn02:
+            curText.setText(curText.getText() + "2");
+            break;
+        case R.id.btn03:
+            curText.setText(curText.getText() + "3");
+            break;
+        case R.id.btn04:
+            curText.setText(curText.getText() + "4");
+            break;
+        case R.id.btn05:
+            curText.setText(curText.getText() + "5");
+            break;
+        case R.id.btn06:
+            curText.setText(curText.getText() + "6");
+            break;
+        case R.id.btn07:
+            curText.setText(curText.getText() + "7");
+            break;
+        case R.id.btn08:
+            curText.setText(curText.getText() + "8");
+            break;
+        case R.id.btn09:
+            curText.setText(curText.getText() + "9");
+            break;
+        case R.id.btnDot:
+            curText.setText(curText.getText() + ".");
+            break;
+        default:
+            curText.setText("ERROR");
+            //Log.d("Error","Error: Unknown Button pressed!");
+            break;
+    }
+}
+```
+
+<!-- +++ -->
+
+<!-- +++ -->
+
+<!-- +++ -->
 
 +++
 
-+++
+### Événements
+
+- <span style="font-size:0.6em;color:gray">les vues ont leurs événements (`onTouchEvent()`) qui doivent être implémentées (override)</span>
+- <span style="font-size:0.6em;color:gray">utilisez des "listeners" au lieu de créer une sous-classe (pour les views)</span>
+- <span style="font-size:0.6em;color:gray">les "event listeners" sont des interfaces dans la classe "View" qui contiennent une seule méthode "callback"</span>
+    - <span style="font-size:0.6em;color:gray">`onClick()`</span>
+    - <span style="font-size:0.6em;color:gray">`onLongClick()`</span>
+    - <span style="font-size:0.6em;color:gray">`onFocusChange()`</span>
+    - <span style="font-size:0.6em;color:gray">`onKey()`</span>
+    - <span style="font-size:0.6em;color:gray">`onTouch()`</span>
+    - <span style="font-size:0.6em;color:gray">`onCreateContextMenu()`</span>
 
 +++
 
-### Calculatrice simple : événements IO
-
-- les view ont des méthodes "slots" qui doivent être implémentées (override)
-- utilisez des "listeners" au lieu de créer une sous-classe (pour les views)
-- les "event listeners" sont des interfaces dans la classe "View" qui contiennent une seule méthode "callback"
-    - onClick()
-    - onLongClick()
-    - onFocusChange()
-    - onKey()
-    - onTouch()
-    - onCreateContextMenu()
-
-+++
-
-### Calculatrice simple : fonctions des boutons
-
-Vos boutons doivent savoir quelle méthode appeler pour fonctionner.
-
-- chaque bouton doit avoir une propriété onClick
-    - si vous voulez que le bouton btn01 exécute la méthode btn01Click(), la propriété OnClick de ce bouton sera "btn01Click"
-    - si vous regardez la déclaration textuelle de l'interface et que vous voyez une entrée similaire à 'android:onClick="btn01Click"', le lien entre bouton et méthode a été créé
-
-+++
 
 ### Aide
 
