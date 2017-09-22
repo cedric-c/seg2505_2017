@@ -1,4 +1,4 @@
-# Développement d'applications Android
+## Développement d'applications Android
 
 SEG 2505 - Introduction au génie logiciel – Automne 2017
 
@@ -6,7 +6,7 @@ Présenté par :
 
 ---
 
-# Laboratoire Android 1
+## Laboratoire Android 1
 
 Une introduction à Android
 À compléter : une calculatrice sur Android
