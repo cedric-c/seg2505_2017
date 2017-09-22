@@ -139,7 +139,7 @@ Chaque version d'Android introduit de nouvelles fonctionnalités. Certaines ité
 - Certains systèmes fonctionnent mieux qu'autre
     <!-- - Windows Surface Pro : vous êtes limités par l'interface -->
     <!-- - QHD et moniteurs 4K : l'interface peut avoir de la misère  -->
-- Certains systèmes se ralentissent l'or de l'exécution de l'émulateur
+- Certains systèmes se ralentissent lors de l'exécution de l'émulateur
     - les systèmes avec des CPU autres que Intel, aucune accélération (Intel Hardware Acceleration)
     - Tablet : limité par le processeur
 <!-- - autres options -->
