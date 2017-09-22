@@ -4,3 +4,7 @@ Git repo pour les laboratoires.
 
 
 Bonjour les étudiants.
+
+## Présentations
+
+### [Laboratoire 3 : Introduction à Android Studio](https://gitpitch.com/cedric-c/seg2505_2017/laboratoire3)
