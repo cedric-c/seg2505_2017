@@ -3,7 +3,7 @@ theme : black
 #background : assets/bar1.png
 background : assets/56D29D81-B7EB-449B-828F-2F989CC405F9.jpeg
 #background-size : auto
-background-size : cover
+#background-size : cover
 #background-size : contain
 # vertical-center : false
 theme-override : assets/PITCHME.css
