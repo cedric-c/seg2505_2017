@@ -2,3 +2,5 @@ logo : assets/logo1.png
 theme : black
 background : assets/bar1.png
 background-size : contain
+vertical-center : false
+# theme-override : assets/PITCHME.css
