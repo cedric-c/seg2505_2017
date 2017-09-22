@@ -1,4 +1,4 @@
-## Développement d'applications Android
+### Développement d'applications Android
 
 SEG 2505 - Introduction au génie logiciel – Automne 2017
 
