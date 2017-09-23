@@ -38,6 +38,8 @@ Laboratoire Android 1 : Une introduction à Android
 3. Concepts de base
 4. Travail de laboratoire : une calculatrice
 
+<span style="font-size:0.6em;color:gray">Appuyez sur la clé <span style="color:#3884b9">**O**</span> pour voir un survole de la présentation.</span>
+
 ---
 
 ### Introduction
