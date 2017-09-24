@@ -429,7 +429,7 @@ Note:
 ### Travail de laboratoire
 
 - <span style="color:gray">L'objectif est d'<span style="color:orange">apprendre à utiliser les outils</span> qui vous sont disponibles</span>
-- <span style="color:gray">Pour ajouter un objet à l'interface, appuyez et tenez sur une composante et amenez-la <span style="color:#ff0000">dans l'arbre des composantes</span>. N’amenez JAMAIS une composante <u>directement</u> à l'interface visuelle.</span>
+- <span style="color:gray">Pour ajouter un objet à l'interface, appuyez et tenez sur une composante et amenez-la dans l'arbre des composantes. N’amenez <span style="color:#BE4C51">JAMAIS</span> une composante <u>directement</u> à l'interface visuelle.</span>
 
 <br>
 #### <span style="color:orange">Montrez la calculatrice avant de quitter</span>
