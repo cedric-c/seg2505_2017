@@ -179,13 +179,11 @@ Vous pouvez modifier le nom du paquet (package name) si nécessaire
 
 +++
 
+<span style="font-size:0.6em;color:gray">Utilisez <span style="color:#a1617a">API LVL 15</span> pour le tutoriel</span>
+
+<span style="font-size:0.6em;color:gray">Après avoir appris la base, vous pouvez <span style="color:#00aa60">développer</span> et <span style="color:#a1617a">publier</span> des applications pour plusieurs versions d'Android.</span>
+
 ![new_project_info_2](assets/slides/75/extract-16.png)
-
-
-Version des outils de développement (Software SDK)
-Utilisez "API LVL 15" pour le tutoriel
-
-Après avoir appris la base, vous pouvez développer et publier des applications pour plusieurs versions d'Android
 
 +++
 
