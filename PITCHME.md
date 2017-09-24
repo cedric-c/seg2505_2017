@@ -67,8 +67,8 @@ Note:
 
 <span style="font-size:0.6em;color:gray">Types:</span>
 1. <span style="font-size:0.6em;color:gray">**Permanent**: <span style="color:#a1617a">toujours présent</span></span>
-2. <span style="font-size:0.6em;color:gray">**Persistant**: ouvrir/fermer/basculer, <span style="color:#00aa60">déplace</span> le contenu</span>
-3. <span style="font-size:0.6em;color:gray">**Temporaire**: ouvrir/fermer/basculer, <span style="color:#d0d0ff">masque</span> le contenu</span>
+2. <span style="font-size:0.6em;color:gray">**Persistant**: ouvrir/fermer/basculer, <span style="color:#00aa60">déplace le contenu</span></span>
+3. <span style="font-size:0.6em;color:gray">**Temporaire**: ouvrir/fermer/basculer, <span style="color:#d0d0ff">masque le contenu</span></span>
 4. <span style="font-size:0.6em;color:gray">**Mini-Variable**: petit panneau avec des <span style="color:orange">icônes seulement</span>. Peut être utilisé dans l'état fermé.</span>
 
 Note:
@@ -86,8 +86,8 @@ Note:
 
 #### Les dialogues
 
-- invitent l'utilisateur à <span style="color:#e8bf6a">prendre une décision</span>
-- types: `AlertDialog`, `DatePickerDialog`, `TimePickerDialog`, `Custom`
+- <span style="font-size:0.6em;color:gray">invitent l'utilisateur à <span style="color:#e8bf6a">prendre une décision</span></span>
+- <span style="font-size:0.6em;color:gray">types: `AlertDialog`, `DatePickerDialog`, `TimePickerDialog`, `Custom`</span>
 
 ![dialog](assets/resized/slides/100/image17.png)
 
@@ -99,6 +99,32 @@ Note:
 - DatePickerDialog
 - TimePickerDialog
 - Custom Layout
+
++++
+
+#### Les Toasts
+
+- <span style="font-size:0.6em;color:gray">morceaux de texte qui fournissent des <span style="color:orange">informations simples</span></span>
+- <span style="font-size:0.6em;color:gray">disparaissent <span style="color:#a1617a">automatiquement</span></span>
+
+![toasts](assets/resized/slides/100/image18.png)
+
+
+Note:
+- des morceaux de texte qui fournissent des informations simples
+- disparaissent automatiquement après un montant de temps
+- vous pouvez manipuler le positionnement
+
++++
+
+#### Paramètres <span style="font-size:0.6em;color:gray">(Settings)</span>
+
+
+
+Note:
+- Permettent aux utilisateurs de modifier le fonctionnement et le comportement d'une application (e.g : comment souvent faire une requête à la DB)
+- Permettent la construction d'interface uniforme dans les applications Android
+
 
 ---
 
