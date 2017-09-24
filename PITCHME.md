@@ -42,7 +42,7 @@ Note:
 
 +++
 
-<span style="color:gray">La gestion de ces événements se fait avec des "<span style="color:#3884b9">Click Events</span>" avec `OnClick()` ou avec un <span style="color:#c45331">Override</span> de `onOptionItemSelected()`.</span>
+<span style="color:gray">La gestion de ces événements se fait avec des "<span style="color:#3884b9">Click Events</span>" comme <span style="color:white">`OnClick()`</span> ou avec un <span style="color:#c45331">Override</span> de <span style="color:white">`onOptionItemSelected()`</span>.</span>
 
 +++
 
