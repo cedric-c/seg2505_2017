@@ -12,10 +12,7 @@ Laboratoire Android 2 : Les menus, les interactions et les activités
 
 ---
 
-
----
-
-### Plan
+#### Plan
 
 1. Éléments d'interfaces usagers
 2. Les activités
@@ -27,7 +24,7 @@ Laboratoire Android 2 : Les menus, les interactions et les activités
 
 ---
 
-### Éléments d'interfaces usagers
+#### Éléments d'interfaces usagers
 
 +++
 
