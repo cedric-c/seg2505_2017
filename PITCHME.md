@@ -270,13 +270,13 @@ Note:
 
 +++
 
-![ui_3](assets/slides/75/extract-22.png)
+<span style="font-size:0.6em;color:gray"><span style="color:orange">Sélectionnez</span> un système appartenant à la liste ou créez le vôtre en appuyant sur "New Hardware Profile".</span>
 
-<span style="font-size:0.6em;color:gray">Sélectionnez un système appartenant à la liste ou créez le vôtre en appuyant sur "New Hardware Profile".</span>
+![ui_3](assets/slides/75/extract-22.png)
 
 +++
 
-![ui_4](assets/slides/extract-23.png)
+![ui_4](assets/slides/50/extract-23.png)
 
 
 +++
