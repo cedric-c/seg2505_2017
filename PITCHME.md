@@ -276,7 +276,7 @@ Note:
 
 +++
 
-![ui_4](assets/slides/50/extract-23.png)
+![ui_4](assets/slides/75/extract-23.png)
 
 
 +++
