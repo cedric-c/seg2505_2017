@@ -780,7 +780,7 @@ Mon code ne peut pas compiler! :<span style="color:#3884b9">'</span>(</span>
 
 - <span style="font-size:0.6em;color:gray">Votre code contient des typos</span>
     - <span style="font-size:0.6em;color:gray">`onClick() <span style="color:#BE4C51">!=</span> onclick()`</span>
-    - <span style="font-size:0.6em;color:gray">`button01 <span style="color:#BE4C51">!=</span> Button01 <span style="color:#BE4C51">!=</span> button_01`</span>
+    - <span style="font-size:0.6em;color:gray">`button01` <span style="color:#BE4C51">`!=`</span> `Button01` <span style="color:#BE4C51">`!=`</span> `button_01`</span>
 - <span style="font-size:0.6em;color:gray">Votre code ne contient pas les bonnes librairies</span>
     - <span style="font-size:0.6em;color:gray">tapez `Alt+Enter` et Android Studio ajoutera les bonnes dépendances</span>
     - <span style="font-size:0.6em;color:gray">du texte rouge indique une classe qui n'est <span style="color:#BE4C51">pas identifiée</span> par Android Studio</span>
