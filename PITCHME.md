@@ -152,8 +152,8 @@ Chaque version d'Android introduit de nouvelles fonctionnalités. Certaines ité
 <span style="color:#a1617a">Hello World</span>
 
 +++
-<br>
-Sélectionnez "Start a New Android Studio project"
+
+<span style="font-size:0.6em;color:gray">Sélectionnez <span style="color:#3884b9">Start a New Android Studio project</span></span>
 
 ![new_project](assets/slides/extract-14.png)
 
@@ -163,10 +163,12 @@ Sélectionnez "Start a New Android Studio project"
 ![new_project_info](assets/slides/75/extract-15.png)
 
 +++
-Nom du projet
-- Le domaine du groupe de développement
-- Le nom du développeur est généralement basé sur la hiérarchie renversée .com <!-- où [code du pays].[TLD].[nom de l'entreprise].[sous-domaine].[équipe] tel que dans br.com.firasoft.msp.jimmyfive -->
+<span style="color:gray">Nom du projet</span>
+- <span style="font-size:0.6em;color:gray">Le domaine du groupe de développement</span>
+- <span style="font-size:0.6em;color:gray">Le nom du développeur est généralement basé sur la hiérarchie renversée .com</span> <!-- où [code du pays].[TLD].[nom de l'entreprise].[sous-domaine].[équipe] tel que dans br.com.firasoft.msp.jimmyfive -->
 - Nom du paquet <!-- tel que montré sur le marché Google (Google Play Store) -->
+
+<span style="font-size:0.6em;color:gray">[<span style="color:#d0d0ff">pays</span>].[<span style="color:#c45331">TLD</span>].[<span style="color:#b4c973">entreprise</span>].[<span style="color:#3884b9">sous-domaine</span>].[<span style="color:#e8bf6a">équipe</span>]</span>
 
 +++
 
@@ -767,23 +769,26 @@ public void onClickNumericalButton (View view) {
     - <span style="font-size:0.6em;color:gray">`onTouch()`</span>
     - <span style="font-size:0.6em;color:gray">`onCreateContextMenu()`</span>
 
-+++
+---
 
 
 ### Aide
 
-- Votre code ne peut pas compiler
-- Votre code contient des typos
-    - onClick() != onclick()
-    - button01 != Button01 != button_01
-- Votre code ne contient pas les bonnes librairies
-    - du texte rouge indique une classe qui n'est pas identifiée par Android Studio
-    - Tapez "Alt+Enter" et Android Studio ajoutera les bonnes dépendances
-- Les lampes rouges et jaunes vous offrent des remarques
++++
+
+<span style="color:gray">Mon code ne peut pas compiler! :<span style="color:#3884b9">'</span>(</span>
+
+- <span style="font-size:0.6em;color:gray">Votre code contient des typos</span>
+    - <span style="font-size:0.6em;color:gray">`onClick() != onclick()`</span>
+    - <span style="font-size:0.6em;color:gray">`button01 != Button01 != button_01`</span>
+- <span style="font-size:0.6em;color:gray">Votre code ne contient pas les bonnes librairies</span>
+    - <span style="font-size:0.6em;color:gray">tapez `Alt+Enter` et Android Studio ajoutera les bonnes dépendances</span>
+    - <span style="font-size:0.6em;color:gray">du texte rouge indique une classe qui n'est <span style="color:#676767">pas identifiée</span> par Android Studio</span>
+- <span style="font-size:0.6em;color:gray">Les lampes rouges et jaunes vous offrent des remarques</span>
 
 +++
 
 ### Améliorer votre code
 
-- DRY (less is more)
-- View.getID() retourne un entier (ID) qui représente ce qui a été appuyé, cette valeur peut être comparée à des valeurs dans la liste des ressources
+- <span style="color:#3884b9">D.R.Y</span> <span style="font-size:0.6em;color:gray">(less is more)</span>
+- <span style="font-size:0.6em;color:gray">View.getID() retourne un entier (ID) qui représente ce qui a été appuyé, cette valeur peut être comparée à des valeurs dans la liste des ressources</span>
