@@ -179,7 +179,7 @@ Vous pouvez modifier le nom du paquet (package name) si nécessaire
 
 +++
 
-<span style="font-size:0.6em;color:gray">Utilisez <span style="color:#a1617a">API LVL 15</span> pour le tutoriel</span>
+<span style="font-size:0.6em;color:gray">Utilisez <span style="color:orange">API LVL 15 </span>pour le tutoriel</span>
 
 <span style="font-size:0.6em;color:gray">Après avoir appris la base, vous pouvez <span style="color:#00aa60">développer</span> et <span style="color:#a1617a">publier</span> des applications pour plusieurs versions d'Android.</span>
 
@@ -264,7 +264,7 @@ Appuyez sur "+" pour créer un nouveau gestionnaire AVD
 
 +++
 
-![ui_3](assets/slides/extract-22.png)
+![ui_3](assets/slides/75/extract-22.png)
 <span style="font-size:0.6em;color:gray">Sélectionnez un système appartenant à la liste ou créez le vôtre en appuyant sur "New Hardware Profile".</span>
 
 +++
@@ -446,7 +446,7 @@ Note:
 1. Suivez les étapes dans le premier exemple pour créer une application. Nommez votre application "Simple Calculator".
 2. Enlever le TextView "Hello World" si votre Layout n'est pas vide.
 3. Ajoutez un champ EditText au Layout nommé MainLayout et changez le champ ID à "resultEdit".
-4. Ajouter un Layout "Layout (Vertical) / VerticalLayout" sous "resultEdit" et assignez l'ID du nouveau Layout à "mainLayout".
+4. Ajoutez un Layout "Layout (Vertical) / VerticalLayout" sous "resultEdit" et assignez l'ID du nouveau Layout à "mainLayout".
 5. Changez la propriété "layout:width" du Layout "resultEdit" à "fill_parent". Ceci fera que ce Layout aura une valeur de x dynamiques.
 
 +++
@@ -458,21 +458,21 @@ Note:
 
 ### Les boutons
 
-- <span style="font-size:0.6em;color:gray"><span style="color:orange">Ajoutez</span> un HorizontalLayout à votre VerticalLayout existant et nommez le "ButtonsLayout01"</span>
-    1. <span style="font-size:0.6em;color:gray"><span style="color:orange">Ajoutez</span> 4 boutons au HorizontalLayout</span>
-    2. <span style="font-size:0.6em;color:gray"><span style="color:orange">Renomez</span> chaque ID à "btn0X" ou X est le numéro du bouton (premier bouton sera nommé "btn01", deuxième "btn02", etc.)</span>
+1. <span style="color:#a1617a">Ajoutez</span> un `HorizontalLayout` à votre `VerticalLayout` existant et nommez le `ButtonsLayout01`
+2. <span style="color:#3884b9">Ajoutez</span> 4 boutons au `HorizontalLayout`
+3. <span style="color:orange">Renomez</span> chaque ID à `btn0X` ou `X` est le numéro du bouton (premier est "btn01", deuxième "btn02", etc.)
 
-<span style="font-size:0.6em;color:gray">Il ce peut que vous remarquez que certains boutons ne sont pas de la même largeur qu'autres. Pour réparer ceci, changez la propriété "layout:weight" à une valeur de "1". Faites ceci pour chaque bouton.
-</span>
+<span style="font-size:0.6em;color:gray">Si vous remarquez que certains boutons ne sont pas de la même largeur qu'autres, changez la propriété `layout:weight` à une valeur de `1` et faites-le pour chaque bouton.</span>
 
 <span style="font-size:0.6em;color:gray">Les boutons auront maintenant la même priorité pour l'espace.</span>
 
-Note:
-1. Ajoutez un HorizontalLayout à votre VerticalLayout existant et nommez le "ButtonsLayout01"
-    1. Ajoutez 4 boutons au HorizontalLayout
-    2. Renomez chaque ID à "btn0X" ou X est le numéro du bouton (premier bouton sera nommé "btn01", deuxième "btn02", etc.)
 
-Il ce peut que vous remarquez que certains boutons ne sont pas de la même largeur qu'autres. Pour réparer ceci, changez la propriété "layout:weight" à une valeur de "1". Faites ceci pour chaque bouton.
+Note:
+1. <span style="color:#a1617a">Ajoutez</span> un `HorizontalLayout` à votre `VerticalLayout` existant et nommez le `ButtonsLayout01`
+2. <span style="color:#3884b9">Ajoutez</span> 4 boutons au `HorizontalLayout`
+3. <span style="color:orange">Renomez</span> chaque ID à `btn0X` ou `X` est le numéro du bouton (premier est "btn01", deuxième "btn02", etc.)
+
+Il ce peut que vous remarquez que certains boutons ne sont pas de la même largeur qu'autres. Pour réparer ceci, changez la propriété `layout:weight` à une valeur de `1`. Faites ceci pour chaque bouton.
 
 Les boutons auront maintenant la même priorité pour l'espace.
 
