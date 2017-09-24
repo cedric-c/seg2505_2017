@@ -783,7 +783,7 @@ public void onClickNumericalButton (View view) {
     - <span style="font-size:0.6em;color:gray">`button01 != Button01 != button_01`</span>
 - <span style="font-size:0.6em;color:gray">Votre code ne contient pas les bonnes librairies</span>
     - <span style="font-size:0.6em;color:gray">tapez `Alt+Enter` et Android Studio ajoutera les bonnes dépendances</span>
-    - <span style="font-size:0.6em;color:gray">du texte rouge indique une classe qui n'est <span style="color:#676767">pas identifiée</span> par Android Studio</span>
+    - <span style="font-size:0.6em;color:gray">du texte rouge indique une classe qui n'est </span><span style="color:#676767">pas identifiée</span> <span style="font-size:0.6em;color:gray">par Android Studio</span>
 - <span style="font-size:0.6em;color:gray">Les lampes rouges et jaunes vous offrent des remarques</span>
 
 +++
