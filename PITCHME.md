@@ -179,7 +179,7 @@ Vous pouvez modifier le nom du paquet (package name) si nécessaire
 
 +++
 
-![new_project_info_2](assets/slides/extract-16.png)
+![new_project_info_2](assets/slides/75/extract-16.png)
 
 
 Version des outils de développement (Software SDK)
@@ -191,7 +191,7 @@ Après avoir appris la base, vous pouvez développer et publier des applications
 
 #### Gabarit d'activité
 
-![activity_1](assets/slides/extract-17.png)
+![activity_1](assets/slides/75/extract-17.png)
 
 +++
 
@@ -205,7 +205,7 @@ Pour cet exercice, <span style="color:orange">sélectionnez</span> "EMPTY Activi
 
 <span style="color:gray">Vous pouvez configurer le nom de vos activités. Notez que ceci a une influence que sur les aspects de développement et ne sont pas visible aux utilisateurs.</span>
 
-![activity_2](assets/slides/extract-18.png)
+![activity_2](assets/slides/75/extract-18.png)
 
 
 +++
@@ -288,6 +288,8 @@ Appuyez sur "+" pour créer un nouveau gestionnaire AVD
 ### Gestion d'AVD (cont.)
 
 ![ui_6](assets/slides/extract-25.png)
+
++++
 
 - Remplissez les détails pour votre gestionnaire, appuyez sur "OK"
 - Les systèmes qui ont plus de fonctionnalités sont plus demandant 
