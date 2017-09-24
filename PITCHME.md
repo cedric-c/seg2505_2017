@@ -80,7 +80,7 @@ Note:
 
 +++
 
-![assets](assets/resized/slides/50/image16.png)
+![assets](assets/resized/slides/35/image16.png)
 
 +++
 
