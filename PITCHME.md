@@ -52,7 +52,7 @@ Note:
 - <span style="font-size:0.6em;color:gray">peuvent être <span style="color:#e8bf6a">combinés</span></span>
 - <span style="font-size:0.6em;color:gray"><span style="color:#3884b9">modulaire</span></span>
 
-![assets](assets/resized/slides/50/image11.png)
+![assets](assets/resized/slides/100/image11.png)
 
 Note:
 - les Fragments sont utilisés pour représenter des portions d'une interface d'utilisateur
