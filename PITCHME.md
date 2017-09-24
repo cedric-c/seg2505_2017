@@ -466,7 +466,7 @@ Note:
 
 +++
 
-![layout](assets/slides/extract-46.png)
+![layout](assets/adding_text.gif)
 
 
 ---
