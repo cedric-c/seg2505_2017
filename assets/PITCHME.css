@@ -1,3 +1,7 @@
 .slide-background{
     top: 0;
 }
+.reveal section img {
+  border: 0;
+  box-shadow: none;
+}
