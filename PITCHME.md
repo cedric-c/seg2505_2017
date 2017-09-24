@@ -119,12 +119,11 @@ Note:
 
 #### Paramètres <span style="font-size:0.6em;color:gray">(Settings)</span>
 
-
+<span style="color:gray">Permettent aux utilisateurs de <span style="color:#00aa60">modifier le fonctionnement</span> et le comportement d'une application. Aide avec la construction d'<span style="color:#d0d0ff">interface uniforme</span> dans les applications Android.</span>
 
 Note:
 - Permettent aux utilisateurs de modifier le fonctionnement et le comportement d'une application (e.g : comment souvent faire une requête à la DB)
 - Permettent la construction d'interface uniforme dans les applications Android
-
 
 ---
 
