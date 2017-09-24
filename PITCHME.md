@@ -242,7 +242,7 @@ Note:
 
 
 +++
-### Machine virtuelle Android (AVD)
+### Machine virtuelle Android <span style="font-size:0.6em;color:gray">(AVD)</span>
 
 <span style="font-size:0.6em;color:gray">Une machine virtuelle Android est une configuration d'émulateur qui vous permet de choisir un modèle d'un système Android</span>
 
@@ -257,10 +257,13 @@ Note:
 
 +++
 
-Sélectionnez `Windows > AVD Manager` ou appuyer sur l'icône AVD Manager dans la barre d'outils d'Éclipse.
+<!-- <span style="font-size:0.6em;color:gray">Sélectionnez <span style="color:white">`Windows > AVD Manager`</span> ou appuyer sur l'icône AVD Manager dans la barre d'outils d'Éclipse.</span> -->
 
+<span style="font-size:0.6em;color:gray">Sélectionnez <span style="color:white">`Tools > Android > AVD Manager`</span> ou appuyer sur l'icône AVD Manager dans la barre d'outils d'Éclipse.</span>
 
 Appuyez sur `+` pour créer un nouveau gestionnaire AVD
+
+
 
 
 <!-- +++ -->
