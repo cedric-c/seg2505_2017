@@ -201,16 +201,18 @@ Pour cet exercice, <span style="color:orange">sélectionnez</span> "EMPTY Activi
 
 +++
 
-<span style="color:gray">Vous pouvez configurer le nom de vos activités. Notez que ceci a une influence que sur les aspects de développement et ne sont pas visible aux utilisateurs.</span>
+<span style="color:gray">Vous pouvez configurer le nom de vos activités. Notez que ceci a une influence que sur les aspects de développement et ne sont <span style="color:#00aa60">pas visible aux utilisateurs</span>.</span>
 
-![activity_2](assets/slides/75/extract-18.png)
+![activity_2](assets/slides/50/extract-18.png)
 
 
 +++
 
-<span style="color:gray">Ceci est une opportunité pour vous d'appliquer la matière apprise en classe.</span>
+<!-- <span style="color:gray">Ceci est une opportunité pour vous d'appliquer la matière apprise en classe.</span> -->
 
-<span style="color:gray">Par défaut, Java utilise la convention "Capitalized Camel Case" (UneClasse) comme standard pour les classes/interfaces, mais "Camel Case" (uneMethode) pour les méthodes et les variables. Visitez le [site d'Oracle](http://www.oracle.com/technetwork/java/codeconventions-135099.html).</span>
+<span style="color:gray">Java utilise la convention "Capitalized Camel Case" (UneClasse) comme standard pour les classes/interfaces, mais "Camel Case" (uneMethode) pour les méthodes et les variables.</span>
+
+<span style="font-size:0.6em;color:gray">Visitez le [site d'Oracle](http://www.oracle.com/technetwork/java/codeconventions-135099.html) pour plus d'information.</span>
 
 Note:
 <span style="color:gray">Par défaut, Java utilise la convention "Capitalized Camel Case" (UneClasse) comme standard pour les classes/interfaces, mais "Camel Case" (uneMethode) pour les méthodes et les variables. Visitez le site d'Oracle pour plus de détails : http://www.oracle.com/technetwork/java/codeconventions-135099.html.</span>
@@ -234,7 +236,7 @@ Note:
 
 ---
 
-### L'interface d'Android Studio 2.2
+### L'interface d'Android Studio
 
 ![ui_2](assets/slides/extract-20.png)
 
@@ -242,12 +244,12 @@ Note:
 +++
 ### Machine virtuelle Android (AVD)
 
-Une machine virtuelle Android est une configuration d'émulateur qui vous permet de choisir un modèle d'un système Android
+<span style="font-size:0.6em;color:gray">Une machine virtuelle Android est une configuration d'émulateur qui vous permet de choisir un modèle d'un système Android</span>
 
-1. une vue des systèmes matériaux <!-- du téléphone --> tel que la présence d'une caméra.
-2. une vue des systèmes logiciels <!-- du système --> tel que la version d'Android
-3. un environnement dédié pour le stockage d'information <!-- sur votre système -->
-4. Autres options : l'apparence de l'émulateur
+1. <span style="font-size:0.6em;color:gray">une vue des <span style="color:orange">systèmes matériaux</span> <!-- du téléphone --> tel que la présence d'une caméra.</span>
+2. <span style="font-size:0.6em;color:gray">une vue des <span style="color:#3884b9">systèmes logiciels</span> <!-- du système --> tel que la version d'Android</span>
+3. <span style="font-size:0.6em;color:gray">un <span style="color:#00aa60">environnement dédié</span> pour le stockage d'information <!-- sur votre système --></span>
+<!-- 4. Autres options : l'apparence de l'émulateur -->
 
 +++
 
@@ -255,9 +257,10 @@ Une machine virtuelle Android est une configuration d'émulateur qui vous permet
 
 +++
 
-Sélectionnez Windows > AVD Manager ou appuyer sur l'icône AVD Manager dans la barre d'outils d'Éclipse.
+Sélectionnez `Windows > AVD Manager` ou appuyer sur l'icône AVD Manager dans la barre d'outils d'Éclipse.
 
-Appuyez sur "+" pour créer un nouveau gestionnaire AVD
+
+Appuyez sur `+` pour créer un nouveau gestionnaire AVD
 
 
 <!-- +++ -->
