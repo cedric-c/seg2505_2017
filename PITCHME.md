@@ -89,7 +89,7 @@ Note:
 - invitent l'utilisateur à <span style="color:#e8bf6a">prendre une décision</span>
 - types: `AlertDialog`, `DatePickerDialog`, `TimePickerDialog`, `Custom`
 
-![dialog](assets/resized/slides/50/image17.png)
+![dialog](assets/resized/slides/100/image17.png)
 
 
 Note:
