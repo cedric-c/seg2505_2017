@@ -265,6 +265,7 @@ Appuyez sur "+" pour créer un nouveau gestionnaire AVD
 +++
 
 ![ui_3](assets/slides/75/extract-22.png)
+
 <span style="font-size:0.6em;color:gray">Sélectionnez un système appartenant à la liste ou créez le vôtre en appuyant sur "New Hardware Profile".</span>
 
 +++
@@ -276,10 +277,11 @@ Appuyez sur "+" pour créer un nouveau gestionnaire AVD
 
 ### Gestion d'AVD
 
-![ui_5](assets/slides/extract-24.png)
+- <span style="font-size:0.6em;color:gray"><span style="color:#00aa60">Sélectionnez</span> Windows > AVD Manager ou appuyer sur l'icône AVD Manager dans la barre d'outils d'Éclipse.</span>
+- <span style="font-size:0.6em;color:gray">Appuyez sur "New" pour <span style="color:#3884b9">créer une nouvelle machine virtuelle</span></span>
 
-- <span style="font-size:0.6em;color:gray">Sélectionnez Windows > AVD Manager ou appuyer sur l'icône AVD Manager dans la barre d'outils d'Éclipse.</span>
-- <span style="font-size:0.6em;color:gray">Appuyez sur "New" pour créer une nouvelle machine virtuelle</span>
+![ui_5](assets/slides/75/extract-24.png)
+
 
 +++
 
