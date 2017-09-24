@@ -259,9 +259,9 @@ Note:
 
 <!-- <span style="font-size:0.6em;color:gray">Sélectionnez <span style="color:white">`Windows > AVD Manager`</span> ou appuyer sur l'icône AVD Manager dans la barre d'outils d'Éclipse.</span> -->
 
-<span style="font-size:0.6em;color:gray">Sélectionnez <span style="font-size:1.0em; color:white">`Tools > Android > AVD Manager`</span> ou appuyer sur l'icône AVD Manager dans la barre d'outils d'Éclipse.</span>
+<span style="font-size:0.6em;color:gray">Sélectionnez <span style="font-size:1.5em; color:white">`Tools > Android > AVD Manager`</span> ou appuyer sur l'icône AVD Manager dans la barre d'outils d'Éclipse.</span>
 
-<span style="font-size:0.6em;color:gray">Appuyez sur <span style="font-size:1.0em; color:white">`+`</span> pour créer un nouveau gestionnaire AVD.</span>
+<span style="font-size:0.6em;color:gray">Appuyez sur <span style="font-size:1.5em; color:white">`+`</span> pour créer un nouveau gestionnaire AVD.</span>
 
 
 
