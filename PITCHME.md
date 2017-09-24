@@ -240,7 +240,7 @@ Note:
 
 ### L'interface d'Android Studio
 
-![ui_2](assets/slides/extract-20.png)
+<!-- ![ui_2](assets/slides/extract-20.png) -->
 
 
 +++
