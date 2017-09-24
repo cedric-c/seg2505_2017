@@ -63,7 +63,7 @@ Note:
 
 #### Tiroire de navigation
 
-<span style="font-size:0.6em;color:gray">Panneau qui présente les <span style="color:#b4c973">fonctions de navigation</span> pour l'application.</span>
+<span style="font-size:0.6em;color:gray">Panneau qui présente les <span style="color:#3884b9">fonctions de navigation</span> pour l'application.</span>
 
 - <span style="font-size:0.6em;color:gray">Types:</span>
     1. <span style="font-size:0.6em;color:gray">**Permanent**: <span style="color:#a1617a">toujours présent</span></span>
