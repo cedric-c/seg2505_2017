@@ -338,7 +338,7 @@ Certains systèmes sont limités en ce qui concerne le pouvoir qu'il vous offre.
 
 ### Concepts de base 
 
-![ui](assets/slides/ui_concepts.png)
+<!-- ![ui](assets/slides/ui_concepts.png) -->
 
 
 +++
