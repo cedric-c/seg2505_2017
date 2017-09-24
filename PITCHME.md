@@ -12,7 +12,7 @@ Laboratoire Android 2 : Les menus, les interactions et les activités
 
 ---
 
-#### Plan
+### Plan
 
 1. Éléments d'interfaces usagers
 2. Les activités
@@ -24,7 +24,7 @@ Laboratoire Android 2 : Les menus, les interactions et les activités
 
 ---
 
-#### Éléments d'interfaces usagers
+### Éléments d'interfaces usagers
 
 +++
 
@@ -65,7 +65,7 @@ Note:
 
 <span style="font-size:0.6em;color:gray">Panneau qui présente les <span style="color:#b4c973">fonctions de navigation</span> pour l'application.</span>
 
-<span style="font-size:0.6em;color:gray">Types:</span>
+- <span style="font-size:0.6em;color:gray">Types:</span>
 1. <span style="font-size:0.6em;color:gray">**Permanent**: <span style="color:#a1617a">toujours présent</span></span>
 2. <span style="font-size:0.6em;color:gray">**Persistant**: ouvrir/fermer/basculer, <span style="color:#00aa60">déplace le contenu</span></span>
 3. <span style="font-size:0.6em;color:gray">**Temporaire**: ouvrir/fermer/basculer, <span style="color:#d0d0ff">masque le contenu</span></span>
