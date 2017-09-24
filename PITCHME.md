@@ -263,6 +263,7 @@ Note:
 
 <span style="font-size:0.6em;color:gray">Appuyez sur <span style="font-size:1.1em; color:white">`+`</span> pour créer un nouveau gestionnaire AVD.</span>
 
+<!-- Téléchargez la version Nexus 5 API 24 -->
 
 
 
@@ -272,7 +273,9 @@ Note:
 
 <span style="font-size:0.6em;color:gray"><span style="color:orange">Sélectionnez</span> un système appartenant à la liste ou créez le vôtre en appuyant sur "New Hardware Profile".</span>
 
-![ui_3](assets/slides/75/extract-22.png)
+<!-- Téléchargez la version ... d'Android. -->
+
+![ui_3](assets/slides/50/extract-22.png)
 
 +++
 
@@ -446,8 +449,8 @@ Note:
 
 1. <span style="font-size:0.6em;color:gray">Suivez les étapes dans le premier exemple pour créer une application. Nommez votre application "Simple Calculator".</span>
 2. <span style="font-size:0.6em;color:gray">Enlever le TextView "Hello World" si votre Layout n'est pas vide.</span>
-3. <span style="font-size:0.6em;color:gray">Ajoutez un champ EditText au Layout nommé MainLayout et changez le champ ID à "resultEdit".</span>
-4. <span style="font-size:0.6em;color:gray">Ajouter un Layout "Layout (Vertical) / VerticalLayout" sous "resultEdit" et assignez l'ID du nouveau Layout à "mainLayout".</span>
+3. <span style="font-size:0.6em;color:gray">Ajoutez un champ EditText <!-- Plain Text --> au Layout nommé MainLayout <!-- activity_main (fichier activity_main.xml) --> et changez le champ ID à "resultEdit".</span>
+4. <span style="font-size:0.6em;color:gray">Ajouter un Layout "Layout (Vertical) / VerticalLayout" <!-- LinearLayout (vertical) --> sous "resultEdit" et assignez l'ID du nouveau Layout à "mainLayout".</span>
 5. <span style="font-size:0.6em;color:gray">Changez la propriété "layout:width" du Layout "resultEdit" à "fill_parent". Ceci fera que ce Layout aura une valeur de x dynamiques.</span>
 
 Note:
