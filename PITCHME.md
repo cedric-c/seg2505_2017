@@ -776,11 +776,11 @@ public void onClickNumericalButton (View view) {
 
 +++
 
-<span style="color:gray">Mon code ne peut pas compiler! :<span style="color:#3884b9">'</span>(</span>
+Mon code ne peut pas compiler! :<span style="color:#3884b9">'</span>(</span>
 
 - <span style="font-size:0.6em;color:gray">Votre code contient des typos</span>
-    - <span style="font-size:0.6em;color:gray">`onClick() != onclick()`</span>
-    - <span style="font-size:0.6em;color:gray">`button01 != Button01 != button_01`</span>
+    - <span style="font-size:0.6em;color:gray">`onClick() <span style="color:#BE4C51">!=</span> onclick()`</span>
+    - <span style="font-size:0.6em;color:gray">`button01 <span style="color:#BE4C51">!=</span> Button01 <span style="color:#BE4C51">!=</span> button_01`</span>
 - <span style="font-size:0.6em;color:gray">Votre code ne contient pas les bonnes librairies</span>
     - <span style="font-size:0.6em;color:gray">tapez `Alt+Enter` et Android Studio ajoutera les bonnes dépendances</span>
     - <span style="font-size:0.6em;color:gray">du texte rouge indique une classe qui n'est <span style="color:#BE4C51">pas identifiée</span> par Android Studio</span>
@@ -791,4 +791,4 @@ public void onClickNumericalButton (View view) {
 ### Améliorer votre code
 
 - <span style="color:#3884b9">D.R.Y</span> <span style="font-size:0.6em;color:gray">(less is more)</span>
-- <span style="font-size:0.6em;color:gray">View.getID() retourne un entier (ID) qui représente ce qui a été appuyé, cette valeur peut être comparée à des valeurs dans la liste des ressources</span>
+- <span style="font-size:0.6em;color:gray">`View.getID()` retourne un entier qui représente ce qui a été appuyé, cette valeur peut être comparée à des valeurs dans la liste des ressources</span>
