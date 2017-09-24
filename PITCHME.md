@@ -160,7 +160,7 @@ Sélectionnez "Start a New Android Studio project"
 
 +++
 
-![new_project_info](assets/slides/extract-15.png)
+![new_project_info](assets/slides/resized/extract-15.png)
 
 +++
 Nom du projet
