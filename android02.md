@@ -2,7 +2,7 @@
 
 SEG 2505 - Introduction au génie logiciel – Automne 2017
 
-Présenté par : 
+Présenté par : Cédric Clément
 
 ---
 
@@ -219,7 +219,7 @@ Notez que vous devez avoir le cadriciel de Google (Google API) dans votre émula
 
 # Créer une nouvelle activité
 
-Pour créer une nouvelle activité avec Android Studio, "right-click" et sélectionnez "New > ACtivity > Blank Activity"
+Pour créer une nouvelle activité avec Android Studio, "right-click" et sélectionnez "New > Activity > Blank Activity"
 
 ---
 
@@ -237,7 +237,7 @@ Exemple de fonctionnalité "UP"
 
 # Deuxième activité
 
-- créez un deuxième activité qui est l'enfant de votre activité principale (MainActivity). Ceci se fait dans la boite de création.
+- créez une deuxième activité qui est l'enfant de votre activité principale (MainActivity). Ceci se fait dans la boite de création.
 - supprimez ce qui se trouve sur l'écran et ajoutez un VerticalLayout
 - ajoutez un GridLayout au VerticalLayout et créez 6 nouveaux ImageViews à l'intérieur du VerticalLayout
 - ajoutez un bouton au VerticalLayout sous le GridLayout
@@ -247,9 +247,9 @@ Exemple de fonctionnalité "UP"
 # Deuxième activité (cont.)
 
 - Comment puis-je retourner à l'activité principale ?
-- Les activités sont structuré a pile. Une activité qui termine est "pop-é" de la pile et l'activité principale est rappellée. Notez que les champs locale (dans les activité parents) qui contiennent des informations ne les perdent pas lorsqu'une activité enfant est "pop-é".
+- Les activités sont structurées en pile. Une activité qui termine est "pop-é" de la pile et l'activité principale est rappelée. Notez que les champs locaux (dans les activités parentes) qui contiennent des informations ne les perdent pas lorsqu'une activité enfant est "pop-é".
 - Lorsqu'on pop une activité, un tue l'instance
-- Vous n'avez pas besoin de créez de bouton retour / back, android fait ceci pour vous
+- Vous n'avez pas besoin de créer de bouton retour / “back”, Android fait ceci pour vous
 
 ---
 
@@ -257,22 +257,22 @@ Exemple de fonctionnalité "UP"
 
 - ajoutez la prochaine fonction à votre deuxième fichier d'activité
 - ceci devrait être la méthode OnClick sur vos images
-- le code envoie les ID des images qui ont été appuyé
+- le code envoie les ID des images qui ont été appuyées
 
 ---
 
 # Statut présent (2)
 
 - votre application devra être similaire à ce que vous voyez ici
-- ajoutez à la propriété OnClick de chaque icon la valeur de "SetTeamIconOnClick"
+- ajoutez à la propriété OnClick de chaque icône la valeur de "SetTeamIconOnClick"
 
 ---
 
 # Gérer les résultats
 
-- Ajoutez cette méthode dans votre activité principale (MainActivity.java). Cette méthode manipule les informations qui lui sont retournés dans le "Return Intent".
-- Les information passées dans le "Return Intent" est interprétée et utilisée pour choisir la nouvelle image.
-- Les noms des photos devraient être différent
+- Ajoutez cette méthode dans votre activité principale (MainActivity.java). Cette méthode manipule les informations qui lui sont retournées dans le "Return Intent".
+- Les informations passées dans le "Return Intent" sont interprétées et utilisées pour choisir la nouvelle image.
+- Les noms des photos devraient être différents
 
 ---
 
@@ -283,21 +283,21 @@ Exemple de fonctionnalité "UP"
 - monter les adresses sur Google Maps
 - pouvoir mettre à jour les images d'équipe à partir d'une liste prédéfinie d'images
 - Votre application ne devrait pas encore:
-- charger les images à partir d'images existante sur le système (optionel)
+- charger les images à partir d'images existantes sur le système (optionnel)
 
-Notez que charger les images à partir d'images existante sur le système porte quelques contraintes:
+Notez que charger les images à partir d'images existantes sur le système porte quelques contraintes:
 1. des permissions sont requises
-2. des fichier "manifest" doivent être géré
+2. des fichiers "manifest" doivent être gérés
 
 ---
 
-# Implicit Intents (intentions implicite)
+# Implicit Intents (intentions implicites)
 
 - fonctionnalité de la caméra avec intention implicite:
 
 Intent i = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
 
-- peut ajouter des metas-information (meta-data)
+- peut ajouter des méta-informations (“Metadata”)
 - onActivityResult reçoit un hyperlien à une image et décodera l'image
 
 ---
@@ -310,8 +310,8 @@ Intent i = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
 
 Intent i = new Intent(Intent.ACTION_PICK);
 
-- peut ajouter des metas-informations (meta-data)
-- onActivityResult reçoit un hyperlien à une fichier et décodera le fichier
+- peut ajouter des méta-informations (Metadata)
+- onActivityResult reçoit un hyperlien à un fichier et décodera le fichier
 
 ---
 
