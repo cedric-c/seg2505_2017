@@ -11,4 +11,4 @@ background-size : contain
 #background-size : cover
 #background-size : contain
 # vertical-center : false
-theme-override : assets/PITCHME.css
+# theme-override : assets/PITCHME.css
