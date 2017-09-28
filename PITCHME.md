@@ -231,6 +231,14 @@ Changer les images
 - http://www.firasoft.com.br/UOT/avatars.zip
 - http://www.firasoft.com.br/UOT/logos.zip
 
+![changing_graphics](assets/resized/slides/100/image23.png)
+
+
++++
+
+![layout_graphics](assets/resized/slides/100/image24.png)
+
+
 +++
 
 Intent explicite et activité externe
@@ -254,8 +262,8 @@ Intent explicite et activité interne
 - Le constructeur de l'objet Intent a deux paramètres
 1. le contexte d'application (Application Context) : c'est d'où arrive l'application
 1.1 Lorsque vous créez une nouvelle activité, une hiérarchie est créée et la nouvelle activité a comme parent l'activité qui a fait appelle à sa création
-- this
-- getApplicationContext()
+- vous passez `this` comme contexte,
+- autrement, utilisez `getApplicationContext()` pour obtenir le contexte de l'application
 2. classe Intent : c'est la classe pour laquel le Intent fait demande
 
 +++
@@ -264,13 +272,20 @@ Statut présent
 
 - votre application devra être similaire à ce que vous voyez ici
 - ajoutez à la propriété OnClick une valeur de "OnOpenInGoogleMaps"
-- ajoutez à la propriété OnClick du ViewImage une valeur de "OnSetAvatarButton"
+- ajoutez à la propriété OnClick du ViewImage le nom d'une fonction sur une autre diapositive
+    - cette fonction va ouvrir la sélection de logo d'équipe
+
+![status](assets/resized/slides/100/image24.png)
+
 
 +++
 
 Créer une nouvelle activité
 
 Pour créer une nouvelle activité avec Android Studio, "right-click" et sélectionnez "New > Activity > Blank Activity"
+
+![new_activity](assets/resized/slides/100/image26.png)
+
 
 +++
 
@@ -279,10 +294,15 @@ Créer une nouvelle activité (cont.)
 - ajoutez les informations de votre choix et appuyez sur "Finish"
 - lorsque vous créez une activité, Android Studio crée un nouveau fichier Java ainsi qu'un fichier XML pour l'interface d'utilisateur
 
++++
+
 Parent hiérarchique
 Si votre application implémente la fonctionnalité "UP", vous pouvez déclarer une autre activité comme le parent d'une autre
 
 Exemple de fonctionnalité "UP"
+
+![new_activity](assets/resized/slides/100/image27.png)
+
 
 +++
 
@@ -307,6 +327,24 @@ Retour à l'activité principale
 - ajoutez la prochaine fonction à votre deuxième fichier d'activité
 - ceci devrait être la méthode OnClick sur vos images
 - le code envoie les ID des images qui ont été appuyées
+
++++
+
+```java
+public void setTeamIcon(View view){
+    Intent returnIntent = new Intent();
+    ImageView selectedImage = (ImageView) view;
+    returnIntent.putExtra("imageID", selectedImage.getId());
+    setResult(RESULT_OK, returnIntent);
+    finish();
+}
+
+```
+@[2](Creating a return intent to pass to the Main Activity)
+@[3](Figuring out which image was clicked)
+@[4](Adding stuff to return intent)
+@[5](Finishing Activity and return to main screen)
+
 
 +++
 
