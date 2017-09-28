@@ -127,17 +127,64 @@ Note:
 - Permettent aux utilisateurs de modifier le fonctionnement et le comportement d'une application (e.g : comment souvent faire une requête à la DB)
 - Permettent la construction d'interface uniforme dans les applications Android
 
++++
+
+![settings](assets/resized/slides/100/image19.png)
+
+
 ---
 
 ### Les activités
+
+- Les activités sont des composantes d'application qui permettent aux utilisateurs de faire une chose telle que d'entrer un numéro de téléphone, envoyer une photo, envoyer un message, visualiser une carte...
+- Une application a typiquement plusieurs activités, une étant l'activité principale (MainActivity)
+- Les activités individuelles ont leurs propres tâches. Ces activités sont liées ensemble avec des Intents.
+- Lorsqu'une activité débute, l'activité antérieure est arrêtée et préservée dans le Stack
+- Il n'y a pas de Main(). Les activités commencent à partir de leur méthode OnCreate().
+
+
+Note:
+- Les activités sont des composantes d'application qui permettent aux utilisateurs de faire une chose telle que d'entrer un numéro de téléphone, envoyer une photo, envoyer un message, visualiser une carte...
+- Une application a typiquement plusieurs activités, une étant l'activité principale (MainActivity)
+- Les activités individuelles ont leurs propres tâches. Ces activités sont liées ensemble avec des Intents.
+- Lorsqu'une activité débute, l'activité antérieure est arrêtée et préservée dans le Stack
+- Il n'y a pas de Main(). Les activités commencent à partir de leur méthode OnCreate().
+
++++
+
+Commencer une nouvelle activité
+
+- Les activités peuvent être appelées avec les fonctions suivantes:
+- startActivity(Intent i)
+- remarque: chaque activité à besoin d'un Intent
+- les Intents peuvent être des morceaux d'applications ou des applications entières
+- startActivityForResult(Intent i, RequestCode c)
+
 
 ---
 
 ### Les intentions
 
----
+- Ce sont des objets messagers conçus pour envoyer la requête d'actions à des composantes
+- Cas d'utilisation d'un Intent
+- commencer une activité
+- commencer un service
+- livrer un message global (broadcast)
+- Types: implicite, explicite
 
-### Le transfert de données
+![intents](assets/resized/slides/100/image22.png)
+
++++
+
+- les Intents contiennent :
+- nom d'une composante
+- une action
+- des informations (data)
+- une catégorie
+- des surplus (Extra)
+- des drapeaux
+
+[intents-filters](http://developer.android.com/guide/components/intents-filters.html)
 
 ---
 
