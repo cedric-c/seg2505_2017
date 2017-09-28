@@ -342,8 +342,8 @@ public void setTeamIcon(View view){
 ```
 @[2](Creating a return intent to pass to the Main Activity)
 @[3](Figuring out which image was clicked)
-@[4](Adding stuff to return intent)
-@[5](Finishing Activity and return to main screen)
+@[4-5](Adding stuff to return intent)
+@[6](Finishing Activity and return to main screen)
 
 
 +++
