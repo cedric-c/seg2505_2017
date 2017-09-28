@@ -249,6 +249,30 @@ Intent explicite et activité externe
 
 Notez que vous devez avoir le cadriciel de Google (Google API) dans votre émulateur virtuel pour que ceci fonctionne
 
+```java
+public void OnOpenInGoogleMaps (View view) {
+
+    EditText teamAddres = (EditText) findViewById(R.id.teamAddressField);
+
+    // Create a Uri from an intent string. Use the result to create an Intent.
+    Uri gmmIntentUri = Uri.parse("http://maps.google.co.in/maps?q="+teamAddres.getText());
+
+    // Create an Intent from gmmIntentUri. Set the action to ACTION_VIEW
+    Intent mapIntent = new Intent(Intent.ACTION_VIEW, gmmIntentUri);
+
+    // Make the Intent explicit by setting the Google Maps package
+    mapIntent.setPackage("com.google.android.apps.maps");
+
+    // Attempt to start an activity that can handle the Intent
+    startActivity(mapIntent);
+}
+```
+@[2](Creating a return intent to pass to the Main Activity)
+@[3](Figuring out which image was clicked)
+@[4-5](Adding stuff to return intent)
+@[6](Finishing Activity and return to main screen)
+
+
 +++
 
 Intent explicite et activité interne
@@ -256,6 +280,16 @@ Intent explicite et activité interne
 - ajoutez la prochaine fonction à votre activité principale (MainActivity.java)
 - changez la propriété OnClick de votre ImageView
 - ceci va ouvrir une autre activité où nous allons choisir une nouvelle image pour l'équipe
+
+```java
+public void OnSetAvatarButton(View view) {
+    Intent intent = new Intent(getApplicationContext(), ProfileActivity.class);   //Application Context and Activity
+    startActivityForResult (intent,0);
+}
+```
+@[2](Creating a return intent to pass to the Main Activity)
+@[3](Figuring out which image was clicked)
+
 
 +++
 
@@ -328,8 +362,6 @@ Retour à l'activité principale
 - ceci devrait être la méthode OnClick sur vos images
 - le code envoie les ID des images qui ont été appuyées
 
-+++
-
 ```java
 public void setTeamIcon(View view){
     Intent returnIntent = new Intent();
@@ -352,6 +384,10 @@ Statut présent (2)
 
 - votre application devra être similaire à ce que vous voyez ici
 - ajoutez à la propriété OnClick de chaque icône la valeur de "SetTeamIconOnClick"
+    - chaque image peut être liée à la fonction sur la prochaine diapositive
+
+![final_product](assets/resized/slides/100/image29.png)
+
 
 +++
 
@@ -360,6 +396,49 @@ Gérer les résultats
 - Ajoutez cette méthode dans votre activité principale (MainActivity.java). Cette méthode manipule les informations qui lui sont retournées dans le "Return Intent".
 - Les informations passées dans le "Return Intent" sont interprétées et utilisées pour choisir la nouvelle image.
 - Les noms des photos devraient être différents
+
+```java
+@Override
+protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+    if (resultCode == RESULT_CANCELED) return;
+
+    //Getting the Avatar Image we show to our users
+    ImageView avatarImage = (ImageView) findViewById(R.id.avatarImage);
+
+    //Figuring out the correct image
+    String drawableName = "ic_logo_00";
+    switch (data.getIntExtra("imageID",R.id.teamid00)) {
+        case R.id.teamid00:
+            drawableName = "ic_logo_00";
+            break;
+        case R.id.teamid01:
+            drawableName = "ic_logo_01";
+            break;
+        case R.id.teamid02:
+            drawableName = "ic_logo_02";
+            break;
+        case R.id.teamid03:
+            drawableName = "ic_logo_03";
+            break;
+        case R.id.teamid04:
+            drawableName = "ic_logo_04";
+            break;
+        case R.id.teamid05:
+            drawableName = "ic_logo_05";
+            break;
+        default:
+            drawableName = "ic_logo_00";
+            break;
+    }
+    int resID = getResources().getIdentifier(drawableName, "drawable",  getPackageName());
+    avatarImage.setImageResource(resID);
+}
+
+```
+@[2](Creating a return intent to pass to the Main Activity)
+@[3](Figuring out which image was clicked)
+@[4-5](Adding stuff to return intent)
+@[6](Finishing Activity and return to main screen)
 
 +++
 
