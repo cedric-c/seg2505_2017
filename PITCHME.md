@@ -189,10 +189,185 @@ Commencer une nouvelle activité
 ---
 
 ### Travail de laboratoire
++++
 
+Todo
+
+Vous devez créer un gestionnaire d'équipe sportive. Ce gestionnaire devra gérer les joueurs d'une équipe et plusieurs équipe.
+
+1. L'aplication doit:
+    2.1 avoir plusieurs activités
+    2.3 permettre l'utilisateur de créer le nom d'un profile
+    2.4 permettre l'utilisateur de changer le nom d'un profile
+    2.5 permettre l'utilisateur d'ajouter l'image d'un profile
+    2.6 permettre l'utilisateur de changer l'image d'un profile
+    2.7 permettre l'utilisateur d'ajouter une adresse un profile
+    2.8 permettre l'utilisateur de modifier l'adresse d'un profile
+    2.9 permettre l'utilisateur d'ouvrir une adresse dans une application de carte (eg. Google Maps)
+    
++++
+
+Activitée principale : vue du profil
+
+- créez un nouveau projet avec une activité vide
+- ajoutez un champ EditText pour le champ Personne/Équipe
+- ajoutez un champ TextView pour accompagner le champ EditText
+- définissez la valeur de la propriété "hint" du EditText à "Veuillez ajouter un nom"
+- répétez ce processus pour le champ lieu (Location)
+- ajoutez une vue d'image ImageView pour représenter l'image de l'équipe
+- l'image sera initialement invisible, car aucune image ne sera assignée au champ et la valeur de la propriété "size" ne sera pas définie
+- changez les propriétés de "width" et "height" à "100dp". Ceci rendra la boîte à 'image visible.
+- ajoutez un bouton qui servira à ouvrir la carte
+- La valeur du OnClick sera OnOpenInGoogleMaps (tantôt)
+
++++
+
+Changer les images
+
+- pour des médias (image, son, etc.) à votre projet vous avez qu'à placer les fichiers dans le répertoire "drawable"
+- app > res > drawable
+- right-click > "show in explorer"
+- changez l'image défaut
+- http://www.firasoft.com.br/UOT/avatars.zip
+- http://www.firasoft.com.br/UOT/logos.zip
+
++++
+
+Intent explicite et activité externe
+
+- ajoutez la prochaine méthode à votre activité principale (MainActivity.java)
+- changez la propriété OnClick
+- cette fonction fait une demande explicite au paquet de Google Maps
+
+Notez que vous devez avoir le cadriciel de Google (Google API) dans votre émulateur virtuel pour que ceci fonctionne
+
++++
+
+Intent explicite et activité interne
+
+- ajoutez la prochaine fonction à votre activité principale (MainActivity.java)
+- changez la propriété OnClick de votre ImageView
+- ceci va ouvrir une autre activité où nous allons choisir une nouvelle image pour l'équipe
+
++++
+
+- Le constructeur de l'objet Intent a deux paramètres
+1. le contexte d'application (Application Context) : c'est d'où arrive l'application
+1.1 Lorsque vous créez une nouvelle activité, une hiérarchie est créée et la nouvelle activité a comme parent l'activité qui a fait appelle à sa création
+- this
+- getApplicationContext()
+2. classe Intent : c'est la classe pour laquel le Intent fait demande
+
++++
+
+Statut présent
+
+- votre application devra être similaire à ce que vous voyez ici
+- ajoutez à la propriété OnClick une valeur de "OnOpenInGoogleMaps"
+- ajoutez à la propriété OnClick du ViewImage une valeur de "OnSetAvatarButton"
+
++++
+
+Créer une nouvelle activité
+
+Pour créer une nouvelle activité avec Android Studio, "right-click" et sélectionnez "New > Activity > Blank Activity"
+
++++
+
+Créer une nouvelle activité (cont.)
+
+- ajoutez les informations de votre choix et appuyez sur "Finish"
+- lorsque vous créez une activité, Android Studio crée un nouveau fichier Java ainsi qu'un fichier XML pour l'interface d'utilisateur
+
+Parent hiérarchique
+Si votre application implémente la fonctionnalité "UP", vous pouvez déclarer une autre activité comme le parent d'une autre
+
+Exemple de fonctionnalité "UP"
+
++++
+
+Deuxième activité
+
+- créez une deuxième activité qui est l'enfant de votre activité principale (MainActivity). Ceci se fait dans la boite de création.
+- supprimez ce qui se trouve sur l'écran et ajoutez un VerticalLayout
+- ajoutez un GridLayout au VerticalLayout et créez 6 nouveaux ImageViews à l'intérieur du VerticalLayout
+- ajoutez un bouton au VerticalLayout sous le GridLayout
+
++++
+
+- Comment puis-je retourner à l'activité principale ?
+- Les activités sont structurées en pile. Une activité qui termine est "pop-é" de la pile et l'activité principale est rappelée. Notez que les champs locaux (dans les activités parentes) qui contiennent des informations ne les perdent pas lorsqu'une activité enfant est "pop-é".
+- Lorsqu'on pop une activité, un tue l'instance
+- Vous n'avez pas besoin de créer de bouton retour / “back”, Android fait ceci pour vous
+
++++
+
+Retour à l'activité principale
+
+- ajoutez la prochaine fonction à votre deuxième fichier d'activité
+- ceci devrait être la méthode OnClick sur vos images
+- le code envoie les ID des images qui ont été appuyées
+
++++
+
+Statut présent (2)
+
+- votre application devra être similaire à ce que vous voyez ici
+- ajoutez à la propriété OnClick de chaque icône la valeur de "SetTeamIconOnClick"
+
++++
+
+Gérer les résultats
+
+- Ajoutez cette méthode dans votre activité principale (MainActivity.java). Cette méthode manipule les informations qui lui sont retournées dans le "Return Intent".
+- Les informations passées dans le "Return Intent" sont interprétées et utilisées pour choisir la nouvelle image.
+- Les noms des photos devraient être différents
+
++++
+
+Statut présent (3)
+
+- Votre application devrait:
+- montrer et pouvoir mettre à jour les noms d'équipe ainsi que les adresses
+- monter les adresses sur Google Maps
+- pouvoir mettre à jour les images d'équipe à partir d'une liste prédéfinie d'images
+- Votre application ne devrait pas encore:
+- charger les images à partir d'images existantes sur le système (optionnel)
+
+Notez que charger les images à partir d'images existantes sur le système porte quelques contraintes:
+1. des permissions sont requises
+2. des fichiers "manifest" doivent être gérés
+
++++
+
+Implicit Intents (intentions implicites)
+
+- fonctionnalité de la caméra avec intention implicite:
+
+Intent i = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+
+- peut ajouter des méta-informations (“Metadata”)
+- onActivityResult reçoit un hyperlien à une image et décodera l'image
+
++++
+
+Implicit Intents
+
+- fonctionnalité pour sauvegarder des informations
+
+Intent i = new Intent(Intent.ACTION_PICK);
+
+- peut ajouter des méta-informations (Metadata)
+- onActivityResult reçoit un hyperlien à un fichier et décodera le fichier
+
++++
 
 ---
 
+[Pour en apprendre plus...](https://developer.android.com/training/index.html)
+
+
+---
 
 
 
