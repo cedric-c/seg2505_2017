@@ -10,3 +10,44 @@
 .txtRed {
     color: #BE4C51;
 }
+
+.txtPurple {
+    color: #a1617a;
+}
+
+.txtOrangeL {
+    color: #e8bf6a;
+}
+
+.txtOrangeD {
+    color: #c45331;
+}
+
+.txtOrange {
+    color: orange;
+}
+.txtLavender {
+    color: #d0d0ff;
+}
+.txtGreenL {
+    color: #b4c973;
+}
+.txtGreen {
+    color: #00aa60;
+}
+
+.txtSmall {
+    size:0.6em;
+}
+
+.txtGray {
+    color: gray;
+}
+
+.txtBlueL {
+    color: #3884b9;
+}
+
+.txtWhite {
+    color: white;
+}
