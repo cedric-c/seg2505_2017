@@ -251,26 +251,18 @@ Notez que vous devez avoir le cadriciel de Google (Google API) dans votre émula
 
 ```java
 public void OnOpenInGoogleMaps (View view) {
-
     EditText teamAddres = (EditText) findViewById(R.id.teamAddressField);
-
-    // Create a Uri from an intent string. Use the result to create an Intent.
     Uri gmmIntentUri = Uri.parse("http://maps.google.co.in/maps?q="+teamAddres.getText());
-
-    // Create an Intent from gmmIntentUri. Set the action to ACTION_VIEW
     Intent mapIntent = new Intent(Intent.ACTION_VIEW, gmmIntentUri);
-
-    // Make the Intent explicit by setting the Google Maps package
     mapIntent.setPackage("com.google.android.apps.maps");
-
-    // Attempt to start an activity that can handle the Intent
     startActivity(mapIntent);
 }
 ```
 @[2](Creating a return intent to pass to the Main Activity)
-@[3](Figuring out which image was clicked)
-@[4-5](Adding stuff to return intent)
-@[6](Finishing Activity and return to main screen)
+@[3](Créer un objet URI (URL) à partir de l'adresse)
+@[4](Créer l'intention (Intent))
+@[5](Déclarer l'intention comme explicite)
+@[6](Commencer l'activité)
 
 
 +++
@@ -283,12 +275,12 @@ Intent explicite et activité interne
 
 ```java
 public void OnSetAvatarButton(View view) {
-    Intent intent = new Intent(getApplicationContext(), ProfileActivity.class);   //Application Context and Activity
+    Intent intent = new Intent(getApplicationContext(), ProfileActivity.class);
     startActivityForResult (intent,0);
 }
 ```
-@[2](Creating a return intent to pass to the Main Activity)
-@[3](Figuring out which image was clicked)
+<!-- @[2](https://developer.android.com/reference/android/content/Intent.html) -->
+<!-- @[3](https://developer.android.com/training/basics/intents/result.html) -->
 
 
 +++
@@ -305,8 +297,8 @@ public void OnSetAvatarButton(View view) {
 Statut présent
 
 - votre application devra être similaire à ce que vous voyez ici
-- ajoutez à la propriété OnClick une valeur de "OnOpenInGoogleMaps"
-- ajoutez à la propriété OnClick du ViewImage le nom d'une fonction sur une autre diapositive
+- ajoutez à la propriété `OnClick` une valeur de `OnOpenInGoogleMaps`
+- ajoutez à la propriété `OnClick` du ViewImage le nom d'une fonction sur une autre diapositive
     - cette fonction va ouvrir la sélection de logo d'équipe
 
 ![status](assets/resized/slides/100/image24.png)
@@ -316,7 +308,7 @@ Statut présent
 
 Créer une nouvelle activité
 
-Pour créer une nouvelle activité avec Android Studio, "right-click" et sélectionnez "New > Activity > Blank Activity"
+Pour créer une nouvelle activité avec Android Studio, "right-click" et sélectionnez `New > Activity > Blank Activity`
 
 ![new_activity](assets/resized/slides/100/image26.png)
 
@@ -338,7 +330,7 @@ Exemple de fonctionnalité "UP"
 ![new_activity](assets/resized/slides/100/image27.png)
 
 
-+++
+---
 
 Deuxième activité
 
@@ -372,10 +364,10 @@ public void setTeamIcon(View view){
 }
 
 ```
-@[2](Creating a return intent to pass to the Main Activity)
-@[3](Figuring out which image was clicked)
-@[4-5](Adding stuff to return intent)
-@[6](Finishing Activity and return to main screen)
+@[2](Créer l'intention pour retourner les informations à `MainActivity`)
+@[3](Obtenir l'information de l'image sélectionnée)
+@[4-5](Ajouter les informations à l'intention créée sur la ligne 2)
+@[6](Envoyer l'intention)
 
 
 +++
@@ -393,7 +385,7 @@ Statut présent (2)
 
 Gérer les résultats
 
-- Ajoutez cette méthode dans votre activité principale (MainActivity.java). Cette méthode manipule les informations qui lui sont retournées dans le "Return Intent".
+- Ajoutez cette méthode dans votre activité principale `MainActivity`. Cette méthode manipule les informations qui lui sont retournées dans le "Return Intent".
 - Les informations passées dans le "Return Intent" sont interprétées et utilisées pour choisir la nouvelle image.
 - Les noms des photos devraient être différents
 
@@ -401,13 +393,10 @@ Gérer les résultats
 @Override
 protected void onActivityResult(int requestCode, int resultCode, Intent data) {
     if (resultCode == RESULT_CANCELED) return;
-
-    //Getting the Avatar Image we show to our users
     ImageView avatarImage = (ImageView) findViewById(R.id.avatarImage);
-
-    //Figuring out the correct image
-    String drawableName = "ic_logo_00";
-    switch (data.getIntExtra("imageID",R.id.teamid00)) {
+    
+    String drawableName = "ic_logo_00"; //4
+    switch (data.getIntExtra("imageID",R.id.teamid00)) {//Figuring out the correct image
         case R.id.teamid00:
             drawableName = "ic_logo_00";
             break;
@@ -429,55 +418,108 @@ protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         default:
             drawableName = "ic_logo_00";
             break;
-    }
+    } //27
     int resID = getResources().getIdentifier(drawableName, "drawable",  getPackageName());
     avatarImage.setImageResource(resID);
 }
 
 ```
-@[2](Creating a return intent to pass to the Main Activity)
-@[3](Figuring out which image was clicked)
-@[4-5](Adding stuff to return intent)
-@[6](Finishing Activity and return to main screen)
+@[2](Obtenir l'image que nous allons montrer à l'utilisateur)
+@[4-27](Obtenir le nom de l'image)
+@[28-29]()
 
 +++
 
 Statut présent (3)
 
 - Votre application devrait:
-- montrer et pouvoir mettre à jour les noms d'équipe ainsi que les adresses
-- monter les adresses sur Google Maps
-- pouvoir mettre à jour les images d'équipe à partir d'une liste prédéfinie d'images
+    - montrer et pouvoir mettre à jour les noms d'équipe ainsi que les adresses
+    - monter les adresses sur Google Maps
+    - pouvoir mettre à jour les images d'équipe à partir d'une liste prédéfinie d'images
 - Votre application ne devrait pas encore:
-- charger les images à partir d'images existantes sur le système (optionnel)
+    - charger les images à partir d'images existantes sur le système (optionnel)
 
 Notez que charger les images à partir d'images existantes sur le système porte quelques contraintes:
 1. des permissions sont requises
 2. des fichiers "manifest" doivent être gérés
 
-+++
+---
 
-Implicit Intents (intentions implicites)
+Intentions implicites (Implicit Intents) [1]
 
 - fonctionnalité de la caméra avec intention implicite:
 
-Intent i = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+`Intent i = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);`
 
 - peut ajouter des méta-informations (“Metadata”)
-- onActivityResult reçoit un hyperlien à une image et décodera l'image
+- `onActivityResult` reçoit un hyperlien à une image et décodera l'image
 
 +++
 
-Implicit Intents
+```java
+String dateExtension = new Date().getTime() + ".png";
+File file = new File(Environment.getExternalStorageDirectory() + "/DCIM", "image" + dateExtension);
+Uri imgUri = Uri.formFile(file);
+String imgPath = file.getAbsolutePath();
+final Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+intent.putExtra(MediaStore.EXTRA_OUTPUT, setImageUri());
+startActivityForResult(intent, CAPTURE_IMAGE);
+
+// ... votre code ...
+
+@Override
+protected void onActivityResult(int requestCode, int resultCode, Intent data){
+    if(resultCode != Activity.RESULT_CANCELLED){
+        if(requestCode == CAPTURE_IMAGE){
+            ImageView imageView = (ImageView) findViewById(R.id.imgView);
+            imageView.setImageBitmap(BitmapFactory.decodeFile(imgPath));
+        }
+    }
+}
+```
+<!-- @[2](Obtenir l'image que nous allons montrer à l'utilisateur) -->
+<!-- @[4-27](Obtenir le nom de l'image) -->
+<!-- @[28-29]() -->
+
+---
+
+Intentions implicites (Implicit Intents) [2]
+
 
 - fonctionnalité pour sauvegarder des informations
 
-Intent i = new Intent(Intent.ACTION_PICK);
+`Intent i = new Intent(Intent.ACTION_PICK);`
 
 - peut ajouter des méta-informations (Metadata)
-- onActivityResult reçoit un hyperlien à un fichier et décodera le fichier
+- `onActivityResult` reçoit un hyperlien à un fichier et décodera le fichier
 
 +++
+
+```java
+Intent i = new Intent(Intent.ACTION_PICK,android.provider.MediaStore.Images.Media.EXTERNAL_CONTENT_URI); startActivityForResult(i, RESULT_LOAD_IMAGE); 
+
+// < ... votre code ... > 
+
+@Override
+protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+    super.onActivityResult(requestCode, resultCode, data);
+    if (requestCode == RESULT_LOAD_IMAGE && resultCode == RESULT_OK && null != data) {
+        Uri selectedImage = data.getData();
+        String[] filePathColumn = { MediaStore.Images.Media.DATA };
+        Cursor cursor = getContentResolver().query(selectedImage,filePathColumn, null, null, null);
+        cursor.moveToFirst();
+        int columnIndex = cursor.getColumnIndex(filePathColumn[0]);
+        String picturePath = cursor.getString(columnIndex);
+        cursor.close();
+        ImageView imageView = (ImageView) findViewById(R.id.imgView);
+        imageView.setImageBitmap(BitmapFactory.decodeFile(picturePath));
+    }
+}
+```
+<!-- @[2](Obtenir l'image que nous allons montrer à l'utilisateur) -->
+<!-- @[4-27](Obtenir le nom de l'image) -->
+<!-- @[28-29]() -->
+
 
 ---
 
