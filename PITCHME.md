@@ -523,6 +523,5 @@ protected void onActivityResult(int requestCode, int resultCode, Intent data) {
 
 ---
 
-- <span class="txtRed">Test</span>
-- [Formation Android](https://developer.android.com/training/index.html)
+- <span class="txtRed">[Formation Android](https://developer.android.com/training/index.html)</span>
 - [Documentation Android](https://developer.android.com/index.html)
