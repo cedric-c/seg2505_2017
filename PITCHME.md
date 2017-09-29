@@ -136,7 +136,7 @@ Note:
 
 ### Les activités
 
-- <span class="txtSmall txtGray">Les activités sont des composantes d'application qui permettent aux utilisateurs de faire une chose telle que d'entrer un numéro de téléphone, envoyer une photo, envoyer un message, visualiser une carte...</span>
+- <span class="txtGray">Les activités sont des composantes d'application qui permettent aux utilisateurs de faire une chose telle que d'entrer un numéro de téléphone, envoyer une photo, envoyer un message, visualiser une carte...</span>
 - <span class="txtSmall txtGray">Une application a typiquement plusieurs activités, une étant l'activité principale (MainActivity)</span>
 - <span class="txtSmall txtGray ">Les activités individuelles ont leurs propres tâches. Ces activités sont liées ensemble avec des Intents.</span>
 - <span class="txtSmall txtGray ">Lorsqu'une activité débute, l'activité antérieure est arrêtée et préservée dans le Stack</span>
