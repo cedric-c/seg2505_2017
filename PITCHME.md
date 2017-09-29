@@ -136,11 +136,11 @@ Note:
 
 ### Les activités
 
-- Les activités sont des composantes d'application qui permettent aux utilisateurs de faire une chose telle que d'entrer un numéro de téléphone, envoyer une photo, envoyer un message, visualiser une carte...
-- Une application a typiquement plusieurs activités, une étant l'activité principale (MainActivity)
-- Les activités individuelles ont leurs propres tâches. Ces activités sont liées ensemble avec des Intents.
-- Lorsqu'une activité débute, l'activité antérieure est arrêtée et préservée dans le Stack
-- Il n'y a pas de Main(). Les activités commencent à partir de leur méthode OnCreate().
+- <span class="txtSmall txtGray">Les activités sont des composantes d'application qui permettent aux utilisateurs de faire une chose telle que d'entrer un numéro de téléphone, envoyer une photo, envoyer un message, visualiser une carte...</span>
+- <span class="txtSmall txtGray">Une application a typiquement plusieurs activités, une étant l'activité principale (MainActivity)</span>
+- <span class="txtSmall txtGray ">Les activités individuelles ont leurs propres tâches. Ces activités sont liées ensemble avec des Intents.</span>
+- <span class="txtSmall txtGray ">Lorsqu'une activité débute, l'activité antérieure est arrêtée et préservée dans le Stack</span>
+- <span class="txtSmall txtGray ">Il n'y a pas de Main(). Les activités commencent à partir de leur méthode OnCreate().</span>
 
 
 Note:
@@ -523,5 +523,5 @@ protected void onActivityResult(int requestCode, int resultCode, Intent data) {
 
 ---
 
-- <span class="txtRed">[Formation Android](https://developer.android.com/training/index.html)</span>
+- [Formation Android](https://developer.android.com/training/index.html)
 - [Documentation Android](https://developer.android.com/index.html)
