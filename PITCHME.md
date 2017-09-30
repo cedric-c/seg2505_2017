@@ -292,9 +292,9 @@ public void OnSetAvatarButton(View view) {
 
 Le constructeur de l'objet Intent a deux paramètres
 
-(1) <span style="font-size:0.6em" class=" txtGray ">le contexte d'application (Application Context) : c'est d'où arrive l'application</span>*
+1. <span style="font-size:0.6em" class=" txtGray ">le contexte d'application (Application Context) : c'est d'où arrive l'application</span>*
 
-(2) <span style="font-size:0.6em" class=" txtGray ">classe d'intention : c'est la classe pour laquel l'intention fait demande</span>
+2. <span style="font-size:0.6em" class=" txtGray ">classe d'intention : c'est la classe pour laquel l'intention fait demande</span>
 
 +++
 
