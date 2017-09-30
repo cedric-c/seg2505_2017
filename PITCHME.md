@@ -166,17 +166,14 @@ Commencer une nouvelle activité
 ### Les intentions
 
 - <span style="font-size:0.6em" class=" txtGray ">Ce sont des objets messagers conçus pour envoyer la requête d'actions à des composantes</span>
-- <span style="font-size:0.6em" class=" txtGray ">Cas d'utilisation d'un Intent</span>
-    - <span style="font-size:0.6em" class=" txtGray ">commencer une activité</span>
-    - <span style="font-size:0.6em" class=" txtGray ">commencer un service</span>
-    - <span style="font-size:0.6em" class=" txtGray ">livrer un message global (broadcast)</span>
+- <span style="font-size:0.6em" class=" txtGray ">Cas d'utilisation d'un Intent: commencer une activité ou un service, livrer un message global (broadcast)</span>
     - <span style="font-size:0.6em" class=" txtGray ">Types: implicite, explicite</span>
 
 ![intents](assets/resized/slides/100/image22.png)
 
 +++
 
-- <span style="font-size:0.6em" class=" txtGray ">les Intents contiennent :</span>
+<span class=" txtGray ">les Intents contiennent :</span>
 - <span style="font-size:0.6em" class=" txtGray ">nom d'une composante</span>
 - <span style="font-size:0.6em" class=" txtGray ">une action</span>
 - <span style="font-size:0.6em" class=" txtGray ">des informations (data)</span>
@@ -198,28 +195,33 @@ Todo
 <span style="font-size:0.6em" class=" txtGray ">L'aplication doit:</span>
 
 2. <span style="font-size:0.6em" class=" txtGray ">avoir plusieurs activités</span>
-2. <span style="font-size:0.6em" class=" txtGray ">permettre l'utilisateur de créer le nom d'un profile</span>
-2. <span style="font-size:0.6em" class=" txtGray ">permettre l'utilisateur de changer le nom d'un profile</span>
-2. <span style="font-size:0.6em" class=" txtGray ">permettre l'utilisateur d'ajouter l'image d'un profile</span>
-2. <span style="font-size:0.6em" class=" txtGray ">permettre l'utilisateur de changer l'image d'un profile</span>
-2. <span style="font-size:0.6em" class=" txtGray ">permettre l'utilisateur d'ajouter une adresse un profile</span>
-2. <span style="font-size:0.6em" class=" txtGray ">permettre l'utilisateur de modifier l'adresse d'un profile</span>
+2. <span style="font-size:0.6em" class=" txtGray ">permettre l'utilisateur de créer/changer le nom d'un profile</span>
+2. <span style="font-size:0.6em" class=" txtGray ">permettre l'utilisateur d'ajouter/changer l'image d'un profile</span>
+2. <span style="font-size:0.6em" class=" txtGray ">permettre l'utilisateur d'ajouter/modifier une adresse un profile</span>
 2. <span style="font-size:0.6em" class=" txtGray ">permettre l'utilisateur d'ouvrir une adresse dans une application de carte (eg. Google Maps)</span>
     
 +++
 
 Activitée principale : vue du profil
 
-- <span style="font-size:0.6em" class=" txtGray ">créez un nouveau projet avec une activité vide</span>
-- <span style="font-size:0.6em" class=" txtGray ">ajoutez un champ EditText pour le champ Personne/Équipe</span>
-- <span style="font-size:0.6em" class=" txtGray ">ajoutez un champ TextView pour accompagner le champ EditText</span>
-- <span style="font-size:0.6em" class=" txtGray ">définissez la valeur de la propriété "hint" du EditText à "Veuillez ajouter un nom"</span>
-- <span style="font-size:0.6em" class=" txtGray ">répétez ce processus pour le champ lieu (Location)</span>
-- <span style="font-size:0.6em" class=" txtGray ">ajoutez une vue d'image ImageView pour représenter l'image de l'équipe</span>
-- <span style="font-size:0.6em" class=" txtGray ">l'image sera initialement invisible, car aucune image ne sera assignée au champ et la valeur de la propriété "size" ne sera pas définie</span>
-- <span style="font-size:0.6em" class=" txtGray ">changez les propriétés de "width" et "height" à "100dp". Ceci rendra la boîte à 'image visible.</span>
-- <span style="font-size:0.6em" class=" txtGray ">ajoutez un bouton qui servira à ouvrir la carte</span>
-- <span style="font-size:0.6em" class=" txtGray ">La valeur du OnClick sera OnOpenInGoogleMaps (tantôt)</span>
+1. <span style="font-size:0.6em" class=" txtGray ">créez un nouveau projet avec une activité vide</span>
+2. <span style="font-size:0.6em" class=" txtGray ">ajoutez un champ EditText pour le champ Personne/Équipe</span>
+3. <span style="font-size:0.6em" class=" txtGray ">ajoutez un champ TextView pour accompagner le champ EditText</span>
+4. <span style="font-size:0.6em" class=" txtGray ">définissez la valeur de la propriété "hint" du EditText à "Veuillez ajouter un nom"</span>
+5. <span style="font-size:0.6em" class=" txtGray ">répétez ce processus pour le champ lieu (Location)</span>
+
+<span style="font-size:0.6em">continuez sur la prochaine diapositive...</span>
+
++++
+
+<span style="font-size:0.6em">...</span>
+
+6. <span style="font-size:0.6em" class=" txtGray ">ajoutez une vue d'image ImageView pour représenter l'image de l'équipe</span>
+7. <span style="font-size:0.6em" class=" txtGray ">l'image sera initialement invisible, car aucune image ne sera assignée au champ et la valeur de la propriété "size" ne sera pas définie</span>
+8. <span style="font-size:0.6em" class=" txtGray ">changez les propriétés de "width" et "height" à "100dp". Ceci rendra la boîte à 'image visible.</span>
+9. <span style="font-size:0.6em" class=" txtGray ">ajoutez un bouton qui servira à ouvrir la carte</span>
+10. <span style="font-size:0.6em" class=" txtGray ">La valeur du OnClick sera OnOpenInGoogleMaps (tantôt)</span>
+
 
 +++
 
