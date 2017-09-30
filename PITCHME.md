@@ -290,13 +290,17 @@ public void OnSetAvatarButton(View view) {
 
 +++
 
-- <span style="font-size:0.6em" class=" txtGray ">Le constructeur de l'objet Intent a deux paramètres</span>
-1. <span style="font-size:0.6em" class=" txtGray ">le contexte d'application (Application Context) : c'est d'où arrive l'application</span>
+Le constructeur de l'objet Intent a deux paramètres
+(1) <span style="font-size:0.6em" class=" txtGray ">le contexte d'application (Application Context) : c'est d'où arrive l'application</span>*
 
-1.1 <span style="font-size:0.6em" class=" txtGray ">Lorsque vous créez une nouvelle activité, une hiérarchie est créée et la nouvelle activité a comme parent l'activité qui a fait appelle à sa création</span>
+(2) <span style="font-size:0.6em" class=" txtGray ">classe d'intention : c'est la classe pour laquel l'intention fait demande</span>
+
++++
+
+* <span style="font-size:0.6em" class=" txtGray ">Lorsque vous créez une nouvelle activité, une hiérarchie est créée et la nouvelle activité a comme parent l'activité qui a fait appelle à sa création</span>
 - <span style="font-size:0.6em" class=" txtGray ">vous passez `this` comme contexte,</span>
 - <span style="font-size:0.6em" class=" txtGray ">autrement, utilisez `getApplicationContext()` pour obtenir le contexte de l'application</span>
-2. <span style="font-size:0.6em" class=" txtGray ">classe Intent : c'est la classe pour laquel le Intent fait demande</span>
+
 
 ---
 
