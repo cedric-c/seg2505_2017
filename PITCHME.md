@@ -173,7 +173,7 @@ Commencer une nouvelle activité
 
 +++
 
-<span class=" txtGray ">les Intents contiennent :</span>
+Les Intents contiennent...
 - <span style="font-size:0.6em" class=" txtGray ">nom d'une composante</span>
 - <span style="font-size:0.6em" class=" txtGray ">une action</span>
 - <span style="font-size:0.6em" class=" txtGray ">des informations (data)</span>
@@ -231,8 +231,8 @@ Changer les images
 - <span style="font-size:0.6em">`app > res > drawable`</span>
 - <span style="font-size:0.6em" class=" txtGray ">right-click > "show in explorer"</span>
 - <span style="font-size:0.6em" class=" txtGray ">changez l'image défaut</span>
-- [http://www.firasoft.com.br/UOT/avatars.zip](avatars.zip)
-- [http://www.firasoft.com.br/UOT/logos.zip](logos.zip)
+- <span style="font-size:0.6em">[http://www.firasoft.com.br/UOT/avatars.zip](avatars.zip)</span>
+- <span style="font-size:0.6em">[http://www.firasoft.com.br/UOT/logos.zip](logos.zip)</span>
 
 ![changing_graphics](assets/resized/slides/100/image23.png)
 
