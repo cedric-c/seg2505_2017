@@ -196,14 +196,14 @@ Todo
 Vous devez créer un gestionnaire d'équipe sportive. Ce gestionnaire devra gérer les joueurs d'une équipe et plusieurs équipe.
 
 <span class="txtSmall txtGray ">L'aplication doit:</span>
-    2.1 <span class="txtSmall txtGray ">avoir plusieurs activités</span>
-    2.3 <span class="txtSmall txtGray ">permettre l'utilisateur de créer le nom d'un profile</span>
-    2.4 <span class="txtSmall txtGray ">permettre l'utilisateur de changer le nom d'un profile</span>
-    2.5 <span class="txtSmall txtGray ">permettre l'utilisateur d'ajouter l'image d'un profile</span>
-    2.6 <span class="txtSmall txtGray ">permettre l'utilisateur de changer l'image d'un profile</span>
-    2.7 <span class="txtSmall txtGray ">permettre l'utilisateur d'ajouter une adresse un profile</span>
-    2.8 <span class="txtSmall txtGray ">permettre l'utilisateur de modifier l'adresse d'un profile</span>
-    2.9 <span class="txtSmall txtGray ">permettre l'utilisateur d'ouvrir une adresse dans une application de carte (eg. Google Maps)</span>
+2.1 <span class="txtSmall txtGray ">avoir plusieurs activités</span>
+2.3 <span class="txtSmall txtGray ">permettre l'utilisateur de créer le nom d'un profile</span>
+2.4 <span class="txtSmall txtGray ">permettre l'utilisateur de changer le nom d'un profile</span>
+2.5 <span class="txtSmall txtGray ">permettre l'utilisateur d'ajouter l'image d'un profile</span>
+2.6 <span class="txtSmall txtGray ">permettre l'utilisateur de changer l'image d'un profile</span>
+2.7 <span class="txtSmall txtGray ">permettre l'utilisateur d'ajouter une adresse un profile</span>
+2.8 <span class="txtSmall txtGray ">permettre l'utilisateur de modifier l'adresse d'un profile</span>
+2.9 <span class="txtSmall txtGray ">permettre l'utilisateur d'ouvrir une adresse dans une application de carte (eg. Google Maps)</span>
     
 +++
 
