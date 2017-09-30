@@ -384,7 +384,7 @@ MÀJ (2)
 - <span style="font-size:0.6em" class=" txtGray ">ajoutez à la propriété OnClick de chaque icône la valeur de "SetTeamIconOnClick"</span>
     - <span style="font-size:0.6em" class=" txtGray ">chaque image peut être liée à la fonction sur la prochaine diapositive</span>
 
-![final_product](assets/resized/slides/100/image29.png)
+![final_product](assets/resized/slides/50/image29.png)
 
 
 +++
@@ -444,6 +444,8 @@ MÀJ (3)
     - <span style="font-size:0.6em" class=" txtGray ">pouvoir mettre à jour les images d'équipe à partir d'une liste prédéfinie d'images</span>
 - <span style="font-size:0.6em" class=" txtGray ">Votre application ne devrait pas encore:</span>
     - <span style="font-size:0.6em" class=" txtGray ">charger les images à partir d'images existantes sur le système (optionnel)</span>
+
++++
 
 Notez que charger les images à partir d'images existantes sur le système porte quelques contraintes:
 1. <span style="font-size:0.6em" class=" txtGray ">des permissions sont requises</span>
