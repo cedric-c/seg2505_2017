@@ -292,14 +292,15 @@ public void OnSetAvatarButton(View view) {
 
 - <span style="font-size:0.6em" class=" txtGray ">Le constructeur de l'objet Intent a deux paramètres</span>
 1. <span style="font-size:0.6em" class=" txtGray ">le contexte d'application (Application Context) : c'est d'où arrive l'application</span>
+
 1.1 <span style="font-size:0.6em" class=" txtGray ">Lorsque vous créez une nouvelle activité, une hiérarchie est créée et la nouvelle activité a comme parent l'activité qui a fait appelle à sa création</span>
 - <span style="font-size:0.6em" class=" txtGray ">vous passez `this` comme contexte,</span>
 - <span style="font-size:0.6em" class=" txtGray ">autrement, utilisez `getApplicationContext()` pour obtenir le contexte de l'application</span>
 2. <span style="font-size:0.6em" class=" txtGray ">classe Intent : c'est la classe pour laquel le Intent fait demande</span>
 
-+++
+---
 
-Statut présent
+MÀJ (1)
 
 - <span style="font-size:0.6em" class=" txtGray ">votre application devra être similaire à ce que vous voyez ici</span>
 - <span style="font-size:0.6em" class=" txtGray ">ajoutez à la propriété `OnClick` une valeur de `OnOpenInGoogleMaps`</span>
@@ -375,9 +376,9 @@ public void setTeamIcon(View view){
 @[6](Envoyer l'intention)
 
 
-+++
+---
 
-Statut présent (2)
+MÀJ (2)
 
 - <span style="font-size:0.6em" class=" txtGray ">votre application devra être similaire à ce que vous voyez ici</span>
 - <span style="font-size:0.6em" class=" txtGray ">ajoutez à la propriété OnClick de chaque icône la valeur de "SetTeamIconOnClick"</span>
@@ -433,9 +434,9 @@ protected void onActivityResult(int requestCode, int resultCode, Intent data) {
 @[4-27](Obtenir le nom de l'image)
 @[28-29]()
 
-+++
+---
 
-Statut présent (3)
+MÀJ (3)
 
 - <span style="font-size:0.6em" class=" txtGray ">Votre application devrait:</span>
     - <span style="font-size:0.6em" class=" txtGray ">montrer et pouvoir mettre à jour les noms d'équipe ainsi que les adresses</span>
