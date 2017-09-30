@@ -342,7 +342,7 @@ Deuxième activité
 
 +++
 
-- <span style="font-size:0.6em" class=" txtGray ">Comment puis-je retourner à l'activité principale ?</span>
+Comment puis-je retourner à l'activité principale ?
 - <span style="font-size:0.6em" class=" txtGray ">Les activités sont structurées en pile. Une activité qui termine est "pop-é" de la pile et l'activité principale est rappelée. Notez que les champs locaux (dans les activités parentes) qui contiennent des informations ne les perdent pas lorsqu'une activité enfant est "pop-é".</span>
 - <span style="font-size:0.6em" class=" txtGray ">Lorsqu'on pop une activité, on tue l'instance</span>
 - <span style="font-size:0.6em" class=" txtGray ">Vous n'avez pas besoin de créer de bouton retour / “back”, Android fait ceci pour vous</span>
