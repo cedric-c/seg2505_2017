@@ -386,7 +386,7 @@ MÀJ (2)
     
 +++
 
-![final_product](assets/resized/slides/50/image29.png)
+![final_product](assets/resized/slides/100/image29.png)
 
 
 +++
