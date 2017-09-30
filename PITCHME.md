@@ -193,7 +193,7 @@ Commencer une nouvelle activité
 
 Todo
 
-Vous devez créer un gestionnaire d'équipe sportive. Ce gestionnaire devra gérer les joueurs d'une équipe et plusieurs équipe.
+<span style="font-size:0.6em">Vous devez créer un gestionnaire d'équipe sportive. Ce gestionnaire devra gérer les joueurs d'une équipe et plusieurs équipe.</span>
 
 <span style="font-size:0.6em" class=" txtGray ">L'aplication doit:</span>
 
