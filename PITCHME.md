@@ -140,7 +140,7 @@ Note:
 - <span style="font-size:0.6em" class=" txtGray" style="font-size:0.6em">Une application a typiquement <span class="txtSmall txtOrange ">plusieurs activités</span>, une qui est l'activité principale (MainActivity)</span>
 - <span style="font-size:0.6em" class=" txtGray " style="font-size:0.6em">Les activités individuelles ont leurs propres tâches. Ces activités sont <span class="txtSmall txtBlueL ">liées ensemble avec des Intents</span>.</span>
 - <span style="font-size:0.6em" class=" txtGray " style="font-size:0.6em">Lorsqu'une activité débute, l'activité antérieure est arrêtée et <span class="txtSmall txtPurple ">préservée dans le Stack</span></span>
-- <span style="font-size:0.6em" class=" txtGray " style="font-size:0.6em">Il n'y a <span class="txtSmall txtRed ">pas de `Main()`</span>. Les activités commencent à partir de leur méthode <span class="txtSmall txtLavender ">OnCreate()</span>.</span>
+- <span style="font-size:0.6em" class=" txtGray " style="font-size:0.6em">Il n'y a <span class="txtSmall txtRed ">pas de `Main()`</span>. Les activités commencent à partir de leur méthode <span class="txtSmall txtLavender ">`OnCreate()`</span>.</span>
 
 
 Note:
@@ -359,7 +359,7 @@ Deuxième activité
 +++
 
 Comment puis-je retourner à l'activité principale ?
-- <span style="font-size:0.6em" class=" txtGray ">Les activités sont structurées en pile. Une activité qui termine est "pop-é" de la pile et l'activité principale est rappelée. Notez que les champs locaux (dans les activités parentes) qui contiennent des informations ne les perdent pas lorsqu'une activité enfant est "pop-é".</span>
+- <span style="font-size:0.6em" class=" txtGray ">Les activités sont <span class="txtSmall txtGreen">structurées en pile</span>. Une activité qui termine est "pop-é" de la pile et l'activité principale est rappelée. Notez que les champs locaux (dans les activités parentes) qui contiennent des informations ne les perdent pas lorsqu'une activité enfant est "pop-é".</span>
 - <span style="font-size:0.6em" class=" txtGray ">Lorsqu'on pop une activité, on tue l'instance</span>
 - <span style="font-size:0.6em" class=" txtGray ">Vous n'avez pas besoin de créer de bouton retour / “back”, Android fait ceci pour vous</span>
 
