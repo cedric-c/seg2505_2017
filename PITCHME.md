@@ -169,6 +169,8 @@ Commencer une nouvelle activité
 - <span style="font-size:0.6em" class=" txtGray ">Cas d'utilisation d'un Intent: commencer une activité ou un service, livrer un message global (broadcast)</span>
     - <span style="font-size:0.6em" class=" txtGray ">Types: implicite, explicite</span>
 
++++
+
 ![intents](assets/resized/slides/100/image22.png)
 
 +++
@@ -181,7 +183,7 @@ Les Intents contiennent...
 - <span style="font-size:0.6em" class=" txtGray ">des surplus (Extra)</span>
 - <span style="font-size:0.6em" class=" txtGray ">des drapeaux</span>
 
-[intents-filters](http://developer.android.com/guide/components/intents-filters.html)
+[Documentation sur les intentions](http://developer.android.com/guide/components/intents-filters.html)
 
 ---
 
@@ -523,6 +525,15 @@ protected void onActivityResult(int requestCode, int resultCode, Intent data) {
 <!-- @[4-27](Obtenir le nom de l'image) -->
 <!-- @[28-29]() -->
 
+
+---
+
+Résumé
+
+- activité
+- intentions
+    - explicite: nom de la classe (launch Google Maps)
+    - implicite: type d'action / data (view Map applications)
 
 ---
 
