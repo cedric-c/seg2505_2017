@@ -298,7 +298,9 @@ Le constructeur de l'objet Intent a deux paramètres
 
 +++
 
-* <span style="font-size:0.6em" class=" txtGray ">Lorsque vous créez une nouvelle activité, une hiérarchie est créée et la nouvelle activité a comme parent l'activité qui a fait appelle à sa création</span>
+<center>*</center>
+
+<span style="font-size:0.6em" class=" txtGray ">Lorsque vous créez une nouvelle activité, une hiérarchie est créée et la nouvelle activité a comme parent l'activité qui a fait appelle à sa création</span>
 - <span style="font-size:0.6em" class=" txtGray ">vous passez `this` comme contexte,</span>
 - <span style="font-size:0.6em" class=" txtGray ">autrement, utilisez `getApplicationContext()` pour obtenir le contexte de l'application</span>
 
