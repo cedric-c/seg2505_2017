@@ -242,7 +242,7 @@ Changer les images
 ![layout_graphics](assets/resized/slides/100/image24.png)
 
 
-+++
+---
 
 Intent explicite et activité externe
 
