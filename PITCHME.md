@@ -336,6 +336,7 @@ Créer une nouvelle activité (cont.)
 +++
 
 Parent hiérarchique
+
 <span style="font-size:0.6em"><span class="txtSmall txtGray ">Si votre application implémente la fonctionnalité "UP", vous pouvez déclarer une autre activité comme le parent d'une autre</span></span>
 
 
