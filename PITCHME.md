@@ -195,7 +195,7 @@ Todo
 
 Vous devez créer un gestionnaire d'équipe sportive. Ce gestionnaire devra gérer les joueurs d'une équipe et plusieurs équipe.
 
-1. <span class="txtSmall txtGray ">L'aplication doit:</span>
+<span class="txtSmall txtGray ">L'aplication doit:</span>
     2.1 <span class="txtSmall txtGray ">avoir plusieurs activités</span>
     2.3 <span class="txtSmall txtGray ">permettre l'utilisateur de créer le nom d'un profile</span>
     2.4 <span class="txtSmall txtGray ">permettre l'utilisateur de changer le nom d'un profile</span>
