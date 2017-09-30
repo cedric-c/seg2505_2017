@@ -321,7 +321,7 @@ MÀJ (1)
 
 Créer une nouvelle activité
 
-Pour créer une nouvelle activité avec Android Studio, "right-click" et sélectionnez `New > Activity > Blank Activity`
+<span style="font-size:0.6em"><span style="color:white">`right-click`</span> et sélectionnez <span style="color:white">`New > Activity > Blank Activity`</span></span>
 
 ![new_activity](assets/resized/slides/100/image26.png)
 
