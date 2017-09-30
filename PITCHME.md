@@ -383,6 +383,8 @@ MÀJ (2)
 - <span style="font-size:0.6em" class=" txtGray ">votre application devra être similaire à ce que vous voyez ici</span>
 - <span style="font-size:0.6em" class=" txtGray ">ajoutez à la propriété OnClick de chaque icône la valeur de "SetTeamIconOnClick"</span>
     - <span style="font-size:0.6em" class=" txtGray ">chaque image peut être liée à la fonction sur la prochaine diapositive</span>
+    
++++
 
 ![final_product](assets/resized/slides/50/image29.png)
 
