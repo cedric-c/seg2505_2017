@@ -223,7 +223,7 @@ Activitée principale : vue du profil
 10. <span style="font-size:0.6em" class=" txtGray ">La valeur du OnClick sera OnOpenInGoogleMaps (tantôt)</span>
 
 
-+++
+---
 
 Changer les images
 
