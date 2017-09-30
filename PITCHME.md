@@ -137,52 +137,52 @@ Note:
 ### Les activités
 
 - <span class="txtGray" style="font-size:0.6em" >Les activités sont des composantes d'application qui permettent aux utilisateurs de faire une chose telle que d'entrer un numéro de téléphone, envoyer une photo, envoyer un message, visualiser une carte...</span>
-- <span class="txtSmall txtGray" style="font-size:0.6em">Une application a typiquement plusieurs activités, une étant l'activité principale (MainActivity)</span>
-- <span class="txtSmall txtGray " style="font-size:0.6em">Les activités individuelles ont leurs propres tâches. Ces activités sont liées ensemble avec des Intents.</span>
-- <span class="txtSmall txtGray " style="font-size:0.6em">Lorsqu'une activité débute, l'activité antérieure est arrêtée et préservée dans le Stack</span>
-- <span class="txtSmall txtGray " style="font-size:0.6em">Il n'y a pas de Main(). Les activités commencent à partir de leur méthode OnCreate().</span>
+- <span style="font-size:0.6em" class=" txtGray" style="font-size:0.6em">Une application a typiquement plusieurs activités, une étant l'activité principale (MainActivity)</span>
+- <span style="font-size:0.6em" class=" txtGray " style="font-size:0.6em">Les activités individuelles ont leurs propres tâches. Ces activités sont liées ensemble avec des Intents.</span>
+- <span style="font-size:0.6em" class=" txtGray " style="font-size:0.6em">Lorsqu'une activité débute, l'activité antérieure est arrêtée et préservée dans le Stack</span>
+- <span style="font-size:0.6em" class=" txtGray " style="font-size:0.6em">Il n'y a pas de Main(). Les activités commencent à partir de leur méthode OnCreate().</span>
 
 
 Note:
-- <span class="txtSmall txtGray ">Les activités sont des composantes d'application qui permettent aux utilisateurs de faire une chose telle que d'entrer un numéro de téléphone, envoyer une photo, envoyer un message, visualiser une carte...</span>
-- <span class="txtSmall txtGray ">Une application a typiquement plusieurs activités, une étant l'activité principale (MainActivity)</span>
-- <span class="txtSmall txtGray ">Les activités individuelles ont leurs propres tâches. Ces activités sont liées ensemble avec des Intents.</span>
-- <span class="txtSmall txtGray ">Lorsqu'une activité débute, l'activité antérieure est arrêtée et préservée dans le Stack</span>
-- <span class="txtSmall txtGray ">Il n'y a pas de Main(). Les activités commencent à partir de leur méthode OnCreate().</span>
+- <span style="font-size:0.6em" class=" txtGray ">Les activités sont des composantes d'application qui permettent aux utilisateurs de faire une chose telle que d'entrer un numéro de téléphone, envoyer une photo, envoyer un message, visualiser une carte...</span>
+- <span style="font-size:0.6em" class=" txtGray ">Une application a typiquement plusieurs activités, une étant l'activité principale (MainActivity)</span>
+- <span style="font-size:0.6em" class=" txtGray ">Les activités individuelles ont leurs propres tâches. Ces activités sont liées ensemble avec des Intents.</span>
+- <span style="font-size:0.6em" class=" txtGray ">Lorsqu'une activité débute, l'activité antérieure est arrêtée et préservée dans le Stack</span>
+- <span style="font-size:0.6em" class=" txtGray ">Il n'y a pas de Main(). Les activités commencent à partir de leur méthode OnCreate().</span>
 
 +++
 
 Commencer une nouvelle activité
 
-- <span class="txtSmall txtGray ">Les activités peuvent être appelées avec les fonctions suivantes:</span>
-- <span class="txtSmall txtGray ">startActivity(Intent i)</span>
-- <span class="txtSmall txtGray ">remarque: chaque activité à besoin d'un Intent</span>
-- <span class="txtSmall txtGray ">les Intents peuvent être des morceaux d'applications ou des applications entières</span>
-- <span class="txtSmall txtGray ">startActivityForResult(Intent i, RequestCode c)</span>
+- <span style="font-size:0.6em" class=" txtGray ">Les activités peuvent être appelées avec les fonctions suivantes:</span>
+- <span style="font-size:0.6em" class=" txtGray ">startActivity(Intent i)</span>
+- <span style="font-size:0.6em" class=" txtGray ">remarque: chaque activité à besoin d'un Intent</span>
+- <span style="font-size:0.6em" class=" txtGray ">les Intents peuvent être des morceaux d'applications ou des applications entières</span>
+- <span style="font-size:0.6em" class=" txtGray ">startActivityForResult(Intent i, RequestCode c)</span>
 
 
 ---
 
 ### Les intentions
 
-- <span class="txtSmall txtGray ">Ce sont des objets messagers conçus pour envoyer la requête d'actions à des composantes</span>
-- <span class="txtSmall txtGray ">Cas d'utilisation d'un Intent</span>
-    - <span class="txtSmall txtGray ">commencer une activité</span>
-    - <span class="txtSmall txtGray ">commencer un service</span>
-    - <span class="txtSmall txtGray ">livrer un message global (broadcast)</span>
-    - <span class="txtSmall txtGray ">Types: implicite, explicite</span>
+- <span style="font-size:0.6em" class=" txtGray ">Ce sont des objets messagers conçus pour envoyer la requête d'actions à des composantes</span>
+- <span style="font-size:0.6em" class=" txtGray ">Cas d'utilisation d'un Intent</span>
+    - <span style="font-size:0.6em" class=" txtGray ">commencer une activité</span>
+    - <span style="font-size:0.6em" class=" txtGray ">commencer un service</span>
+    - <span style="font-size:0.6em" class=" txtGray ">livrer un message global (broadcast)</span>
+    - <span style="font-size:0.6em" class=" txtGray ">Types: implicite, explicite</span>
 
 ![intents](assets/resized/slides/100/image22.png)
 
 +++
 
-- <span class="txtSmall txtGray ">les Intents contiennent :</span>
-- <span class="txtSmall txtGray ">nom d'une composante</span>
-- <span class="txtSmall txtGray ">une action</span>
-- <span class="txtSmall txtGray ">des informations (data)</span>
-- <span class="txtSmall txtGray ">une catégorie</span>
-- <span class="txtSmall txtGray ">des surplus (Extra)</span>
-- <span class="txtSmall txtGray ">des drapeaux</span>
+- <span style="font-size:0.6em" class=" txtGray ">les Intents contiennent :</span>
+- <span style="font-size:0.6em" class=" txtGray ">nom d'une composante</span>
+- <span style="font-size:0.6em" class=" txtGray ">une action</span>
+- <span style="font-size:0.6em" class=" txtGray ">des informations (data)</span>
+- <span style="font-size:0.6em" class=" txtGray ">une catégorie</span>
+- <span style="font-size:0.6em" class=" txtGray ">des surplus (Extra)</span>
+- <span style="font-size:0.6em" class=" txtGray ">des drapeaux</span>
 
 [intents-filters](http://developer.android.com/guide/components/intents-filters.html)
 
@@ -195,40 +195,40 @@ Todo
 
 Vous devez créer un gestionnaire d'équipe sportive. Ce gestionnaire devra gérer les joueurs d'une équipe et plusieurs équipe.
 
-<span class="txtSmall txtGray ">L'aplication doit:</span>
+<span style="font-size:0.6em" class=" txtGray ">L'aplication doit:</span>
 
-2. <span class="txtSmall txtGray ">avoir plusieurs activités</span>
-2. <span class="txtSmall txtGray ">permettre l'utilisateur de créer le nom d'un profile</span>
-2. <span class="txtSmall txtGray ">permettre l'utilisateur de changer le nom d'un profile</span>
-2. <span class="txtSmall txtGray ">permettre l'utilisateur d'ajouter l'image d'un profile</span>
-2. <span class="txtSmall txtGray ">permettre l'utilisateur de changer l'image d'un profile</span>
-2. <span class="txtSmall txtGray ">permettre l'utilisateur d'ajouter une adresse un profile</span>
-2. <span class="txtSmall txtGray ">permettre l'utilisateur de modifier l'adresse d'un profile</span>
-2. <span class="txtSmall txtGray ">permettre l'utilisateur d'ouvrir une adresse dans une application de carte (eg. Google Maps)</span>
+2. <span style="font-size:0.6em" class=" txtGray ">avoir plusieurs activités</span>
+2. <span style="font-size:0.6em" class=" txtGray ">permettre l'utilisateur de créer le nom d'un profile</span>
+2. <span style="font-size:0.6em" class=" txtGray ">permettre l'utilisateur de changer le nom d'un profile</span>
+2. <span style="font-size:0.6em" class=" txtGray ">permettre l'utilisateur d'ajouter l'image d'un profile</span>
+2. <span style="font-size:0.6em" class=" txtGray ">permettre l'utilisateur de changer l'image d'un profile</span>
+2. <span style="font-size:0.6em" class=" txtGray ">permettre l'utilisateur d'ajouter une adresse un profile</span>
+2. <span style="font-size:0.6em" class=" txtGray ">permettre l'utilisateur de modifier l'adresse d'un profile</span>
+2. <span style="font-size:0.6em" class=" txtGray ">permettre l'utilisateur d'ouvrir une adresse dans une application de carte (eg. Google Maps)</span>
     
 +++
 
 Activitée principale : vue du profil
 
-- <span class="txtSmall txtGray ">créez un nouveau projet avec une activité vide</span>
-- <span class="txtSmall txtGray ">ajoutez un champ EditText pour le champ Personne/Équipe</span>
-- <span class="txtSmall txtGray ">ajoutez un champ TextView pour accompagner le champ EditText</span>
-- <span class="txtSmall txtGray ">définissez la valeur de la propriété "hint" du EditText à "Veuillez ajouter un nom"</span>
-- <span class="txtSmall txtGray ">répétez ce processus pour le champ lieu (Location)</span>
-- <span class="txtSmall txtGray ">ajoutez une vue d'image ImageView pour représenter l'image de l'équipe</span>
-- <span class="txtSmall txtGray ">l'image sera initialement invisible, car aucune image ne sera assignée au champ et la valeur de la propriété "size" ne sera pas définie</span>
-- <span class="txtSmall txtGray ">changez les propriétés de "width" et "height" à "100dp". Ceci rendra la boîte à 'image visible.</span>
-- <span class="txtSmall txtGray ">ajoutez un bouton qui servira à ouvrir la carte</span>
-- <span class="txtSmall txtGray ">La valeur du OnClick sera OnOpenInGoogleMaps (tantôt)</span>
+- <span style="font-size:0.6em" class=" txtGray ">créez un nouveau projet avec une activité vide</span>
+- <span style="font-size:0.6em" class=" txtGray ">ajoutez un champ EditText pour le champ Personne/Équipe</span>
+- <span style="font-size:0.6em" class=" txtGray ">ajoutez un champ TextView pour accompagner le champ EditText</span>
+- <span style="font-size:0.6em" class=" txtGray ">définissez la valeur de la propriété "hint" du EditText à "Veuillez ajouter un nom"</span>
+- <span style="font-size:0.6em" class=" txtGray ">répétez ce processus pour le champ lieu (Location)</span>
+- <span style="font-size:0.6em" class=" txtGray ">ajoutez une vue d'image ImageView pour représenter l'image de l'équipe</span>
+- <span style="font-size:0.6em" class=" txtGray ">l'image sera initialement invisible, car aucune image ne sera assignée au champ et la valeur de la propriété "size" ne sera pas définie</span>
+- <span style="font-size:0.6em" class=" txtGray ">changez les propriétés de "width" et "height" à "100dp". Ceci rendra la boîte à 'image visible.</span>
+- <span style="font-size:0.6em" class=" txtGray ">ajoutez un bouton qui servira à ouvrir la carte</span>
+- <span style="font-size:0.6em" class=" txtGray ">La valeur du OnClick sera OnOpenInGoogleMaps (tantôt)</span>
 
 +++
 
 Changer les images
 
-- <span class="txtSmall txtGray ">pour des médias (image, son, etc.) à votre projet vous avez qu'à placer les fichiers dans le répertoire "drawable"</span>
+- <span style="font-size:0.6em" class=" txtGray ">pour des médias (image, son, etc.) à votre projet vous avez qu'à placer les fichiers dans le répertoire "drawable"</span>
 - <span style="font-size:0.6em">`app > res > drawable`</span>
-- <span class="txtSmall txtGray ">right-click > "show in explorer"</span>
-- <span class="txtSmall txtGray ">changez l'image défaut</span>
+- <span style="font-size:0.6em" class=" txtGray ">right-click > "show in explorer"</span>
+- <span style="font-size:0.6em" class=" txtGray ">changez l'image défaut</span>
 - [http://www.firasoft.com.br/UOT/avatars.zip](avatars.zip)
 - [http://www.firasoft.com.br/UOT/logos.zip](logos.zip)
 
@@ -244,11 +244,11 @@ Changer les images
 
 Intent explicite et activité externe
 
-- <span class="txtSmall txtGray ">ajoutez la prochaine méthode à votre activité principale (`MainActivity.java`)</span>
-- <span class="txtSmall txtGray ">changez la propriété `OnClick`</span>
-- <span class="txtSmall txtGray ">cette fonction fait une demande explicite au paquet de Google Maps</span>
+- <span style="font-size:0.6em" class=" txtGray ">ajoutez la prochaine méthode à votre activité principale (`MainActivity.java`)</span>
+- <span style="font-size:0.6em" class=" txtGray ">changez la propriété `OnClick`</span>
+- <span style="font-size:0.6em" class=" txtGray ">cette fonction fait une demande explicite au paquet de Google Maps</span>
 
-<span class="txtSmall txtGray ">Notez que vous devez avoir le cadriciel de Google (Google API) dans votre émulateur virtuel pour que ceci fonctionne</span>
+<span style="font-size:0.6em" class=" txtGray ">Notez que vous devez avoir le cadriciel de Google (Google API) dans votre émulateur virtuel pour que ceci fonctionne</span>
 
 ```java
 public void OnOpenInGoogleMaps (View view) {
@@ -270,9 +270,9 @@ public void OnOpenInGoogleMaps (View view) {
 
 Intent explicite et activité interne
 
-- <span class="txtSmall txtGray ">ajoutez la prochaine fonction à votre activité principale (MainActivity.java)</span>
-- <span class="txtSmall txtGray ">changez la propriété OnClick de votre ImageView</span>
-- <span class="txtSmall txtGray ">ceci va ouvrir une autre activité où nous allons choisir une nouvelle image pour l'équipe</span>
+- <span style="font-size:0.6em" class=" txtGray ">ajoutez la prochaine fonction à votre activité principale (MainActivity.java)</span>
+- <span style="font-size:0.6em" class=" txtGray ">changez la propriété OnClick de votre ImageView</span>
+- <span style="font-size:0.6em" class=" txtGray ">ceci va ouvrir une autre activité où nous allons choisir une nouvelle image pour l'équipe</span>
 
 ```java
 public void OnSetAvatarButton(View view) {
@@ -286,21 +286,21 @@ public void OnSetAvatarButton(View view) {
 
 +++
 
-- <span class="txtSmall txtGray ">Le constructeur de l'objet Intent a deux paramètres</span>
-1. <span class="txtSmall txtGray ">le contexte d'application (Application Context) : c'est d'où arrive l'application</span>
-1.1 <span class="txtSmall txtGray ">Lorsque vous créez une nouvelle activité, une hiérarchie est créée et la nouvelle activité a comme parent l'activité qui a fait appelle à sa création</span>
-- <span class="txtSmall txtGray ">vous passez `this` comme contexte,</span>
-- <span class="txtSmall txtGray ">autrement, utilisez `getApplicationContext()` pour obtenir le contexte de l'application</span>
-2. <span class="txtSmall txtGray ">classe Intent : c'est la classe pour laquel le Intent fait demande</span>
+- <span style="font-size:0.6em" class=" txtGray ">Le constructeur de l'objet Intent a deux paramètres</span>
+1. <span style="font-size:0.6em" class=" txtGray ">le contexte d'application (Application Context) : c'est d'où arrive l'application</span>
+1.1 <span style="font-size:0.6em" class=" txtGray ">Lorsque vous créez une nouvelle activité, une hiérarchie est créée et la nouvelle activité a comme parent l'activité qui a fait appelle à sa création</span>
+- <span style="font-size:0.6em" class=" txtGray ">vous passez `this` comme contexte,</span>
+- <span style="font-size:0.6em" class=" txtGray ">autrement, utilisez `getApplicationContext()` pour obtenir le contexte de l'application</span>
+2. <span style="font-size:0.6em" class=" txtGray ">classe Intent : c'est la classe pour laquel le Intent fait demande</span>
 
 +++
 
 Statut présent
 
-- <span class="txtSmall txtGray ">votre application devra être similaire à ce que vous voyez ici</span>
-- <span class="txtSmall txtGray ">ajoutez à la propriété `OnClick` une valeur de `OnOpenInGoogleMaps`</span>
-- <span class="txtSmall txtGray ">ajoutez à la propriété `OnClick` du ViewImage le nom d'une fonction sur une autre diapositive</span>
-    - <span class="txtSmall txtGray ">cette fonction va ouvrir la sélection de logo d'équipe</span>
+- <span style="font-size:0.6em" class=" txtGray ">votre application devra être similaire à ce que vous voyez ici</span>
+- <span style="font-size:0.6em" class=" txtGray ">ajoutez à la propriété `OnClick` une valeur de `OnOpenInGoogleMaps`</span>
+- <span style="font-size:0.6em" class=" txtGray ">ajoutez à la propriété `OnClick` du ViewImage le nom d'une fonction sur une autre diapositive</span>
+    - <span style="font-size:0.6em" class=" txtGray ">cette fonction va ouvrir la sélection de logo d'équipe</span>
 
 ![status](assets/resized/slides/100/image24.png)
 
@@ -318,8 +318,8 @@ Pour créer une nouvelle activité avec Android Studio, "right-click" et sélect
 
 Créer une nouvelle activité (cont.)
 
-- <span class="txtSmall txtGray ">ajoutez les informations de votre choix et appuyez sur "Finish"</span>
-- <span class="txtSmall txtGray ">lorsque vous créez une activité, Android Studio crée un nouveau fichier Java ainsi qu'un fichier XML pour l'interface d'utilisateur</span>
+- <span style="font-size:0.6em" class=" txtGray ">ajoutez les informations de votre choix et appuyez sur "Finish"</span>
+- <span style="font-size:0.6em" class=" txtGray ">lorsque vous créez une activité, Android Studio crée un nouveau fichier Java ainsi qu'un fichier XML pour l'interface d'utilisateur</span>
 
 +++
 
@@ -335,25 +335,25 @@ Exemple de fonctionnalité "UP"
 
 Deuxième activité
 
-- <span class="txtSmall txtGray ">créez une deuxième activité qui est l'enfant de votre activité principale (MainActivity). Ceci se fait dans la boite de création.</span>
-- <span class="txtSmall txtGray ">supprimez ce qui se trouve sur l'écran et ajoutez un VerticalLayout</span>
-- <span class="txtSmall txtGray ">ajoutez un GridLayout au VerticalLayout et créez 6 nouveaux ImageViews à l'intérieur du VerticalLayout</span>
-- <span class="txtSmall txtGray ">ajoutez un bouton au VerticalLayout sous le GridLayout</span>
+- <span style="font-size:0.6em" class=" txtGray ">créez une deuxième activité qui est l'enfant de votre activité principale (MainActivity). Ceci se fait dans la boite de création.</span>
+- <span style="font-size:0.6em" class=" txtGray ">supprimez ce qui se trouve sur l'écran et ajoutez un VerticalLayout</span>
+- <span style="font-size:0.6em" class=" txtGray ">ajoutez un GridLayout au VerticalLayout et créez 6 nouveaux ImageViews à l'intérieur du VerticalLayout</span>
+- <span style="font-size:0.6em" class=" txtGray ">ajoutez un bouton au VerticalLayout sous le GridLayout</span>
 
 +++
 
-- <span class="txtSmall txtGray ">Comment puis-je retourner à l'activité principale ?</span>
-- <span class="txtSmall txtGray ">Les activités sont structurées en pile. Une activité qui termine est "pop-é" de la pile et l'activité principale est rappelée. Notez que les champs locaux (dans les activités parentes) qui contiennent des informations ne les perdent pas lorsqu'une activité enfant est "pop-é".</span>
-- <span class="txtSmall txtGray ">Lorsqu'on pop une activité, on tue l'instance</span>
-- <span class="txtSmall txtGray ">Vous n'avez pas besoin de créer de bouton retour / “back”, Android fait ceci pour vous</span>
+- <span style="font-size:0.6em" class=" txtGray ">Comment puis-je retourner à l'activité principale ?</span>
+- <span style="font-size:0.6em" class=" txtGray ">Les activités sont structurées en pile. Une activité qui termine est "pop-é" de la pile et l'activité principale est rappelée. Notez que les champs locaux (dans les activités parentes) qui contiennent des informations ne les perdent pas lorsqu'une activité enfant est "pop-é".</span>
+- <span style="font-size:0.6em" class=" txtGray ">Lorsqu'on pop une activité, on tue l'instance</span>
+- <span style="font-size:0.6em" class=" txtGray ">Vous n'avez pas besoin de créer de bouton retour / “back”, Android fait ceci pour vous</span>
 
 +++
 
 Retour à l'activité principale
 
-- <span class="txtSmall txtGray ">ajoutez la prochaine fonction à votre deuxième fichier d'activité</span>
-- <span class="txtSmall txtGray ">ceci devrait être la méthode OnClick sur vos images</span>
-- <span class="txtSmall txtGray ">le code envoie les ID des images qui ont été appuyées</span>
+- <span style="font-size:0.6em" class=" txtGray ">ajoutez la prochaine fonction à votre deuxième fichier d'activité</span>
+- <span style="font-size:0.6em" class=" txtGray ">ceci devrait être la méthode OnClick sur vos images</span>
+- <span style="font-size:0.6em" class=" txtGray ">le code envoie les ID des images qui ont été appuyées</span>
 
 ```java
 public void setTeamIcon(View view){
@@ -375,9 +375,9 @@ public void setTeamIcon(View view){
 
 Statut présent (2)
 
-- <span class="txtSmall txtGray ">votre application devra être similaire à ce que vous voyez ici</span>
-- <span class="txtSmall txtGray ">ajoutez à la propriété OnClick de chaque icône la valeur de "SetTeamIconOnClick"</span>
-    - <span class="txtSmall txtGray ">chaque image peut être liée à la fonction sur la prochaine diapositive</span>
+- <span style="font-size:0.6em" class=" txtGray ">votre application devra être similaire à ce que vous voyez ici</span>
+- <span style="font-size:0.6em" class=" txtGray ">ajoutez à la propriété OnClick de chaque icône la valeur de "SetTeamIconOnClick"</span>
+    - <span style="font-size:0.6em" class=" txtGray ">chaque image peut être liée à la fonction sur la prochaine diapositive</span>
 
 ![final_product](assets/resized/slides/100/image29.png)
 
@@ -386,9 +386,9 @@ Statut présent (2)
 
 Gérer les résultats
 
-- <span class="txtSmall txtGray ">Ajoutez cette méthode dans votre activité principale `MainActivity`. Cette méthode manipule les informations qui lui sont retournées dans le "Return Intent".</span>
-- <span class="txtSmall txtGray ">Les informations passées dans le "Return Intent" sont interprétées et utilisées pour choisir la nouvelle image.</span>
-- <span class="txtSmall txtGray ">Les noms des photos devraient être différents</span>
+- <span style="font-size:0.6em" class=" txtGray ">Ajoutez cette méthode dans votre activité principale `MainActivity`. Cette méthode manipule les informations qui lui sont retournées dans le "Return Intent".</span>
+- <span style="font-size:0.6em" class=" txtGray ">Les informations passées dans le "Return Intent" sont interprétées et utilisées pour choisir la nouvelle image.</span>
+- <span style="font-size:0.6em" class=" txtGray ">Les noms des photos devraient être différents</span>
 
 ```java
 @Override
@@ -433,27 +433,27 @@ protected void onActivityResult(int requestCode, int resultCode, Intent data) {
 
 Statut présent (3)
 
-- <span class="txtSmall txtGray ">Votre application devrait:</span>
-    - <span class="txtSmall txtGray ">montrer et pouvoir mettre à jour les noms d'équipe ainsi que les adresses</span>
-    - <span class="txtSmall txtGray ">monter les adresses sur Google Maps</span>
-    - <span class="txtSmall txtGray ">pouvoir mettre à jour les images d'équipe à partir d'une liste prédéfinie d'images</span>
-- <span class="txtSmall txtGray ">Votre application ne devrait pas encore:</span>
-    - <span class="txtSmall txtGray ">charger les images à partir d'images existantes sur le système (optionnel)</span>
+- <span style="font-size:0.6em" class=" txtGray ">Votre application devrait:</span>
+    - <span style="font-size:0.6em" class=" txtGray ">montrer et pouvoir mettre à jour les noms d'équipe ainsi que les adresses</span>
+    - <span style="font-size:0.6em" class=" txtGray ">monter les adresses sur Google Maps</span>
+    - <span style="font-size:0.6em" class=" txtGray ">pouvoir mettre à jour les images d'équipe à partir d'une liste prédéfinie d'images</span>
+- <span style="font-size:0.6em" class=" txtGray ">Votre application ne devrait pas encore:</span>
+    - <span style="font-size:0.6em" class=" txtGray ">charger les images à partir d'images existantes sur le système (optionnel)</span>
 
 Notez que charger les images à partir d'images existantes sur le système porte quelques contraintes:
-1. <span class="txtSmall txtGray ">des permissions sont requises</span>
-2. <span class="txtSmall txtGray ">des fichiers "manifest" doivent être gérés</span>
+1. <span style="font-size:0.6em" class=" txtGray ">des permissions sont requises</span>
+2. <span style="font-size:0.6em" class=" txtGray ">des fichiers "manifest" doivent être gérés</span>
 
 ---
 
 Intentions implicites (Implicit Intents) [1]
 
-- <span class="txtSmall txtGray ">fonctionnalité de la caméra avec intention implicite:</span>
+- <span style="font-size:0.6em" class=" txtGray ">fonctionnalité de la caméra avec intention implicite:</span>
 
 `Intent i = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);`
 
-- <span class="txtSmall txtGray ">peut ajouter des méta-informations (“Metadata”)</span>
-- <span class="txtSmall txtGray ">`onActivityResult` reçoit un hyperlien à une image et décodera l'image</span>
+- <span style="font-size:0.6em" class=" txtGray ">peut ajouter des méta-informations (“Metadata”)</span>
+- <span style="font-size:0.6em" class=" txtGray ">`onActivityResult` reçoit un hyperlien à une image et décodera l'image</span>
 
 +++
 
@@ -487,12 +487,12 @@ protected void onActivityResult(int requestCode, int resultCode, Intent data){
 Intentions implicites (Implicit Intents) [2]
 
 
-- <span class="txtSmall txtGray ">fonctionnalité pour sauvegarder des informations</span>
+- <span style="font-size:0.6em" class=" txtGray ">fonctionnalité pour sauvegarder des informations</span>
 
 `Intent i = new Intent(Intent.ACTION_PICK);`
 
-- <span class="txtSmall txtGray ">peut ajouter des méta-informations (Metadata)</span>
-- <span class="txtSmall txtGray ">`onActivityResult` reçoit un hyperlien à un fichier et décodera le fichier</span>
+- <span style="font-size:0.6em" class=" txtGray ">peut ajouter des méta-informations (Metadata)</span>
+- <span style="font-size:0.6em" class=" txtGray ">`onActivityResult` reçoit un hyperlien à un fichier et décodera le fichier</span>
 
 +++
 
