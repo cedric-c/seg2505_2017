@@ -408,6 +408,8 @@ Gérer les résultats
 - <span style="font-size:0.6em" class=" txtGray ">Les informations passées dans le "Return Intent" sont interprétées et utilisées pour choisir la nouvelle image.</span>
 - <span style="font-size:0.6em" class=" txtGray ">Les noms des photos devraient être différents</span>
 
++++
+
 ```java
 @Override
 protected void onActivityResult(int requestCode, int resultCode, Intent data) {
