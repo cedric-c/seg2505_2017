@@ -468,6 +468,11 @@ Notez que charger les images à partir d'images existantes sur le système porte
 
 ---
 
+
+
+
+
+<!--
 Intentions implicites (Implicit Intents) [1]
 
 - <span style="font-size:0.6em" class=" txtGray ">fonctionnalité de la caméra avec intention implicite:</span>
@@ -478,6 +483,7 @@ Intentions implicites (Implicit Intents) [1]
 - <span style="font-size:0.6em" class=" txtGray ">`onActivityResult` reçoit un hyperlien à une image et décodera l'image</span>
 
 +++
+
 
 ```java
 String dateExtension = new Date().getTime() + ".png";
@@ -500,10 +506,8 @@ protected void onActivityResult(int requestCode, int resultCode, Intent data){
     }
 }
 ```
-<!-- @[2](Obtenir l'image que nous allons montrer à l'utilisateur) -->
-<!-- @[4-27](Obtenir le nom de l'image) -->
-<!-- @[28-29]() -->
-
+-->
+<!--
 ---
 
 Intentions implicites (Implicit Intents) [2]
@@ -539,13 +543,10 @@ protected void onActivityResult(int requestCode, int resultCode, Intent data) {
     }
 }
 ```
-<!-- @[2](Obtenir l'image que nous allons montrer à l'utilisateur) -->
-<!-- @[4-27](Obtenir le nom de l'image) -->
-<!-- @[28-29]() -->
 
 
 ---
-
+-->
 Résumé
 
 - activité
