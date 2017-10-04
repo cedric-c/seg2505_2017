@@ -9,4 +9,6 @@ Bonjour les étudiants.
 
 ### [Laboratoire 3 : Introduction à Android Studio](https://gitpitch.com/cedric-c/seg2505_2017/laboratoire3)
 
-### [Laboratoire 4 : Les menus, les interactions et les activités](htttps://gitpitch.com/cedric-c/seg2505_2017/laboratoire4)
+### [Laboratoire 4 : Les menus, les interactions et les activités](https://gitpitch.com/cedric-c/seg2505_2017/laboratoire4)
+
+
