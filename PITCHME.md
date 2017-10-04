@@ -233,7 +233,7 @@ Changer les images
 - <span style="font-size:0.6em">`app > res > drawable`</span>
 - <span style="font-size:0.6em" class=" txtGray ">right-click > "show in explorer"</span>
 - <span style="font-size:0.6em" class=" txtGray ">changez l'image défaut</span>
-- <span style="font-size:0.6em"> [https://github.com/cedric-c/seg2505_2017/blob/laboratoire4/assets/images.zip](images.zip)</span>
+- <span style="font-size:0.6em"> copy-paste: https://github.com/cedric-c/seg2505_2017/blob/laboratoire4/assets/images.zip</span>
 
 ![changing_graphics](assets/resized/slides/100/image23.png)
 
