@@ -13,89 +13,88 @@ Laboratoire Android 3 : Base de données (DB) locale sur Android
 ---
 
 ### Agenda
-1. Survole de SQLite sur Android
-2. La base des tables, schémas, clés primaires
-3. Structured Query Language (SQL)
-4. Exemple de SQLite simple
-5. Travail de laboratoire
+1. <span style="font-size:0.6em;color:gray">Survole de SQLite sur Android</span>
+2. <span style="font-size:0.6em;color:gray">La base des tables, schémas, clés primaires</span>
+3. <span style="font-size:0.6em;color:gray">Structured Query Language (SQL)</span>
+4. <span style="font-size:0.6em;color:gray">Exemple de SQLite simple</span>
+5. <span style="font-size:0.6em;color:gray">Travail de laboratoire</span>
 
 ---
 
-## Qu'est-ce SQLite?
+#### Qu'est-ce SQLite?
 
-- Les applications mobiles ont besoin de garder des informations locales
-- La base de données se retrouve dans presque chaque application
-    - les applications qui manipulent les données
-    - les applications qui font que sauver des informations simples comme les points pour un match de soccer
-- Pouvoir capter des informations dans une base de données est du plus important puisque l'environnement Android peut à n'importe quel instant supprimer les informations en mémoire pour se servir de ces ressources.
+- <span style="font-size:0.6em;color:gray">Les applications mobiles ont besoin de garder des <span style="color:#3884b9">informations locales</span></span>
+- <span style="font-size:0.6em;color:gray">La base de données se retrouve dans presque <span style="color:#a1617a">chaque application</span></span>
+    - <span style="font-size:0.6em;color:gray">les applications qui <span style="color:#00aa60">manipulent les données</span></span>
+    - <span style="font-size:0.6em;color:gray">les applications qui font que sauver des <span style="color:#c45331">informations simples</span> comme les points pour un match de soccer</span>
+- <span style="font-size:0.6em;color:gray">Pouvoir capter des informations dans une base de données est du plus important puisque l'environnement Android peut à n'importe quel instant supprimer les informations en mémoire pour se servir de ces ressources.</span>
 
 +++
 
-## Qu'est-ce SQLite?
+#### Qu'est-ce SQLite?
 
-- SQLite est une base de données intégrée 
-- La plupart des bases de données (Oracle, MySQL) sont des processus qui fonctionnent de manière indépendante
-- SQLite est dit <<intégré>> car c'est qu'une librairie qui fait partie d'une application
-    - il n'y a donc aucun processus dédié qui soutient l'exécution de la base de données
-- Les opérations effectuées dans la base de données se font à l'intérieur de la librairie SQLite
+- <span style="font-size:0.6em;color:gray">SQLite est une base de données <span style="color:orange">intégrée</span></span> 
+- <span style="font-size:0.6em;color:gray">La plupart des bases de données (Oracle, MySQL) sont des <span style="color:#a1617a">processus</span> qui fonctionnent de manière <span style="color:#a1617a">indépendante</span></span>
+- <span style="font-size:0.6em;color:gray">SQLite est dit "<span style="color:#00aa60">intégré</span>" car c'est qu'une librairie qui <span style="color:#00aa60">fait partie d'une application</span></span>
+    - <span style="font-size:0.6em;color:gray">il n'y a donc <span style="color:#BE4C51">aucun processus dédié</span> qui soutient l'exécution de la base de données</span>
+- <span style="font-size:0.6em;color:gray">Les opérations effectuées dans la base de données se font à l'<span style="color:#3884b9">intérieur</span> de la librairie SQLite</span>
 
 ---
 
-## Comprendre les tables
+### Comprendre les tables
 
-- Une structure simple dans la DB
-- Chaque DB peut contenir plusieurs tables et chaque table est conçue pour contenir un type d'information spécifique
-- Exemple
-    - Une DB peut contenir une table <<client>> qui contient le nom, l'adresse, le numéro téléphonique de chaque client pour une organisation
-    - La même DB pourrait aussi contenir une table <<produits>> qui contient des entrées de produits (identifiant du produit, description) qu'offre une organisation.
+- <span style="font-size:0.6em;color:gray">Une structure simple dans la DB</span>
+- <span style="font-size:0.6em;color:gray">Chaque DB peut contenir <span style="color:#a1617a">plusieurs tables</span> et chaque table est conçue pour contenir un type d'information spécifique</span>
+- <span style="font-size:0.6em;color:gray">Exemple</span>
+    - <span style="font-size:0.6em;color:gray">Une DB peut contenir une table "client" qui contient le nom, l'adresse, le numéro téléphonique de chaque client pour une organisation</span>
+    - <span style="font-size:0.6em;color:gray">La même DB pourrait aussi contenir une table "produits" qui contient des entrées de produits (identifiant du produit, description) qu'offre une organisation.</span>
 
 +++
 
-## Comprendre les tables
+### Comprendre les tables
 
-- Chaque table dans une DB a un nom unique
+- <span style="font-size:0.6em;color:gray">Chaque table dans une DB a un nom unique</span>
 
-
----
-
-## Le schéma
-
-- Le schéma définit les caractéristiques des données sauvegardées dans la table d'une DB
-- Le schéma pour table de client pourrait définir que
-    - un client n'aura pas de nom de plus de 20 caractères de longueur
-    - l'entrée téléphonique d'un client aura que des entrées d'un certain format
-- Les schémas sont aussi utilisés pour définir la structure entière d'une DB et les relations entre les tables qu'elle contient
 
 ---
 
-## Colonnes et types de donnée
+### Le schéma
 
-- Chaque colonne représente un champ dans une DB (nom, téléphone, courriel)
-- Chaque colonne doit contenir un type spécifié de donnée
-
----
-
-## Clés primaires
-
-- Chaque DB contient une ou plusieurs colonnes utilisées pour identifier chaque rangée d'une manière unique
-- C'est ce qu'on nomme la clé primaire (primary key)
-- Exemple: numéro bancaire, NAS
-- C'est ce qui permet à un système de DB d'identifier de manière unique chaque entrée dans la DB
-sans clé primaire, il ne serait pas possible de supprimer des entrées spécifiques
+- <span style="font-size:0.6em;color:gray">Le schéma définit les <span style="color:#d0d0ff">caractéristiques</span> des données sauvegardées dans la table d'une DB</span>
+- <span style="font-size:0.6em;color:gray">Le schéma pour table de client pourrait définir que</span>
+    - <span style="font-size:0.6em;color:gray">un client <span style="color:#c45331">n'aura pas</span> de nom de plus de 20 caractères de longueur</span>
+    - <span style="font-size:0.6em;color:gray">l'entrée téléphonique d'un client <span style="color:#00aa60">aura que</span> des entrées d'un certain format</span>
+- <span style="font-size:0.6em;color:gray">Les schémas sont aussi utilisés pour <span style="color:#a1617a">définir</span> la structure entière d'une DB et les relations entre les tables qu'elle contient</span>
 
 ---
 
-## Structured Query Language (SQL)
+### Colonnes et types de donnée
 
-- Les données sont manipulées avec un langage appelé Structured Query Language
-- C'est le standard 
-- C'est simple et conçu pour lire et écrire à une DB
-    - Peu de mots clés
-    - Différentes implémentations de SQL ont souvent une syntaxe identique
+- <span style="font-size:0.6em;color:gray">Chaque colonne représente un champ dans une DB (nom, téléphone, courriel)</span>
+- <span style="font-size:0.6em;color:gray">Chaque colonne doit contenir un type spécifié de donnée</span>
+
+---
+
+### Clés primaires
+
+- <span style="font-size:0.6em;color:gray">Chaque DB contient une ou plusieurs colonnes utilisées pour identifier chaque rangée d'une manière unique</span>
+- <span style="font-size:0.6em;color:gray">C'est ce qu'on nomme la clé primaire (primary key)</span>
+- <span style="font-size:0.6em;color:gray">Exemple: numéro bancaire, NAS</span>
+- <span style="font-size:0.6em;color:gray">C'est ce qui permet à un système de DB d'identifier de manière unique chaque entrée dans la DB sans clé primaire, il ne serait pas possible de supprimer des entrées spécifiques</span>
+
+---
+
+### Structured Query Language (SQL)
+
+- <span style="font-size:0.6em;color:gray">Les données sont manipulées avec un langage appelé Structured Query Language</span>
+- <span style="font-size:0.6em;color:gray">C'est le standard </span>
+- <span style="font-size:0.6em;color:gray">C'est simple et conçu pour lire et écrire à une DB</span>
+    - <span style="font-size:0.6em;color:gray">Peu de mots clés</span>
+    - <span style="font-size:0.6em;color:gray">Différentes implémentations de SQL ont souvent une syntaxe identique</span>
     
 +++
     
-## Commande utile : `Create Table`
+#### Commande utile : `Create Table`
 
 ```
 CREATE TABLE table_name(
@@ -109,35 +108,35 @@ CREATE TABLE table_name(
 
 +++
 
-## Commande utile : `Drop Table` pour supprimer (table)
+#### Commande utile : `Drop Table` pour supprimer (table)
 
 - `DROP TABLE table_name`
 - `DROP TABLE IF EXISTS table_name`
 
 +++
 
-## Commande utile : `Insert into Table` pour ajouter (élément)
+#### Commande utile : `Insert into Table` pour ajouter (élément)
 
 `INSERT INTO table_name VALUES (value1, value2, value3, ...);`
 
 +++
 
-## Commande utile : `Delete from Table` pour supprimer (élément)
+#### Commande utile : `Delete from Table` pour supprimer (élément)
 
 `DELETE FROM table_name WHERE some_column=some_value;`
 
 +++
 
-## Commande utile : Retrait
+#### Commande utile : Retrait
 `SELECT column_name, column_name FROM table_name WHERE column_name=value;`
 
 ---
 
-# Exemple simple
+## Exemple simple
 
 +++
 
-## Interface d'utilisateur
+### Interface d'utilisateur
 
 ![arbre](assets/resized/slides/extract-4.jpg)
 
@@ -147,31 +146,31 @@ CREATE TABLE table_name(
 
 +++
 
-## Table de produits
+### Table de produits
 
 ![android](assets/resized/slides/extract-5.png)
 
 ---
 
-# Livrable du laboratoire
+## Livrable du laboratoire
 
 ---
 
-## Importez le projet
+### Importez le projet
 
-- `Import` dans Android Studio: `File > New > Import Project`
+- <span style="font-size:0.6em;color:gray">`Import` dans Android Studio: `File > New > Import Project`</span>
 
-Vous devez implémenter pour ajouter, lire, et supprimer de la base de donnée (`add`, `read`, et `delete`).
+<span style="font-size:0.6em;color:gray">Vous devez implémenter pour ajouter, lire, et supprimer de la base de donnée (`add`, `read`, et `delete`).</span>
 
 ---
 
-## Première étape
+### Première étape
 
-- Créez une classe qui **extends** `SQLiteOpenHelper` pour exécuter les opérations suivantes dans SQLite:
+- <span style="font-size:0.6em;color:gray">Créez une classe qui **extends** `SQLiteOpenHelper` pour exécuter les opérations suivantes dans SQLite:</span>
 
-- insert
-- read
-- delete
+- <span style="font-size:0.6em;color:gray">insert</span>
+- <span style="font-size:0.6em;color:gray">read</span>
+- <span style="font-size:0.6em;color:gray">delete</span>
 
 ```
 public class MyDBHandler extends SQLiteOpenHelper
@@ -179,7 +178,7 @@ public class MyDBHandler extends SQLiteOpenHelper
 
 +++
 
-### À importer...
+#### À importer...
 
 ```
 import android.database.sqlite.SQLiteDatabase;
@@ -191,7 +190,7 @@ import android.database.Cursor;
 
 +++
 
-### Définissez le schéma
+#### Définissez le schéma
 
 ```
 public class MyDBHandler extends SQLiteOpenHelper{
@@ -206,7 +205,7 @@ public class MyDBHandler extends SQLiteOpenHelper{
 
 +++
 
-Note: le constructeur de `MyDBHandler` doit appeler le constructeur de sa classe parent, soit
+<span style="font-size:0.6em;color:gray">Note: le constructeur de `MyDBHandler` doit appeler le constructeur de sa classe parent, soit</span>
 
 ```
 public MyDBHandler(Context context){
@@ -216,9 +215,9 @@ public MyDBHandler(Context context){
 
 +++
 
-### Créer la table
+#### Créer la table
 
-Vous devez faire un override de la méthode `onCreate()`
+<span style="font-size:0.6em;color:gray">Vous devez faire un override de la méthode `onCreate()`</span>
 
 ```
 @Override
@@ -236,9 +235,9 @@ public void onCreate(SQLiteDatabase db){
 
 +++
 
-### Mise à jour 
+#### Mise à jour 
 
-Pour remplacer des anciennes tables par des nouvelles:
+<span style="font-size:0.6em;color:gray">Pour remplacer des anciennes tables par des nouvelles:</span>
 
 ```
 @Override
@@ -250,11 +249,11 @@ public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
 
 ---
 
-## Opérations
+### Opérations
 
 +++
 
-### Insertion
+#### Insertion
 
 ```java
 public void addProduct(Product product){
@@ -276,7 +275,7 @@ public void addProduct(Product product){
 
 +++
 
-### Lecture
+#### Lecture
 
 ```java
 public Product findProduct(String productName){
@@ -315,7 +314,7 @@ public Product findProduct(String productName){
 
 +++
 
-### Supprimer
+#### Supprimer
 
 ```java
 public boolean deleteProduct(String productName){
@@ -350,7 +349,7 @@ public boolean deleteProduct(String productName){
 
 ---
 
-## Dernière étape
+### Dernière étape
 
 ```java
 class ... {
