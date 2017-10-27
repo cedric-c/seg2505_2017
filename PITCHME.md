@@ -1,10 +1,23 @@
-# Base de données (DB) locale sur Android
+### Développement d'applications Android
 
-## Agenda
-- Survole de SQLite sur Android
-- La base des tables, schémas, clés primaires
-- Structured Query Language (SQL)
-- Exemple de SQLite simple
+Laboratoire Android 3 : Base de données (DB) locale sur Android
+
+<span style="color:gray"></span>
+
+<span style="color:gray">SEG 2505 - Introduction au génie logiciel</span>
+
+<span style="color:gray">Automne 2017</span>
+
+<!-- <span style="color:gray">Présenté par : Cédric Clément</span> -->
+
+---
+
+### Agenda
+1. Survole de SQLite sur Android
+2. La base des tables, schémas, clés primaires
+3. Structured Query Language (SQL)
+4. Exemple de SQLite simple
+5. Travail de laboratoire
 
 ---
 
