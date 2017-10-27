@@ -6,6 +6,8 @@
 - Structured Query Language (SQL)
 - Exemple de SQLite simple
 
+---
+
 ## Qu'est-ce SQLite?
 
 - Les applications mobiles ont besoin de garder des informations locales
@@ -13,6 +15,8 @@
     - les applications qui manipulent les données
     - les applications qui font que sauver des informations simples comme les points pour un match de soccer
 - Pouvoir capter des informations dans une base de données est du plus important puisque l'environnement Android peut à n'importe quel instant supprimer les informations en mémoire pour se servir de ces ressources.
+
++++
 
 ## Qu'est-ce SQLite?
 
@@ -22,6 +26,8 @@
     - il n'y a donc aucun processus dédié qui soutient l'exécution de la base de données
 - Les opérations effectuées dans la base de données se font à l'intérieur de la librairie SQLite
 
+---
+
 ## Comprendre les tables
 
 - Une structure simple dans la DB
@@ -30,9 +36,14 @@
     - Une DB peut contenir une table <<client>> qui contient le nom, l'adresse, le numéro téléphonique de chaque client pour une organisation
     - La même DB pourrait aussi contenir une table <<produits>> qui contient des entrées de produits (identifiant du produit, description) qu'offre une organisation.
 
++++
+
 ## Comprendre les tables
 
 - Chaque table dans une DB a un nom unique
+
+
+---
 
 ## Le schéma
 
@@ -42,10 +53,14 @@
     - l'entrée téléphonique d'un client aura que des entrées d'un certain format
 - Les schémas sont aussi utilisés pour définir la structure entière d'une DB et les relations entre les tables qu'elle contient
 
+---
+
 ## Colonnes et types de donnée
 
 - Chaque colonne représente un champ dans une DB (nom, téléphone, courriel)
 - Chaque colonne doit contenir un type spécifié de donnée
+
+---
 
 ## Clés primaires
 
@@ -55,6 +70,8 @@
 - C'est ce qui permet à un système de DB d'identifier de manière unique chaque entrée dans la DB
 sans clé primaire, il ne serait pas possible de supprimer des entrées spécifiques
 
+---
+
 ## Structured Query Language (SQL)
 
 - Les données sont manipulées avec un langage appelé Structured Query Language
@@ -62,6 +79,8 @@ sans clé primaire, il ne serait pas possible de supprimer des entrées spécifi
 - C'est simple et conçu pour lire et écrire à une DB
     - Peu de mots clés
     - Différentes implémentations de SQL ont souvent une syntaxe identique
+    
++++
     
 ## Commande utile : `Create Table`
 
@@ -75,21 +94,31 @@ CREATE TABLE table_name(
 );
 ```
 
++++
+
 ## Commande utile : `Drop Table`
 
 - DROP TABLE table_name
 - DROP TABLE IF EXISTS table_name
 
++++
+
 ## Commande utile : `Insert into Table`
 
 INSERT INTO table_name VALUES (value1, value2, value3, ...);
+
++++
 
 ## Commande utile : `Delete from Table`
 
 DELETE FROM table_name WHERE some_column=some_value;
 
++++
+
 ## Commande utile : Retrait
 SELECT column_name, column_name FROM table_name WHERE column_name=value;
+
+---
 
 # Exemple simple
 
