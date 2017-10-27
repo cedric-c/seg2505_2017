@@ -166,48 +166,31 @@ CREATE TABLE table_name(
 
 ### Première étape
 
-- <span style="font-size:0.6em;color:gray">Créez une classe qui **extends** `SQLiteOpenHelper` pour exécuter les opérations suivantes dans SQLite:</span>
+- <span style="font-size:0.6em;color:gray">Créez une classe qui **extends** `SQLiteOpenHelper` qui servira à exécuter les opérations insert, read et delete de SQLite.</span>
 
-- <span style="font-size:0.6em;color:gray">insert</span>
-- <span style="font-size:0.6em;color:gray">read</span>
-- <span style="font-size:0.6em;color:gray">delete</span>
-
-```
-public class MyDBHandler extends SQLiteOpenHelper
-```
-
-+++
-
-#### À importer...
-
-```
+```java
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.content.Context;
 import android.content.ContentValues;
 import android.database.Cursor;
-```
 
-+++
-
-#### Définissez le schéma
-
-```
-public class MyDBHandler extends SQLiteOpenHelper{
+public class MyDBHandler extends SQLiteOpenHelper
     private static final int DATABASE_VERSION = 1;
     private static final String DATABASE_NAME = "productDB.db";
     public static final String TABLE_PRODUCTS = "products";
     public static final String COLUMN_ID = "_id";
     public static final String COLUMN_PRODUCTNAME = "productname";
     public static final String COLUMN_SKU = "SKU";
-}
 ```
+@[1-5](à importer...)
+@[8-13](Définition du schéma)
 
 +++
 
 <span style="font-size:0.6em;color:gray">Note: le constructeur de `MyDBHandler` doit appeler le constructeur de sa classe parent, soit</span>
 
-```
+```java
 public MyDBHandler(Context context){
     super(context, DATABASE_NAME, null, DATABASE_VERSION);
 }
