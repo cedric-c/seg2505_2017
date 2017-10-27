@@ -188,7 +188,7 @@ public class MyDBHandler extends SQLiteOpenHelper{
 }
 ```
 @[1-5](à importer...)
-@[8-13](Définition du schéma)
+@[8-14](Définition du schéma)
 
 +++
 
