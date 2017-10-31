@@ -162,7 +162,7 @@ CREATE TABLE table_name(
 
 <span style="font-size:0.6em;color:gray">`Import` dans Android Studio: `File > New > Import Project`</span>
 
-<span style="font-size:0.6em;color:gray">Vous devez implémenter pour ajouter, lire, et supprimer de la base de donnée (`add`, `read`, et `delete`).</span>
+<span style="font-size:0.6em;color:gray">Vous devez implémenter des méthodes pour ajouter, lire, et supprimer de la base de donnée (`add`, `read`, et `delete`).</span>
 
 ---
 
