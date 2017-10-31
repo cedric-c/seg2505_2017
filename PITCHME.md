@@ -212,7 +212,7 @@ public MyDBHandler(Context context){
 @Override
 public void onCreate(SQLiteDatabase db){
     
-    String CREATE_PRODUCTS_TABLE = "CREATE TABLE" +
+    String CREATE_PRODUCTS_TABLE = "CREATE TABLE " +
         TABLE_PRODUCTS + "("
         + COLUMN_ID + " INTEGER PRIMARY KEY," +
         COLUMN_PRODUCTNAME +
@@ -246,7 +246,7 @@ public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
 
 ```java
 public void addProduct(Product product){
-    SQLiteDatabase db = this.getWriteableDatabase();
+    SQLiteDatabase db = this.getWritableDatabase();
     
     ContentValues values = new ContentValues();
     values.put(COLUMN_PRODUCTNAME, product.getProductName());
@@ -307,7 +307,7 @@ public Product findProduct(String productName){
 
 ```java
 public boolean deleteProduct(String productName){
-    SQLiteDatabase db = this.getWriteableDatabase();
+    SQLiteDatabase db = this.getWritableDatabase();
     boolean result = false;
     String query = "SELECT * FROM "
         + TABLE_PRODUCTS
