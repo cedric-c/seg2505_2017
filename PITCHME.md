@@ -158,7 +158,7 @@ CREATE TABLE table_name(
 
 ### Importez le projet
 
-[https://github.com/mgarzon/DatabaseProject](DatabaseProject)
+[Database Project](https://github.com/mgarzon/DatabaseProject)
 
 <span style="font-size:0.6em;color:gray">`Import` dans Android Studio: `File > New > Import Project`</span>
 
