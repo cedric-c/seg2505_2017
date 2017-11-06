@@ -1,362 +1,398 @@
 ### Développement d'applications Android
 
-Laboratoire Android 3 : Base de données (DB) locale sur Android
+Laboratoire Android 4 : Concepts UI supplémentaires et stockage
 
-<span style="color:gray"></span>
+SEG 2505 - Introduction au génie logiciel
 
-<span style="color:gray">SEG 2505 - Introduction au génie logiciel</span>
+Automne 2017
 
-<span style="color:gray">Automne 2017</span>
-
-<!-- <span style="color:gray">Présenté par : Cédric Clément</span> -->
+Présenté par : Cédric Clément
 
 ---
 
 ### Agenda
-1. <span style="font-size:0.6em;color:gray">Survole de SQLite sur Android</span>
-2. <span style="font-size:0.6em;color:gray">La base des tables, schémas, clés primaires</span>
-3. <span style="font-size:0.6em;color:gray">Structured Query Language (SQL)</span>
-4. <span style="font-size:0.6em;color:gray">Exemple de SQLite simple</span>
-5. <span style="font-size:0.6em;color:gray">Travail de laboratoire</span>
+
+1. Conception de l'interface utilisateur
+2. Remarques sur la gestion de mémoire
+3. Remarques supplémentaires et informations utiles
+4. Travail de laboratoire
 
 ---
 
-#### Qu'est-ce SQLite?
+### Résumé
 
-- <span style="font-size:0.6em;color:gray">Les applications mobiles ont besoin de garder des <span style="color:#3884b9">informations locales</span></span>
-- <span style="font-size:0.6em;color:gray">La base de données se retrouve dans presque <span style="color:#a1617a">chaque application</span></span>
-    - <span style="font-size:0.6em;color:gray">les applications qui <span style="color:#00aa60">manipulent les données</span></span>
-    - <span style="font-size:0.6em;color:gray">les applications qui font que sauver des <span style="color:#c45331">informations simples</span> comme les points pour un match de soccer</span>
-- <span style="font-size:0.6em;color:gray">Pouvoir capter des informations dans une base de données est du plus important puisque l'environnement Android peut à n'importe quel instant supprimer les informations en mémoire pour se servir de ces ressources.</span>
-
-+++
-
-#### Qu'est-ce SQLite?
-
-- <span style="font-size:0.6em;color:gray">SQLite est une base de données <span style="color:orange">intégrée</span></span> 
-- <span style="font-size:0.6em;color:gray">La plupart des bases de données (Oracle, MySQL) sont des <span style="color:#a1617a">processus</span> qui fonctionnent de manière <span style="color:#a1617a">indépendante</span></span>
-- <span style="font-size:0.6em;color:gray">SQLite est dit "<span style="color:#00aa60">intégré</span>" car c'est qu'une librairie qui <span style="color:#00aa60">fait partie d'une application</span></span>
-    - <span style="font-size:0.6em;color:gray">il n'y a donc <span style="color:#BE4C51">aucun processus dédié</span> qui soutient l'exécution de la base de données</span>
-- <span style="font-size:0.6em;color:gray">Les opérations effectuées dans la base de données se font à l'<span style="color:#3884b9">intérieur</span> de la librairie SQLite</span>
+- Dans les laboratoires précédents, vous avez appris que vous pouvez mettre à jour les composants existants dans une mise en page.
+- Aujourd'hui, nous allons voir comment créer des mises en page plus dynamiques et avec plus d’adaptabilité.
+- Si vous avez manqué les séances de laboratoire précédentes, consultez le matériel précédent avant de poursuivre.
 
 ---
 
-### Comprendre les tables
+### UI / UX : Principes de base
 
-- <span style="font-size:0.6em;color:gray">Une structure simple dans la DB</span>
-- <span style="font-size:0.6em;color:gray">Chaque DB peut contenir <span style="color:#a1617a">plusieurs tables</span> et chaque table est conçue pour contenir un type d'information spécifique</span>
-- <span style="font-size:0.6em;color:gray">Exemple</span>
-    - <span style="font-size:0.6em;color:gray">Une DB peut contenir une table "client" qui contient le nom, l'adresse, le numéro téléphonique de chaque client pour une organisation</span>
-    - <span style="font-size:0.6em;color:gray">La même DB pourrait aussi contenir une table "produits" qui contient des entrées de produits (identifiant du produit, description) qu'offre une organisation.</span>
+- La conception d'interface utilisateur est le domaine responsable de:
+- Interfaces utilisateur (UI)
+- Expérience utilisateur (UX)
+
+Les interfaces tactiles mobiles s'appuient sur une bonne conception d'interface: 
+- Outils d'interaction limitée (pas de souris, pas de clavier)
+- Occlusion d'IU (Mains et doigts cachent derrière eux des informations)
+- Espace limité (petits écrans)
 
 +++
 
-### Comprendre les tables
+### Simplicité
 
-- <span style="font-size:0.6em;color:gray">Chaque table dans une DB a un nom unique</span>
+- L'âge de conception matériel (design plat et en couches, feuilles de papier empilées)
+- Évitez d'encombrer votre écran avec l'information (utilisez des icônes)
+- Uniformité et cohérence
+- Less is more
+
++++
+
+### Hiérarchie
+
+- Le contenu doit être placé sur l'écran en fonction de leur importance.
+- Les humains "scan" de gauche à droite et de haut en bas
+- Bars hauts, menus et titres ont un emplacement prédéfini.
+- Les utilisateurs ont des attentes envers l'emplacement des composantes, respectez les lignes directrices!
+
+
++++
+
+#### Rule of Thirds
+
+<!-- image -->
+
++++
+
+### Composition
+
+- Ajoutez des marges à votre application.
+- Ne jamais toucher les frontières de l'écran
+- Les contextes doivent être séparés.
+
+densité indépendante pour les pixels (1 pixel à une densité de 160) dp = (Largeur en pixels * 160) / densité de l'écran
+
+
++++
+
+### Dynamisme
+
+- La réactivité est primordiale
 
 
 ---
 
-### Le schéma
+### Composantes
 
-- <span style="font-size:0.6em;color:gray">Le schéma définit les <span style="color:#d0d0ff">caractéristiques</span> des données sauvegardées dans la table d'une DB</span>
-- <span style="font-size:0.6em;color:gray">Le schéma pour table de client pourrait définir que</span>
-    - <span style="font-size:0.6em;color:gray">un client <span style="color:#c45331">n'aura pas</span> de nom de plus de 20 caractères de longueur</span>
-    - <span style="font-size:0.6em;color:gray">l'entrée téléphonique d'un client <span style="color:#00aa60">aura que</span> des entrées d'un certain format</span>
-- <span style="font-size:0.6em;color:gray">Les schémas sont aussi utilisés pour <span style="color:#a1617a">définir</span> la structure entière d'une DB et les relations entre les tables qu'elle contient</span>
++++
+
+### `ListView`
+
+Un `ListView` est une vue d'ensemble qui présente une liste d'objet "scrollable".
+
+Les objets s'ajoutent à une liste avec l'aide d'un adaptateur.
+
++++ 
+
+### `GridView`
+
+Nous avons utilisé cette vue dans des laboratoires précédents. Par contre, elle recevait ses entrées de manière statique.
+
++++
+
+### Pour votre projet...
+
+Vous devez créer et gérer une liste d'objet. Ces objets seront mis à jour de manière dynamique ce qui signifie que votre liste aura besoin d'être mise à jour de manière dynamique.
+
++++
+
+### Adaptateur
+
+- L'adaptateur est le lien entre les vues d'adaptateur et ce qu'ils affichent.
+- `ListView` et `GridView` étendent `AdapterView`
+- Un adaptateur reçoit un `context` et un `ressourceID`.
+- Déclarer l'adaptateur à utiliser pour un `ListView` en appelant sa méthode `setAdapter`.
 
 ---
 
-### Colonnes et types de donnée
+### `ListView` simple
 
-- <span style="font-size:0.6em;color:gray">Chaque colonne représente un champ dans une DB (nom, téléphone, courriel)</span>
-- <span style="font-size:0.6em;color:gray">Chaque colonne doit contenir un type spécifié de donnée</span>
-
----
-
-### Clés primaires
-
-- <span style="font-size:0.6em;color:gray">Chaque DB contient une ou plusieurs colonnes utilisées pour identifier chaque rangée d'une manière unique</span>
-- <span style="font-size:0.6em;color:gray">C'est ce qu'on nomme la clé primaire (primary key)</span>
-- <span style="font-size:0.6em;color:gray">Exemple: numéro bancaire, NAS</span>
-- <span style="font-size:0.6em;color:gray">C'est ce qui permet à un système de DB d'identifier de manière unique chaque entrée dans la DB sans clé primaire, il ne serait pas possible de supprimer des entrées spécifiques</span>
-
----
-
-### Structured Query Language (SQL)
-
-- <span style="font-size:0.6em;color:gray">Les données sont manipulées avec un langage appelé Structured Query Language</span>
-- <span style="font-size:0.6em;color:gray">C'est le standard </span>
-- <span style="font-size:0.6em;color:gray">C'est simple et conçu pour lire et écrire à une DB</span>
-    - <span style="font-size:0.6em;color:gray">Peu de mots clés</span>
-    - <span style="font-size:0.6em;color:gray">Différentes implémentations de SQL ont souvent une syntaxe identique</span>
-    
-+++
-    
-#### Commande utile : `Create Table`
-
-```
-CREATE TABLE table_name(
-    column1 datatype PRIMARY KEY
-    column2 datatype,
-    column3 datatype,
-    ....
-    columnN datatype,
-);
-```
+- peut être créé avec un tableau de chaînes et l'adaptateur `ArrayAdapter`
+- mise en page préconstruite : `android.R.layout.simple_list_item_1`
+- modifiez la méthode `onItemClick` pour changer la fonctionnalité de votre application.
 
 +++
 
-#### Commande utile : `Drop Table` pour supprimer (table)
-
-- `DROP TABLE table_name`
-- `DROP TABLE IF EXISTS table_name`
+<!-- image -->
 
 +++
 
-#### Commande utile : `Insert into Table` pour ajouter (élément)
-
-`INSERT INTO table_name VALUES (value1, value2, value3, ...);`
-
-+++
-
-#### Commande utile : `Delete from Table` pour supprimer (élément)
-
-`DELETE FROM table_name WHERE some_column=some_value;`
-
-+++
-
-#### Commande utile : Retrait
-`SELECT column_name, column_name FROM table_name WHERE column_name=value;`
-
----
-
-## Exemple simple
-
-+++
-
-### Interface d'utilisateur
-
-![arbre](assets/resized/slides/extract-4.jpg)
-
-+++
-
-![android](assets/resized/slides/extract-3.jpg)
-
-+++
-
-### Table de produits
-
-![android](assets/resized/slides/extract-5.png)
-
----
-
-## Livrable du laboratoire
-
----
-
-### Importez le projet
-
-[Database Project](https://github.com/mgarzon/DatabaseProject)
-
-<span style="font-size:0.6em;color:gray">`Import` dans Android Studio: `File > New > Import Project`</span>
-
-<span style="font-size:0.6em;color:gray">Vous devez implémenter des méthodes pour ajouter, lire, et supprimer de la base de donnée (`add`, `read`, et `delete`).</span>
-
----
-
-### Première étape
-
-- <span style="font-size:0.6em;color:gray">Créez une classe qui **extends** `SQLiteOpenHelper` qui servira à exécuter les opérations insert, read et delete de SQLite.</span>
+### Extrait de `onCreate`
 
 ```java
-import android.database.sqlite.SQLiteDatabase;
-import android.database.sqlite.SQLiteOpenHelper;
-import android.content.Context;
-import android.content.ContentValues;
-import android.database.Cursor;
-
-public class MyDBHandler extends SQLiteOpenHelper{
-    
-    private static final int DATABASE_VERSION = 1;
-    private static final String DATABASE_NAME = "productDB.db";
-    public static final String TABLE_PRODUCTS = "products";
-    public static final String COLUMN_ID = "_id";
-    public static final String COLUMN_PRODUCTNAME = "productname";
-    public static final String COLUMN_SKU = "SKU";
-
-    // ...
+// Get ListView object from xml layout
+listView = (ListView) findViewById(R.id.list);
+//Defining Array values to show in ListView
+String[] values = new String[] {
+        "Item 01","Item 02","Item 03","Item 04","Item 05","Item 06","Item 07","Item 08"
+};
+//Converting Array to ArrayList
+final ArrayList<String> list = new ArrayList<String>();
+for (int i = 0; i < values.length; ++i) {
+    list.add(values[i]);
 }
+//Create an ArrayAdapter and Set it on the ListView
+ArrayAdapter adapter = new ArrayAdapter(this, android.R.layout.simple_list_item_1, list);
+listView.setAdapter(adapter);
+listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+    @Override
+    public void onItemClick(AdapterView<?> parent, final View view, int position, long id) {
+        final String item = (String) parent.getItemAtPosition(position);
+        //Do something with the string that you just got!
+    }
+});
 ```
-@[1-5](à importer...)
-@[8-14](Définition du schéma)
+
+---
+
+### Contenu dynamique
+
+Les listes...
+- ne sont pas limitées aux types primitifs.
+- peuvent contenir des objets, images, etc.
 
 +++
 
-<span style="font-size:0.6em;color:gray">Note: le constructeur de `MyDBHandler` doit appeler le constructeur de sa classe parent, soit</span>
+### Disposition (Layout)
+
+- Ceci est un modèle de base pour l'unité d'une liste, représenté par un fichier XML.
+- Définit la structure des informations présentées dans chaque élément affiché dans une liste.
+
++++
+
+<!-- image -->
+
++++
+
+### Comportement d'une liste
+
+Les éléments apparaissent de manière séquentielle
+
+<!-- image -->
+
++++
+
+### Adaptateur personnalisé
+
+- Pour créer une mise en page personnalisée, vous devez créer un `CustomAdapter` et implémenter les méthodes requises.
+- Votre `CustomAdapter` devrait étendre un des adaptateurs existants. N'oubliez pas la méthode `getView`.
+- Dans votre méthode `getView`, vous devez avoir un `LayoutInflater` (pour élargir les éléments de la liste).
+
+
++++
+
+### Extrait `onCreate`
 
 ```java
-public MyDBHandler(Context context){
-    super(context, DATABASE_NAME, null, DATABASE_VERSION);
-}
-```
-
-+++
-
-#### Créer la table
-
-<span style="font-size:0.6em;color:gray">Vous devez faire un override de la méthode `onCreate()`</span>
-
-```
 @Override
-public void onCreate(SQLiteDatabase db){
-    
-    String CREATE_PRODUCTS_TABLE = "CREATE TABLE " +
-        TABLE_PRODUCTS + "("
-        + COLUMN_ID + " INTEGER PRIMARY KEY," +
-        COLUMN_PRODUCTNAME +
-        " TEXT," + COLUMN_SKU + " INTEGER" + ")";
-    
-    db.execSQL(CREATE_PRODUCTS_TABLE);
+protected void onCreate(Bundle savedInstanceState) {
+    super.onCreate(savedInstanceState);
+    setContentView(R.layout.activity_list);
+    ListView listView = (ListView) findViewById(R.id.list);
+    String[] values = new String[]{
+            "Millonarios FC", "empty", "empty", "empty", "empty", "empty", "empty", "empty"
+    };
+    TeamArrayAdapter adapter = new TeamArrayAdapter(this, values);
+    listView.setAdapter(adapter);
+    listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+        @Override
+        public void onItemClick(AdapterView<?> parent, final View view, int position, long id) {
+            final String item = (String) parent.getItemAtPosition(position);
+            //DO SOMETHING with your item, maybe open  a new activity!
+        }
+    });
 }
 ```
 
 +++
 
-#### Mise à jour 
+### Extrait de classe `TeamArrayAdapter`
 
-<span style="font-size:0.6em;color:gray">Pour remplacer des anciennes tables par des nouvelles:</span>
+```java
+public class TeamArrayAdapter extends ArrayAdapter<String>  {
+    private final Context context;
+    private final String[] values;
 
-```
-@Override
-public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
-    db.execSQL("DROP TABLE IF EXISTS " + TABLE_PRODUCTS);
-    onCreate(db);
+    public TeamArrayAdapter(Context context, String[] values) {
+        super(context, R.layout.list_team_layout, values);
+        this.context = context;
+        this.values = values;
+    }
+
+    @Override
+    public View getView(int position, View convertView, ViewGroup parent) {
+        LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+        View rowView = inflater.inflate(R.layout.list_team_layout, parent, false);
+        TextView textView = (TextView) rowView.findViewById(R.id.line01);
+        ImageView imageView = (ImageView) rowView.findViewById(R.id.icon);
+        textView.setText(values[position]);
+        // Change the icon for Windows and iPhone
+        String s = values[position];
+        if (s == null || s.isEmpty() || s.equals("empty")) {
+            imageView.setImageResource(R.drawable.ic_logo_empty);
+        } else {
+            imageView.setImageResource(R.drawable.ic_logo_mil);
+        }
+        return rowView;
+    }
 }
 ```
 
 ---
 
-### Opérations
+### Gestion de mémoire
 
-+++
-
-#### Insertion
-
-```java
-public void addProduct(Product product){
-    SQLiteDatabase db = this.getWritableDatabase();
-    
-    ContentValues values = new ContentValues();
-    values.put(COLUMN_PRODUCTNAME, product.getProductName());
-    values.put(COLUMN_SKU, product.getSku());
-    
-    db.insert(TABLE_PRODUCTS, null, values);
-    db.close();
-}
-```
-@[1](Créez une méthode pour faire des ajouts)
-@[2](Obtenez une instance d'une DB)
-@[4-6](L'ajout des `key:value` dans l'objet `values`)
-@[8](Insertion dans la DB)
-@[9](Fermer la connection à la DB)
-
-+++
-
-#### Lecture
-
-```java
-public Product findProduct(String productName){
-    SQLiteDatabase db = this.getReadableDatabase();
-    
-    String query = "Select * FROM " 
-        + TABLE_PRODUCTS
-        + " WHERE "
-        + COLUMN_PRODUCTNAME
-        + " = \""
-        + productName
-        + "\""
-    ;
-    
-    Cursor cursor = db.rawQuery(query, null);
-    Product product = new Product();
-    
-    if(cursor.moveToFirst()){
-        product.setID(Integer.parseInt(cursor.getString(0)));
-        product.setProductName(cursor.getString(1));
-        product.setSku(Integer.parseInt(cursor.getString(2)));
-        cursor.close()
-    } else {
-        product = null;
-    }
-    db.close();
-    return product;
-}
-```
-@[1](Créez une méthode pour faire des lectures)
-@[2](Obtenez une instance d'une DB)
-@[4-11](Créer votre query)
-@[13](Exécuter votre query)
-@[14-23](Créer l'objet **product**)
-@[24](Fermer la connection à la DB)
-
-+++
-
-#### Supprimer
-
-```java
-public boolean deleteProduct(String productName){
-    SQLiteDatabase db = this.getWritableDatabase();
-    boolean result = false;
-    String query = "SELECT * FROM "
-        + TABLE_PRODUCTS
-        + " WHERE "
-        + COLUMN_PRODUCTNAME
-        + " = \""
-        + productName
-        + "\""
-    ;
-    Cursor cursor = db.rawQuery(query, null);
-    
-    if(cursor.moveToFirst()){
-        String idStr = cursor.getString(0);
-        db.delete(TABLE_PRODUCTS, COLUMN_ID + " = " + idStr, null);
-        cursor.close();
-        result = true;
-    }
-    db.close();
-    return result;
-}
-```
-@[1](Créez une méthode pour supprimer)
-@[2](Obtenez une instance d'une DB)
-@[4-11](Créer votre query)
-@[12](Exécuter votre query)
-@[14-19](Si l'objet existe, supprimer)
-@[20](Fermer la connection à la DB)
+Un patron de conceptions utiles dans la gestion d'application et de mémoire est le Singleton.
 
 ---
 
-### Dernière étape
+### Singleton
 
-```java
-class ... {
-    public static void main(String[] args) {
-        
-        MyDBHandler dbHandler = new MyDBHandler(this);
-        
-        // ...
-        
-        dbHandler.addProduct(product);
-        
-        // ...
-        
-        Product product = dbHandler.findProduct(productBox.getText().toString());
-        
-        // ...
-        
-        boolean result = dbHandler.deleteProduct(productBox.getText().toString());
-    }
-}
-```
+Patron de conception utile pour stocker les informations.
+
+Une limite d'un seul instance assure la cohérence entre vos attentes et la réalité entre lecture / écriture.
+
+<!-- image -->
+
++++
+
+#### Utilisation
+
+Pour utiliser efficacement Singleton comme une solution pour votre projet, la recommandation est de vous créer des classes Java représentant les informations (équipe, match, tournoi) dont vous avez besoin de stocker.
+
+Après le codage des  classes qui nécessitent le stockage de données, vous pouvez créer des listes pour stocker les instances de vos classes dans le Singleton.
+
+++++
+
+Vous pouvez utiliser Umple pour générer vos fichiers de classe.
+
+Utilisez votre Singleton comme gestionnaire de ressource. N’oubliez pas les getters et setters.
+
+---
+
+### Stockage de données
+
+- Ensembles de `valeurs-clés`
+- `Int` ou `String`
+- utile pour les informations de configurations
+
+---
+
+### Lignes directrices du projet
+
+1. ceci est un cours de génie logiciel
+2. votre travail sera jugé sur sa fonctionnalité, sa structure ainsi que la présentation de votre code
+3. utilisez les conventions et restez cohérent
+4. Testez votre application.
+5. 1 seul APK sera accepté... GIT to the rescue!
+
++++
+
+### Plagiat
+
+Politique de l'Université d'Ottawa sur le plagiat [EN](http: //www.uottawa.ca/academic-regulations/academic-fraud.html)/[FR](http://www.uottawa.ca/reglements-scolaires/fraude-et-plagiat.html)
+
+(ne copiez pas le code trouvé sur Internet)
+
+---
+
+### Mise en page
+
+- Vous pouvez choisir des modèles préexistants ou définir le vôtre.
+- Vous pouvez personnaliser la couleur,`ActionBar`, pleins écrans et autres.
+- Pour accéder aux options de mise en page, cliquez sur le bouton circulaire dans la vue de la conception. Le texte du bouton affiche le nom du thème actuel de votre mise en page.
+
++++
+
+### Personnalisation : Styles
+
+Plusieurs styles IU sont disponibles, soit `Light` et `Dark`.
+
+`/res/values/styles.xml` 
+
+---
+
+### Erreurs typiques
+
+"Android Studio ne compile pas mon projet ou n'affiche pas une disposition de l'IU"
+
+1. Regardez votre code ainsi que les logs Gradle
+2. Reinstallez Android Studio (vos projets ne seront pas affectés par ceci)
+
++++
+
+"L'émulateur ne fonctionne pas"
+
+1. Si vous avez un processeur AMD, changez la configuration de votre AVD. Vous avez peut-être x86 ou x86_64 en sélection. Changez ceci à `armeabi-v7a ABI`.
+2. Problème avec HAXM? Vous devez aller dans le BIOS pour allumer Intel Virtualization Technology.
+
++++
+
+"L'émulateur est lent"
+
+1. lorsque vous commencez l'émulateur, ne le fermez pas.
+2. pas assez de mémoire? Modifiez l'AVD qui est utilisé à un système nécessitant moins de mémoire (plus vieux).
+3. utilisez un téléphone Android.
+
+
+---
+
+### Travail de laboratoire
+
+Liste de recettes
+
++++
+
+### Exigences
+
+1. activité principale, la liste des recettes
+2. votre propre adaptateur (avec Inflater)
+3. fichier XML pour la mise en page. Ce fichier contient:
+    1. l'image de la recette
+    2. le nom de la recette
+    3. une liste (détaillée) des ingrédients 
+
++++
+
+### `onCreate`
+
+1. "content view loader"
+2. référence à la `ListView` où seront stocké les objets recettes
+3. création de la liste
+4. création de l'adaptateur
+5. `onClick` pour les recettes
+6. MAJ de l'IU
+
++++
+
+### Adaptateur et votre propre mise en page
+
+1. créez un fichier XML
+2. ajoutez les composantes qui feront 1 objet dans cette liste
+3. "Gonflez" (Inflate) les objets dans la liste
+
++++
+
+### Exemple de mise en page
+
+<!-- image -->
+<!-- image -->
+
+---
+
+### Liens utiles
+
+- [Couleurs de l'Université](http: //www.uottawa.ca/brand/visual-identity/uottawa-colour-palettes
+)
+- [Conception matériel](https: //material.google.com/layout/principles.html)

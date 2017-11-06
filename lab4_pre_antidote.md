@@ -2,7 +2,7 @@
 
 Laboratoire Android 4 : Concepts UI supplémentaires et stockage
 
-EG 2505 - Introduction au génie logiciel
+SEG 2505 - Introduction au génie logiciel
 
 Automne 2017
 
