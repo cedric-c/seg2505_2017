@@ -132,7 +132,9 @@ Vous devez créer et gérer une liste d'objet. Ces objets seront mis à jour de 
 
 +++
 
-### Extrait de `onCreate`
+### `onCreate` 
+
+Extrait de la méthode `onCreate` dans l'activité.
 
 ```java
 // Get ListView object from xml layout
@@ -166,6 +168,8 @@ Les listes...
 - ne sont pas limitées aux types primitifs.
 - peuvent contenir des objets, images, etc.
 
+Les "templates" pour ces listes sont des fichier layouts XML.
+
 +++
 
 ### Disposition (Layout)
@@ -187,6 +191,8 @@ Si les éléments prennent plus d'espace que disponible, une barre (trois points
 
 ![listeDynamique](assets/images/image6.png)
 
+
+<!-- 18 -->
 +++
 
 ### Adaptateur personnalisé
@@ -195,7 +201,7 @@ Si les éléments prennent plus d'espace que disponible, une barre (trois points
 - Votre `CustomAdapter` devrait étendre un des adaptateurs existants. N'oubliez pas la méthode `getView`.
 - Dans votre méthode `getView`, vous devez avoir un `LayoutInflater` (pour élargir les éléments de la liste).
 
-
+<!-- 19 -->
 +++
 
 ### Extrait `onCreate`
@@ -221,9 +227,13 @@ protected void onCreate(Bundle savedInstanceState) {
 }
 ```
 
+<!-- 20 -->
+
 +++
 
 ### Extrait de classe `TeamArrayAdapter`
+
+Dans cet exemple, les icônes et leurs noms sont configurés à partir d'une liste d'étiquettes. Vous pouvez aussi utiliser votre Singleton.
 
 ```java
 public class TeamArrayAdapter extends ArrayAdapter<String>  {
@@ -255,6 +265,8 @@ public class TeamArrayAdapter extends ArrayAdapter<String>  {
 }
 ```
 
+
+<!-- 21 -->
 +++
 
 ### Résultat
