@@ -61,7 +61,11 @@ Les interfaces tactiles mobiles s'appuient sur une bonne conception d'interface:
 
 #### Rule of Thirds
 
-<!-- image -->
+![3rds](assets/images/image1.png)
+
++++
+
+![3rds](assets/images/image2.png)
 
 +++
 
@@ -124,7 +128,7 @@ Vous devez créer et gérer une liste d'objet. Ces objets seront mis à jour de 
 
 +++
 
-<!-- image -->
+![simpleListView](assets/images/image3.png)
 
 +++
 
@@ -171,15 +175,17 @@ Les listes...
 
 +++
 
-<!-- image -->
+![dynamicContent](assets/images/image4_1.png)
 
 +++
 
 ### Comportement d'une liste
 
-Les éléments apparaissent de manière séquentielle
+Les éléments apparaissent de manière séquentielle.
 
-<!-- image -->
+Si les éléments prennent plus d'espace que disponible, une barre (trois points) sera ajouté à la droite de l'objet dans la liste.
+
+![listeDynamique](assets/images/image6.png)
 
 +++
 
@@ -249,6 +255,12 @@ public class TeamArrayAdapter extends ArrayAdapter<String>  {
 }
 ```
 
++++
+
+### Résultat
+
+![resultOfPreviousSlide](assets/images/image7.png)
+
 ---
 
 ### Gestion de mémoire
@@ -263,7 +275,7 @@ Patron de conception utile pour stocker les informations.
 
 Une limite d'un seul instance assure la cohérence entre vos attentes et la réalité entre lecture / écriture.
 
-<!-- image -->
+![singleton](assets/images/image8.png)
 
 +++
 
@@ -319,7 +331,13 @@ Politique de l'Université d'Ottawa sur le plagiat [EN](http://www.uottawa.ca/ac
 
 Plusieurs styles IU sont disponibles, soit `Light` et `Dark`.
 
-`/res/values/styles.xml` 
+Voir `/res/values/styles.xml` 
+
++++
+
+![themes](assets/images/image9.png)
+
+`/res/values/styles.xml`
 
 ---
 
@@ -386,8 +404,9 @@ Liste de recettes
 
 ### Exemple de mise en page
 
-<!-- image -->
-<!-- image -->
+![adapter1](assets/images/image10.png)
+
+![adapter2](assets/images/image11.png)
 
 ---
 
