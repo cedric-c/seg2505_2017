@@ -21,8 +21,8 @@ Présenté par : Cédric Clément
 
 ### Résumé
 
-- Dans les laboratoires précédent vous avez appris que vous pouvez mettre à jour les composants existants dans une mise en page.
-- Aujourd'hui, nous allons regarde comment créer des mises en page plus dynamiques, avec encore plus adaptabilité.
+- Dans les laboratoires précédents, vous avez appris que vous pouvez mettre à jour les composants existants dans une mise en page.
+- Aujourd'hui, nous allons voir comment créer des mises en page plus dynamiques et avec plus d’adaptabilité.
 - Si vous avez manqué les séances de laboratoire précédentes, consultez le matériel précédent avant de poursuivre.
 
 ---
@@ -53,8 +53,9 @@ Les interfaces tactiles mobiles s'appuient sur une bonne conception d'interface:
 
 - Le contenu doit être placé sur l'écran en fonction de leur importance.
 - Les humains "scan" de gauche à droite et de haut en bas
-- Bars haut, menus et titres ont un emplacement prédéfini.
+- Bars hauts, menus et titres ont un emplacement prédéfini.
 - Les utilisateurs ont des attentes envers l'emplacement des composantes, respectez les lignes directrices!
+
 
 +++
 
@@ -67,11 +68,11 @@ Les interfaces tactiles mobiles s'appuient sur une bonne conception d'interface:
 ### Composition
 
 - Ajoutez des marges à votre application.
-- Jamais toucher les frontières de l'écran
-- Les contextes doivent être séparé.
+- Ne jamais toucher les frontières de l'écran
+- Les contextes doivent être séparés.
 
-densité indépendantes pour les pixels (1 pixel à une densité de 160)
-dp = (Largeur en pixels * 160) / densité de l'écran
+densité indépendante pour les pixels (1 pixel à une densité de 160) dp = (Largeur en pixels * 160) / densité de l'écran
+
 
 +++
 
@@ -96,19 +97,19 @@ Les objets s'ajoutent à une liste avec l'aide d'un adaptateur.
 
 ### `GridView`
 
-Nous avons utilisé cette vue dans des laboratoires précedents. Par contre, elle recevait ses entrées de manière statique.
+Nous avons utilisé cette vue dans des laboratoires précédents. Par contre, elle recevait ses entrées de manière statique.
 
 +++
 
 ### Pour votre projet...
 
-Vous devez créer et gérer une liste d'objet. Ces objets seront mit à jour de manière dynamique ce qui signifie que votre liste aura besoin d'être mise à jour de manière dynamique.
+Vous devez créer et gérer une liste d'objet. Ces objets seront mis à jour de manière dynamique ce qui signifie que votre liste aura besoin d'être mise à jour de manière dynamique.
 
 +++
 
 ### Adaptateur
 
-- L'adaptateur est le lien entre les vues d'adapteur et ce qu'ils affichent.
+- L'adaptateur est le lien entre les vues d'adaptateur et ce qu'ils affichent.
 - `ListView` et `GridView` étendent `AdapterView`
 - Un adaptateur reçoit un `context` et un `ressourceID`.
 - Déclarer l'adaptateur à utiliser pour un `ListView` en appelant sa méthode `setAdapter`.
@@ -159,7 +160,7 @@ listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
 
 Les listes...
 - ne sont pas limitées aux types primitifs.
-- peuvent contenir des objets, images, etc...
+- peuvent contenir des objets, images, etc.
 
 +++
 
@@ -176,7 +177,7 @@ Les listes...
 
 ### Comportement d'une liste
 
-Les éléments aparaissent de manière séquentielle
+Les éléments apparaissent de manière séquentielle
 
 <!-- image -->
 
@@ -185,7 +186,7 @@ Les éléments aparaissent de manière séquentielle
 ### Adaptateur personnalisé
 
 - Pour créer une mise en page personnalisée, vous devez créer un `CustomAdapter` et implémenter les méthodes requises.
-- Votre `CustomAdapter` devrait étendre un des adaptateurs existant. N'oubliez pas la méthode `getView`.
+- Votre `CustomAdapter` devrait étendre un des adaptateurs existants. N'oubliez pas la méthode `getView`.
 - Dans votre méthode `getView`, vous devez avoir un `LayoutInflater` (pour élargir les éléments de la liste).
 
 
@@ -252,7 +253,7 @@ public class TeamArrayAdapter extends ArrayAdapter<String>  {
 
 ### Gestion de mémoire
 
-Un patrons de conceptions utile dans la gestion d'application et de mémoire est le Singleton.
+Un patron de conceptions utiles dans la gestion d'application et de mémoire est le Singleton.
 
 ---
 
@@ -270,13 +271,13 @@ Une limite d'un seul instance assure la cohérence entre vos attentes et la réa
 
 Pour utiliser efficacement Singleton comme une solution pour votre projet, la recommandation est de vous créer des classes Java représentant les informations (équipe, match, tournoi) dont vous avez besoin de stocker.
 
-Après le codage des  classes qui nécéssitent le stockage de données, vous pouvez créer des listes pour stocker les instances de vos classes dans le Singleton.
+Après le codage des  classes qui nécessitent le stockage de données, vous pouvez créer des listes pour stocker les instances de vos classes dans le Singleton.
 
 ++++
 
 Vous pouvez utiliser Umple pour générer vos fichiers de classe.
 
-Utilisez votre Singleton comme gestionnaire de ressource. Noubliez pas les getters et setters.
+Utilisez votre Singleton comme gestionnaire de ressource. N’oubliez pas les getters et setters.
 
 ---
 
@@ -293,7 +294,7 @@ Utilisez votre Singleton comme gestionnaire de ressource. Noubliez pas les gette
 1. ceci est un cours de génie logiciel
 2. votre travail sera jugé sur sa fonctionnalité, sa structure ainsi que la présentation de votre code
 3. utilisez les conventions et restez cohérent
-4. Testez votre applicaiton.
+4. Testez votre application.
 5. 1 seul APK sera accepté... GIT to the rescue!
 
 +++
@@ -308,15 +309,15 @@ Politique de l'Université d'Ottawa sur le plagiat [EN](http: //www.uottawa.ca/a
 
 ### Mise en page
 
-- Vous pouvez choisir des modèles pré-existants ou définir le votre.
-- Vous pouvez personnaliser la couleur,`ActionBar`, plein écrans et autres.
+- Vous pouvez choisir des modèles préexistants ou définir le vôtre.
+- Vous pouvez personnaliser la couleur,`ActionBar`, pleins écrans et autres.
 - Pour accéder aux options de mise en page, cliquez sur le bouton circulaire dans la vue de la conception. Le texte du bouton affiche le nom du thème actuel de votre mise en page.
 
 +++
 
 ### Personnalisation : Styles
 
-Plusieurs style IU sont disponibles, soit `Light` et `Dark`.
+Plusieurs styles IU sont disponibles, soit `Light` et `Dark`.
 
 `/res/values/styles.xml` 
 
@@ -333,7 +334,7 @@ Plusieurs style IU sont disponibles, soit `Light` et `Dark`.
 
 "L'émulateur ne fonctionne pas"
 
-1. Si vous avez un processeur AMD, changez la configuration de votre AVD. Vous avez peut-être x86 ou x86_64 de sélectionné. Changez ceci à `armeabi-v7a ABI`.
+1. Si vous avez un processeur AMD, changez la configuration de votre AVD. Vous avez peut-être x86 ou x86_64 en sélection. Changez ceci à `armeabi-v7a ABI`.
 2. Problème avec HAXM? Vous devez aller dans le BIOS pour allumer Intel Virtualization Technology.
 
 +++
@@ -341,7 +342,7 @@ Plusieurs style IU sont disponibles, soit `Light` et `Dark`.
 "L'émulateur est lent"
 
 1. lorsque vous commencez l'émulateur, ne le fermez pas.
-2. pas assez de mémoire? Modifiez l'AVD qui est utilisé à un système nécésitant moins de mémoire (plus vieu).
+2. pas assez de mémoire? Modifiez l'AVD qui est utilisé à un système nécessitant moins de mémoire (plus vieux).
 3. utilisez un téléphone Android.
 
 
@@ -366,7 +367,7 @@ Liste de recettes
 
 ### `onCreate`
 
-1. content view loader
+1. "content view loader"
 2. référence à la `ListView` où seront stocké les objets recettes
 3. création de la liste
 4. création de l'adaptateur
