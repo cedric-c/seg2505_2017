@@ -301,7 +301,7 @@ Utilisez votre Singleton comme gestionnaire de ressource. N’oubliez pas les ge
 
 ### Plagiat
 
-Politique de l'Université d'Ottawa sur le plagiat [EN](http: //www.uottawa.ca/academic-regulations/academic-fraud.html)/[FR](http://www.uottawa.ca/reglements-scolaires/fraude-et-plagiat.html)
+Politique de l'Université d'Ottawa sur le plagiat [EN](http://www.uottawa.ca/academic-regulations/academic-fraud.html) / [FR](http://www.uottawa.ca/reglements-scolaires/fraude-et-plagiat.html)
 
 (ne copiez pas le code trouvé sur Internet)
 
