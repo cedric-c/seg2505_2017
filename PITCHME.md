@@ -14,47 +14,48 @@ Laboratoire Android 4 : Concepts UI supplémentaires et stockage
 
 1. <span style="font-size:0.6em;color:gray">Conception de l'interface utilisateur</span>
 2. <span class="txtSmall txtGray" style="font-size:0.6em;">Remarques sur la gestion de mémoire</span>
-3. Remarques supplémentaires et informations utiles
-4. Travail de laboratoire
+3. <span class="txtSmall txtGray "  style="font-size:0.6em;">Remarques supplémentaires et informations utiles</span>
+4. <span class="txtSmall txtGray "  style="font-size:0.6em;">Travail de laboratoire</span>
 
 ---
 
 ### Résumé
 
-- Dans les laboratoires précédents, vous avez appris que vous pouvez mettre à jour les composants existants dans une mise en page.
-- Aujourd'hui, nous allons voir comment créer des mises en page plus dynamiques et avec plus d’adaptabilité.
-- Si vous avez manqué les séances de laboratoire précédentes, consultez le matériel précédent avant de poursuivre.
+- <span class="txtSmall txtGray "  style="font-size:0.6em;">Dans les laboratoires précédents, vous avez appris que vous pouvez mettre à jour les composants existants dans une mise en page.</span>
+- <span class="txtSmall txtGray "  style="font-size:0.6em;">Aujourd'hui, nous allons voir comment créer des mises en page plus dynamiques et avec plus d’adaptabilité.</span>
+- <span class="txtSmall txtGray "  style="font-size:0.6em;">Si vous avez manqué les séances de laboratoire précédentes, consultez le matériel précédent avant de poursuivre.</span>
 
 ---
 
 ### UI / UX : Principes de base
 
-- La conception d'interface utilisateur est le domaine responsable de:
-- Interfaces utilisateur (UI)
-- Expérience utilisateur (UX)
+- <span class="txtSmall txtGray "  style="font-size:0.6em;">La conception d'interface utilisateur est le domaine responsable de:</span>
+- <span class="txtSmall txtGray "  style="font-size:0.6em;">Interfaces utilisateur (UI)</span>
+- <span class="txtSmall txtGray "  style="font-size:0.6em;">Expérience utilisateur (UX)</span>
 
-Les interfaces tactiles mobiles s'appuient sur une bonne conception d'interface: 
-- Outils d'interaction limitée (pas de souris, pas de clavier)
-- Occlusion d'IU (Mains et doigts cachent derrière eux des informations)
-- Espace limité (petits écrans)
+<span class="txtSmall txtGray "  style="font-size:0.6em;">Les interfaces tactiles mobiles s'appuient sur une bonne conception d'interface: </span>
+
+- <span class="txtSmall txtGray "  style="font-size:0.6em;">Outils d'interaction limitée (pas de souris, pas de clavier)</span>
+- <span class="txtSmall txtGray "  style="font-size:0.6em;">Occlusion d'IU (Mains et doigts cachent derrière eux des informations)</span>
+- <span class="txtSmall txtGray "  style="font-size:0.6em;">Espace limité (petits écrans)</span>
 
 +++
 
 ### Simplicité
 
-- L'âge de conception matériel (design plat et en couches, feuilles de papier empilées)
-- Évitez d'encombrer votre écran avec l'information (utilisez des icônes)
-- Uniformité et cohérence
-- Less is more
+- <span class="txtSmall txtGray "  style="font-size:0.6em;">L'âge de conception matériel (design plat et en couches, feuilles de papier empilées)</span>
+- <span class="txtSmall txtGray "  style="font-size:0.6em;">Évitez d'encombrer votre écran avec l'information (utilisez des icônes)</span>
+- <span class="txtSmall txtGray "  style="font-size:0.6em;">Uniformité et cohérence</span>
+- <span class="txtSmall txtGray "  style="font-size:0.6em;">Less is more</span>
 
 +++
 
 ### Hiérarchie
 
-- Le contenu doit être placé sur l'écran en fonction de leur importance.
-- Les humains "scan" de gauche à droite et de haut en bas
-- Bars hauts, menus et titres ont un emplacement prédéfini.
-- Les utilisateurs ont des attentes envers l'emplacement des composantes, respectez les lignes directrices!
+- <span class="txtSmall txtGray "  style="font-size:0.6em;">Le contenu doit être placé sur l'écran en fonction de leur importance.</span>
+- <span class="txtSmall txtGray "  style="font-size:0.6em;">Les humains "scan" de gauche à droite et de haut en bas</span>
+- <span class="txtSmall txtGray "  style="font-size:0.6em;">Bars hauts, menus et titres ont un emplacement prédéfini.</span>
+- <span class="txtSmall txtGray "  style="font-size:0.6em;">Les utilisateurs ont des attentes envers l'emplacement des composantes, respectez les lignes directrices!</span>
 
 
 +++
@@ -71,18 +72,18 @@ Les interfaces tactiles mobiles s'appuient sur une bonne conception d'interface:
 
 ### Composition
 
-- Ajoutez des marges à votre application.
-- Ne jamais toucher les frontières de l'écran
-- Les contextes doivent être séparés.
+- <span class="txtSmall txtGray "  style="font-size:0.6em;">Ajoutez des marges à votre application.</span>
+- <span class="txtSmall txtGray "  style="font-size:0.6em;">Ne jamais toucher les frontières de l'écran</span>
+- <span class="txtSmall txtGray "  style="font-size:0.6em;">Les contextes doivent être séparés.</span>
 
-densité indépendante pour les pixels (1 pixel à une densité de 160) dp = (Largeur en pixels * 160) / densité de l'écran
+<span class="txtSmall txtGray "  style="font-size:0.6em;">densité indépendante pour les pixels (1 pixel à une densité de 160) dp = (Largeur en pixels * 160) / densité de l'écran</span>
 
 
 +++
 
 ### Dynamisme
 
-- La réactivité est primordiale
+- <span class="txtSmall txtGray "  style="font-size:0.6em;">La réactivité est primordiale</span>
 
 
 ---
@@ -93,38 +94,38 @@ densité indépendante pour les pixels (1 pixel à une densité de 160) dp = (La
 
 ### `ListView`
 
-Un `ListView` est une vue d'ensemble qui présente une liste d'objet "scrollable".
+<span class="txtSmall txtGray "  style="font-size:0.6em;">Un `ListView` est une vue d'ensemble qui présente une liste d'objet "scrollable".</span>
 
-Les objets s'ajoutent à une liste avec l'aide d'un adaptateur.
+<span class="txtSmall txtGray "  style="font-size:0.6em;">Les objets s'ajoutent à une liste avec l'aide d'un adaptateur.</span>
 
 +++ 
 
 ### `GridView`
 
-Nous avons utilisé cette vue dans des laboratoires précédents. Par contre, elle recevait ses entrées de manière statique.
+<span class="txtSmall txtGray "  style="font-size:0.6em;">Nous avons utilisé cette vue dans des laboratoires précédents. Par contre, elle recevait ses entrées de manière statique.</span>
 
 +++
 
 ### Pour votre projet...
 
-Vous devez créer et gérer une liste d'objet. Ces objets seront mis à jour de manière dynamique ce qui signifie que votre liste aura besoin d'être mise à jour de manière dynamique.
+<span class="txtSmall txtGray "  style="font-size:0.6em;">Vous devez créer et gérer une liste d'objet. Ces objets seront mis à jour de manière dynamique ce qui signifie que votre liste aura besoin d'être mise à jour de manière dynamique.</span>
 
 +++
 
 ### Adaptateur
 
-- L'adaptateur est le lien entre les vues d'adaptateur et ce qu'ils affichent.
-- `ListView` et `GridView` étendent `AdapterView`
-- Un adaptateur reçoit un `context` et un `ressourceID`.
-- Déclarer l'adaptateur à utiliser pour un `ListView` en appelant sa méthode `setAdapter`.
+- <span class="txtSmall txtGray "  style="font-size:0.6em;">L'adaptateur est le lien entre les vues d'adaptateur et ce qu'ils affichent.</span>
+- <span class="txtSmall txtGray "  style="font-size:0.6em;">`ListView` et `GridView` étendent `AdapterView`</span>
+- <span class="txtSmall txtGray "  style="font-size:0.6em;">Un adaptateur reçoit un `context` et un `ressourceID`.</span>
+- <span class="txtSmall txtGray "  style="font-size:0.6em;">Déclarer l'adaptateur à utiliser pour un `ListView` en appelant sa méthode `setAdapter`.</span>
 
 ---
 
 ### `ListView` simple
 
-- peut être créé avec un tableau de chaînes et l'adaptateur `ArrayAdapter`
-- mise en page préconstruite : `android.R.layout.simple_list_item_1`
-- modifiez la méthode `onItemClick` pour changer la fonctionnalité de votre application.
+- <span class="txtSmall txtGray "  style="font-size:0.6em;">peut être créé avec un tableau de chaînes et l'adaptateur `ArrayAdapter`</span>
+- <span class="txtSmall txtGray "  style="font-size:0.6em;">mise en page préconstruite : `android.R.layout.simple_list_item_1`</span>
+- <span class="txtSmall txtGray "  style="font-size:0.6em;">modifiez la méthode `onItemClick` pour changer la fonctionnalité de votre application.</span>
 
 +++
 
@@ -134,7 +135,7 @@ Vous devez créer et gérer une liste d'objet. Ces objets seront mis à jour de 
 
 ### `onCreate` 
 
-Extrait de la méthode `onCreate` dans l'activité.
+<span class="txtSmall txtGray "  style="font-size:0.6em;">Extrait de la méthode `onCreate` dans l'activité.</span>
 
 ```java
 // Get ListView object from xml layout
@@ -164,18 +165,18 @@ listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
 
 ### Contenu dynamique
 
-Les listes...
-- ne sont pas limitées aux types primitifs.
-- peuvent contenir des objets, images, etc.
+<span class="txtSmall txtGray "  style="font-size:0.6em;">Les listes...</span>
+- <span class="txtSmall txtGray "  style="font-size:0.6em;">ne sont pas limitées aux types primitifs.</span>
+- <span class="txtSmall txtGray "  style="font-size:0.6em;">peuvent contenir des objets, images, etc.</span>
 
-Les "templates" pour ces listes sont des fichier layouts XML.
+<span class="txtSmall txtGray "  style="font-size:0.6em;">Les "templates" pour ces listes sont des fichier layouts XML.</span>
 
 +++
 
 ### Disposition (Layout)
 
-- Ceci est un modèle de base pour l'unité d'une liste, représenté par un fichier XML.
-- Définit la structure des informations présentées dans chaque élément affiché dans une liste.
+- <span class="txtSmall txtGray "  style="font-size:0.6em;">Ceci est un modèle de base pour l'unité d'une liste, représenté par un fichier XML.</span>
+- <span class="txtSmall txtGray "  style="font-size:0.6em;">Définit la structure des informations présentées dans chaque élément affiché dans une liste.</span>
 
 +++
 
@@ -185,9 +186,9 @@ Les "templates" pour ces listes sont des fichier layouts XML.
 
 ### Comportement d'une liste
 
-Les éléments apparaissent de manière séquentielle.
+<span class="txtSmall txtGray "  style="font-size:0.6em;">Les éléments apparaissent de manière séquentielle.</span>
 
-Si les éléments prennent plus d'espace que disponible, une barre (trois points) sera ajouté à la droite de l'objet dans la liste.
+<span class="txtSmall txtGray "  style="font-size:0.6em;">Si les éléments prennent plus d'espace que disponible, une barre (trois points) sera ajouté à la droite de l'objet dans la liste.</span>
 
 ![listeDynamique](assets/images/image6.png)
 
@@ -198,9 +199,9 @@ Si les éléments prennent plus d'espace que disponible, une barre (trois points
 
 ### Adaptateur personnalisé
 
-- Pour créer une mise en page personnalisée, vous devez créer un `CustomAdapter` et implémenter les méthodes requises.
-- Votre `CustomAdapter` devrait étendre un des adaptateurs existants. N'oubliez pas la méthode `getView`.
-- Dans votre méthode `getView`, vous devez avoir un `LayoutInflater` (pour élargir les éléments de la liste).
+- <span class="txtSmall txtGray "  style="font-size:0.6em;">Pour créer une mise en page personnalisée, vous devez créer un `CustomAdapter` et implémenter les méthodes requises.</span>
+- <span class="txtSmall txtGray "  style="font-size:0.6em;">Votre `CustomAdapter` devrait étendre un des adaptateurs existants. N'oubliez pas la méthode `getView`.</span>
+- <span class="txtSmall txtGray "  style="font-size:0.6em;">Dans votre méthode `getView`, vous devez avoir un `LayoutInflater` (pour élargir les éléments de la liste).</span>
 
 <!-- 19 -->
 
@@ -235,7 +236,7 @@ protected void onCreate(Bundle savedInstanceState) {
 
 ### Extrait de classe `TeamArrayAdapter`
 
-Dans cet exemple, les icônes et leurs noms sont configurés à partir d'une liste d'étiquettes. Vous pouvez aussi utiliser votre Singleton.
+<span class="txtSmall txtGray "  style="font-size:0.6em;">Dans cet exemple, les icônes et leurs noms sont configurés à partir d'une liste d'étiquettes. Vous pouvez aussi utiliser votre Singleton.</span>
 
 ```java
 public class TeamArrayAdapter extends ArrayAdapter<String>  {
@@ -280,15 +281,15 @@ public class TeamArrayAdapter extends ArrayAdapter<String>  {
 
 ### Gestion de mémoire
 
-Un patron de conceptions utiles dans la gestion d'application et de mémoire est le Singleton.
+<span class="txtSmall txtGray "  style="font-size:0.6em;">Un patron de conceptions utiles dans la gestion d'application et de mémoire est le Singleton.</span>
 
 ---
 
 ### Singleton
 
-Patron de conception utile pour stocker les informations.
+<span class="txtSmall txtGray "  style="font-size:0.6em;">Patron de conception utile pour stocker les informations.</span>
 
-Une limite d'un seul instance assure la cohérence entre vos attentes et la réalité entre lecture / écriture.
+<span class="txtSmall txtGray "  style="font-size:0.6em;">Une limite d'un seul instance assure la cohérence entre vos attentes et la réalité entre lecture / écriture. </span>
 
 ![singleton](assets/images/image8.png)
 
@@ -296,124 +297,124 @@ Une limite d'un seul instance assure la cohérence entre vos attentes et la réa
 
 #### Utilisation
 
-Pour utiliser efficacement Singleton comme une solution pour votre projet, la recommandation est de vous créer des classes Java représentant les informations (équipe, match, tournoi) dont vous avez besoin de stocker.
+<span class="txtSmall txtGray "  style="font-size:0.6em;">Pour utiliser efficacement Singleton comme une solution pour votre projet, la recommandation est de vous créer des classes Java représentant les informations (équipe, match, tournoi) dont vous avez besoin de stocker.</span>
 
-Après le codage des  classes qui nécessitent le stockage de données, vous pouvez créer des listes pour stocker les instances de vos classes dans le Singleton.
+<span class="txtSmall txtGray "  style="font-size:0.6em;">Après le codage des  classes qui nécessitent le stockage de données, vous pouvez créer des listes pour stocker les instances de vos classes dans le Singleton.</span>
 
 +++
 
-Vous pouvez utiliser Umple pour générer vos fichiers de classe.
+<span class="txtSmall txtGray "  style="font-size:0.6em;">Vous pouvez utiliser Umple pour générer vos fichiers de classe.</span>
 
-Utilisez votre Singleton comme gestionnaire de ressource. N’oubliez pas les getters et setters.
+<span class="txtSmall txtGray "  style="font-size:0.6em;">Utilisez votre Singleton comme gestionnaire de ressource. N’oubliez pas les getters et setters.</span>
 
 ---
 
 ### Stockage de données
 
-- Ensembles de `valeurs-clés`
-- `Int` ou `String`
-- utile pour les informations de configurations
+- <span class="txtSmall txtGray "  style="font-size:0.6em;">Ensembles de `valeurs-clés`</span>
+- <span class="txtSmall txtGray "  style="font-size:0.6em;">`Int` ou `String`</span>
+- <span class="txtSmall txtGray "  style="font-size:0.6em;">utile pour les informations de configurations</span>
 
 ---
 
 ### Lignes directrices du projet
 
-1. ceci est un cours de génie logiciel
-2. votre travail sera jugé sur sa fonctionnalité, sa structure ainsi que la présentation de votre code
-3. utilisez les conventions et restez cohérent
-4. Testez votre application.
-5. 1 seul APK sera accepté... GIT to the rescue!
+1. <span class="txtSmall txtGray "  style="font-size:0.6em;">ceci est un cours de génie logiciel</span>
+2. <span class="txtSmall txtGray "  style="font-size:0.6em;">votre travail sera jugé sur sa fonctionnalité, sa structure ainsi que la présentation de votre code</span>
+3. <span class="txtSmall txtGray "  style="font-size:0.6em;">utilisez les conventions et restez cohérent</span>
+4. <span class="txtSmall txtGray "  style="font-size:0.6em;">Testez votre application.</span>
+5. <span class="txtSmall txtGray "  style="font-size:0.6em;">1 seul APK sera accepté... GIT to the rescue!</span>
 
 +++
 
 ### Plagiat
 
-Politique de l'Université d'Ottawa sur le plagiat [EN](http://www.uottawa.ca/academic-regulations/academic-fraud.html) / [FR](http://www.uottawa.ca/reglements-scolaires/fraude-et-plagiat.html)
+<span class="txtSmall txtGray "  style="font-size:0.6em;">Politique de l'Université d'Ottawa sur le plagiat</span> [EN](http://www.uottawa.ca/academic-regulations/academic-fraud.html) <span class="txtSmall txtGray "  style="font-size:0.6em;">/</span> [FR](http://www.uottawa.ca/reglements-scolaires/fraude-et-plagiat.html)
 
-(ne copiez pas le code trouvé sur Internet)
+<span class="txtSmall txtGray "  style="font-size:0.6em;">(ne copiez pas le code trouvé sur Internet)</span>
 
 ---
 
 ### Mise en page
 
-- Vous pouvez choisir des modèles préexistants ou définir le vôtre.
-- Vous pouvez personnaliser la couleur,`ActionBar`, pleins écrans et autres.
-- Pour accéder aux options de mise en page, cliquez sur le bouton circulaire dans la vue de la conception. Le texte du bouton affiche le nom du thème actuel de votre mise en page.
+- <span class="txtSmall txtGray "  style="font-size:0.6em;">Vous pouvez choisir des modèles préexistants ou définir le vôtre.</span>
+- <span class="txtSmall txtGray "  style="font-size:0.6em;">Vous pouvez personnaliser la couleur,`ActionBar`, pleins écrans et autres.</span>
+- <span class="txtSmall txtGray "  style="font-size:0.6em;">Pour accéder aux options de mise en page, cliquez sur le bouton circulaire dans la vue de la conception. Le texte du bouton affiche le nom du thème actuel de votre mise en page.</span>
 
 +++
 
 ### Personnalisation : Styles
 
-Plusieurs styles IU sont disponibles, soit `Light` et `Dark`.
+<span class="txtSmall txtGray "  style="font-size:0.6em;">Plusieurs styles IU sont disponibles, soit `Light` et `Dark`.</span>
 
-Voir `/res/values/styles.xml` 
+<span class="txtSmall txtGray "  style="font-size:0.6em;">Voir `/res/values/styles.xml` </span>
 
 +++
 
 ![themes](assets/images/image9.png)
 
-`/res/values/styles.xml`
+<span class="txtSmall txtGray "  style="font-size:0.6em;">`/res/values/styles.xml`</span>
 
 ---
 
 ### Erreurs typiques
 
-"Android Studio ne compile pas mon projet ou n'affiche pas une disposition de l'IU"
+<span class="txtSmall txtGray "  style="font-size:0.6em;">"Android Studio ne compile pas mon projet ou n'affiche pas une disposition de l'IU"</span>
 
-1. Regardez votre code ainsi que les logs Gradle
-2. Reinstallez Android Studio (vos projets ne seront pas affectés par ceci)
-
-+++
-
-"L'émulateur ne fonctionne pas"
-
-1. Si vous avez un processeur AMD, changez la configuration de votre AVD. Vous avez peut-être x86 ou x86_64 en sélection. Changez ceci à `armeabi-v7a ABI`.
-2. Problème avec HAXM? Vous devez aller dans le BIOS pour allumer Intel Virtualization Technology.
+1. <span class="txtSmall txtGray "  style="font-size:0.6em;">Regardez votre code ainsi que les logs Gradle</span>
+2. <span class="txtSmall txtGray "  style="font-size:0.6em;">Reinstallez Android Studio (vos projets ne seront pas affectés par ceci)</span>
 
 +++
 
-"L'émulateur est lent"
+<span class="txtSmall txtGray "  style="font-size:0.6em;">"L'émulateur ne fonctionne pas"</span>
 
-1. lorsque vous commencez l'émulateur, ne le fermez pas.
-2. pas assez de mémoire? Modifiez l'AVD qui est utilisé à un système nécessitant moins de mémoire (plus vieux).
-3. utilisez un téléphone Android.
+1. <span class="txtSmall txtGray "  style="font-size:0.6em;">Si vous avez un processeur AMD, changez la configuration de votre AVD. Vous avez peut-être x86 ou x86_64 en sélection. Changez ceci à `armeabi-v7a ABI`.</span>
+2. <span class="txtSmall txtGray "  style="font-size:0.6em;">Problème avec HAXM? Vous devez aller dans le BIOS pour allumer Intel Virtualization Technology.</span>
+
++++
+
+<span class="txtSmall txtGray "  style="font-size:0.6em;">"L'émulateur est lent"</span>
+
+1. <span class="txtSmall txtGray "  style="font-size:0.6em;">lorsque vous commencez l'émulateur, ne le fermez pas.</span>
+2. <span class="txtSmall txtGray "  style="font-size:0.6em;">pas assez de mémoire? Modifiez l'AVD qui est utilisé à un système nécessitant moins de mémoire (plus vieux).</span>
+3. <span class="txtSmall txtGray "  style="font-size:0.6em;">utilisez un téléphone Android.</span>
 
 
 ---
 
 ### Travail de laboratoire
 
-Liste de recettes
+<span class="txtSmall txtGray "  style="font-size:0.6em;">Liste de recettes</span>
 
 +++
 
 ### Exigences
 
-1. activité principale, la liste des recettes
-2. votre propre adaptateur (avec Inflater)
-3. fichier XML pour la mise en page. Ce fichier contient:
-    1. l'image de la recette
-    2. le nom de la recette
-    3. une liste (détaillée) des ingrédients 
+1. <span class="txtSmall txtGray "  style="font-size:0.6em;">activité principale, la liste des recettes</span>
+2. <span class="txtSmall txtGray "  style="font-size:0.6em;">votre propre adaptateur (avec Inflater)</span>
+3. <span class="txtSmall txtGray "  style="font-size:0.6em;">fichier XML pour la mise en page. Ce fichier contient:</span>
+    1. <span class="txtSmall txtGray "  style="font-size:0.6em;">l'image de la recette</span>
+    2. <span class="txtSmall txtGray "  style="font-size:0.6em;">le nom de la recette</span>
+    3. <span class="txtSmall txtGray "  style="font-size:0.6em;">une liste (détaillée) des ingrédients </span>
 
 +++
 
 ### `onCreate`
 
-1. "content view loader"
-2. référence à la `ListView` où seront stocké les objets recettes
-3. création de la liste
-4. création de l'adaptateur
-5. `onClick` pour les recettes
-6. MAJ de l'IU
+1. <span class="txtSmall txtGray "  style="font-size:0.6em;">"content view loader"</span>
+2. <span class="txtSmall txtGray "  style="font-size:0.6em;">référence à la `ListView` où seront stocké les objets recettes</span>
+3. <span class="txtSmall txtGray "  style="font-size:0.6em;">création de la liste</span>
+4. <span class="txtSmall txtGray "  style="font-size:0.6em;">création de l'adaptateur</span>
+5. <span class="txtSmall txtGray "  style="font-size:0.6em;">`onClick` pour les recettes</span>
+6. <span class="txtSmall txtGray "  style="font-size:0.6em;">MAJ de l'IU</span>
 
 +++
 
 ### Adaptateur et votre propre mise en page
 
-1. créez un fichier XML
-2. ajoutez les composantes qui feront 1 objet dans cette liste
-3. "Gonflez" (Inflate) les objets dans la liste
+1. <span class="txtSmall txtGray "  style="font-size:0.6em;">créez un fichier XML</span>
+2. <span class="txtSmall txtGray "  style="font-size:0.6em;">ajoutez les composantes qui feront 1 objet dans cette liste</span>
+3. <span class="txtSmall txtGray "  style="font-size:0.6em;">"Gonflez" (Inflate) les objets dans la liste</span>
 
 +++
 
