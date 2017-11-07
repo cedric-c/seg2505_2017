@@ -2,11 +2,11 @@
 
 Laboratoire Android 4 : Concepts UI supplémentaires et stockage
 
-<span style="font-size:0.6em;color:gray">SEG 2505 - Introduction au génie logiciel</span>
+<span style="color:gray">SEG 2505 - Introduction au génie logiciel</span>
 
-<span style="font-size:0.6em;color:gray">Automne 2017</span>
+<span style="color:gray">Automne 2017</span>
 
-<span style="font-size:0.6em;color:gray">Présenté par : Cédric Clément</span>
+<span style="color:gray">Présenté par : Cédric Clément</span>
 
 ---
 
@@ -114,18 +114,18 @@ Laboratoire Android 4 : Concepts UI supplémentaires et stockage
 
 ### Adaptateur
 
-- <span class="txtSmall txtGray "  style="font-size:0.6em;">L'adaptateur est le lien entre les vues d'adaptateur et ce qu'ils affichent.</span>
+- <span class="txtSmall txtGray "  style="font-size:0.6em;">L'adaptateur est le <span style="color:#c45331">lien entre les vues</span> d'adaptateur et ce qu'ils affichent.</span>
 - <span class="txtSmall txtGray "  style="font-size:0.6em;">`ListView` et `GridView` étendent `AdapterView`</span>
-- <span class="txtSmall txtGray "  style="font-size:0.6em;">Un adaptateur reçoit un `context` et un `ressourceID`.</span>
-- <span class="txtSmall txtGray "  style="font-size:0.6em;">Déclarer l'adaptateur à utiliser pour un `ListView` en appelant sa méthode `setAdapter`.</span>
+- <span class="txtSmall txtGray "  style="font-size:0.6em;">Un adaptateur reçoit un <span style="color:#00aa60">`context`</span> et un <span style="color:#d0d0ff">`ressourceID`</span>.</span>
+- <span class="txtSmall txtGray "  style="font-size:0.6em;">Vous pouvez déclarer l'adaptateur que vous voulez utiliser pour un `ListView` en appelant sa méthode <span style="color:#a1617a">`setAdapter`</span>.</span>
 
 ---
 
 ### `ListView` simple
 
 - <span class="txtSmall txtGray "  style="font-size:0.6em;">peut être créé avec un tableau de chaînes et l'adaptateur `ArrayAdapter`</span>
-- <span class="txtSmall txtGray "  style="font-size:0.6em;">mise en page préconstruite : `android.R.layout.simple_list_item_1`</span>
-- <span class="txtSmall txtGray "  style="font-size:0.6em;">modifiez la méthode `onItemClick` pour changer la fonctionnalité de votre application.</span>
+- <span class="txtSmall txtGray "  style="font-size:0.6em;">mise en page préconstruite : <span style="color:#d0d0ff">`android.R.layout.simple_list_item_1`</span></span>
+- <span class="txtSmall txtGray "  style="font-size:0.6em;">modifiez la méthode <span style="color:#b4c973">`onItemClick`</span> pour changer la fonctionnalité de votre application.</span>
 
 +++
 
@@ -166,8 +166,8 @@ listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
 ### Contenu dynamique
 
 <span class="txtSmall txtGray "  style="font-size:0.6em;">Les listes...</span>
-- <span class="txtSmall txtGray "  style="font-size:0.6em;">ne sont pas limitées aux types primitifs.</span>
-- <span class="txtSmall txtGray "  style="font-size:0.6em;">peuvent contenir des objets, images, etc.</span>
+- <span class="txtSmall txtGray "  style="font-size:0.6em;">ne sont <span style="color:#BE4C51">pas limitées</span> aux types primitifs.</span>
+- <span class="txtSmall txtGray "  style="font-size:0.6em;"><span style="color:#00aa60">peuvent contenir des objets</span>, images, etc.</span>
 
 <span class="txtSmall txtGray "  style="font-size:0.6em;">Les "templates" pour ces listes sont des fichier layouts XML.</span>
 
@@ -175,8 +175,8 @@ listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
 
 ### Disposition (Layout)
 
-- <span class="txtSmall txtGray "  style="font-size:0.6em;">Ceci est un modèle de base pour l'unité d'une liste, représenté par un fichier XML.</span>
-- <span class="txtSmall txtGray "  style="font-size:0.6em;">Définit la structure des informations présentées dans chaque élément affiché dans une liste.</span>
+- <span class="txtSmall txtGray "  style="font-size:0.6em;">Ceci est un <span style="color:#e8bf6a">modèle de base</span> pour l'unité d'une liste, représenté par un fichier XML.</span>
+- <span class="txtSmall txtGray "  style="font-size:0.6em;">Définit la <span style="color:#a1617a">structure</span> des informations présentées dans chaque élément affiché dans une liste.</span>
 
 +++
 
@@ -199,9 +199,9 @@ listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
 
 ### Adaptateur personnalisé
 
-- <span class="txtSmall txtGray "  style="font-size:0.6em;">Pour créer une mise en page personnalisée, vous devez créer un `CustomAdapter` et implémenter les méthodes requises.</span>
+- <span class="txtSmall txtGray "  style="font-size:0.6em;">Pour créer une mise en page personnalisée, <span style="color:#c45331">vous devez créer un `CustomAdapter`</span> <span style="color:#00aa60">et</span> <span style="color:#a1617a">implémenter les méthodes requises</span>.</span>
 - <span class="txtSmall txtGray "  style="font-size:0.6em;">Votre `CustomAdapter` devrait étendre un des adaptateurs existants. N'oubliez pas la méthode `getView`.</span>
-- <span class="txtSmall txtGray "  style="font-size:0.6em;">Dans votre méthode `getView`, vous devez avoir un `LayoutInflater` (pour élargir les éléments de la liste).</span>
+- <span class="txtSmall txtGray "  style="font-size:0.6em;">Dans votre méthode <span style="color:#d0d0ff">`getView`</span>, vous devez avoir un <span style="color:#a1617a">`LayoutInflater`</span> (pour élargir les éléments de la liste).</span>
 
 <!-- 19 -->
 
@@ -289,7 +289,7 @@ public class TeamArrayAdapter extends ArrayAdapter<String>  {
 
 <span class="txtSmall txtGray "  style="font-size:0.6em;">Patron de conception utile pour stocker les informations.</span>
 
-<span class="txtSmall txtGray "  style="font-size:0.6em;">Une limite d'un seul instance assure la cohérence entre vos attentes et la réalité entre lecture / écriture. </span>
+<span class="txtSmall txtGray "  style="font-size:0.6em;">Une limite d'<span style="color:#c45331">un seul instance</span> assure la cohérence entre vos attentes et la réalité entre lecture / écriture. </span>
 
 ![singleton](assets/images/image8.png)
 
@@ -299,13 +299,13 @@ public class TeamArrayAdapter extends ArrayAdapter<String>  {
 
 <span class="txtSmall txtGray "  style="font-size:0.6em;">Pour utiliser efficacement Singleton comme une solution pour votre projet, la recommandation est de vous créer des classes Java représentant les informations (équipe, match, tournoi) dont vous avez besoin de stocker.</span>
 
-<span class="txtSmall txtGray "  style="font-size:0.6em;">Après le codage des  classes qui nécessitent le stockage de données, vous pouvez créer des listes pour stocker les instances de vos classes dans le Singleton.</span>
+<span class="txtSmall txtGray "  style="font-size:0.6em;">Après le codage des classes qui nécessitent le stockage de données, vous pouvez créer des listes pour stocker les instances de vos classes dans le Singleton.</span>
 
 +++
 
-<span class="txtSmall txtGray "  style="font-size:0.6em;">Vous pouvez utiliser Umple pour générer vos fichiers de classe.</span>
+<span class="txtSmall txtGray "  style="font-size:0.6em;">Vous pouvez utiliser <span style="color:#d0d0ff">Umple</span> pour générer vos fichiers de classe.</span>
 
-<span class="txtSmall txtGray "  style="font-size:0.6em;">Utilisez votre Singleton comme gestionnaire de ressource. N’oubliez pas les getters et setters.</span>
+<span class="txtSmall txtGray "  style="font-size:0.6em;">Utilisez votre Singleton comme <span style="color:#00aa60">gestionnaire de ressource</span>. N’oubliez pas les getters et setters.</span>
 
 ---
 
@@ -320,10 +320,10 @@ public class TeamArrayAdapter extends ArrayAdapter<String>  {
 ### Lignes directrices du projet
 
 1. <span class="txtSmall txtGray "  style="font-size:0.6em;">ceci est un cours de génie logiciel</span>
-2. <span class="txtSmall txtGray "  style="font-size:0.6em;">votre travail sera jugé sur sa fonctionnalité, sa structure ainsi que la présentation de votre code</span>
-3. <span class="txtSmall txtGray "  style="font-size:0.6em;">utilisez les conventions et restez cohérent</span>
-4. <span class="txtSmall txtGray "  style="font-size:0.6em;">Testez votre application.</span>
-5. <span class="txtSmall txtGray "  style="font-size:0.6em;">1 seul APK sera accepté... GIT to the rescue!</span>
+2. <span class="txtSmall txtGray "  style="font-size:0.6em;">votre travail sera jugé sur sa fonctionnalité, sa structure ainsi que la <span style="color:#a1617a">présentation</span> de votre code</span>
+3. <span class="txtSmall txtGray "  style="font-size:0.6em;">utilisez les <span style="color:#c45331">conventions</span> et restez cohérent</span>
+4. <span class="txtSmall txtGray "  style="font-size:0.6em;"><span style="color:#b4c973">Testez</span> votre application.</span>
+5. <span class="txtSmall txtGray "  style="font-size:0.6em;">1 seul APK sera accepté... <span style="color:#3884b9">GIT</span> to the rescue!</span>
 
 +++
 
@@ -331,7 +331,7 @@ public class TeamArrayAdapter extends ArrayAdapter<String>  {
 
 <span class="txtSmall txtGray "  style="font-size:0.6em;">Politique de l'Université d'Ottawa sur le plagiat</span> [EN](http://www.uottawa.ca/academic-regulations/academic-fraud.html) <span class="txtSmall txtGray "  style="font-size:0.6em;">/</span> [FR](http://www.uottawa.ca/reglements-scolaires/fraude-et-plagiat.html)
 
-<span class="txtSmall txtGray "  style="font-size:0.6em;">(ne copiez pas le code trouvé sur Internet)</span>
+<span class="txtSmall txtGray "  style="font-size:0.6em;">(<span style="color:#BE4C51">ne copiez pas</span> le code trouvé sur Internet)</span>
 
 ---
 
@@ -345,7 +345,7 @@ public class TeamArrayAdapter extends ArrayAdapter<String>  {
 
 ### Personnalisation : Styles
 
-<span class="txtSmall txtGray "  style="font-size:0.6em;">Plusieurs styles IU sont disponibles, soit `Light` et `Dark`.</span>
+<span class="txtSmall txtGray "  style="font-size:0.6em;">Plusieurs <span style="color:#3884b9">styles</span> IU sont disponibles, soit `Light` et `Dark`.</span>
 
 <span class="txtSmall txtGray "  style="font-size:0.6em;">Voir `/res/values/styles.xml` </span>
 
@@ -361,15 +361,15 @@ public class TeamArrayAdapter extends ArrayAdapter<String>  {
 
 <span class="txtSmall txtGray "  style="font-size:0.6em;">"Android Studio ne compile pas mon projet ou n'affiche pas une disposition de l'IU"</span>
 
-1. <span class="txtSmall txtGray "  style="font-size:0.6em;">Regardez votre code ainsi que les logs Gradle</span>
-2. <span class="txtSmall txtGray "  style="font-size:0.6em;">Reinstallez Android Studio (vos projets ne seront pas affectés par ceci)</span>
+1. <span class="txtSmall txtGray "  style="font-size:0.6em;">Regardez votre code ainsi que les <span style="color:#a1617a">logs Gradle</span></span>
+2. <span class="txtSmall txtGray "  style="font-size:0.6em;"><span style="color:#3884b9">Reinstallez</span> Android Studio (vos projets ne seront pas affectés par ceci)</span>
 
 +++
 
 <span class="txtSmall txtGray "  style="font-size:0.6em;">"L'émulateur ne fonctionne pas"</span>
 
 1. <span class="txtSmall txtGray "  style="font-size:0.6em;">Si vous avez un processeur AMD, changez la configuration de votre AVD. Vous avez peut-être x86 ou x86_64 en sélection. Changez ceci à `armeabi-v7a ABI`.</span>
-2. <span class="txtSmall txtGray "  style="font-size:0.6em;">Problème avec HAXM? Vous devez aller dans le BIOS pour allumer Intel Virtualization Technology.</span>
+2. <span class="txtSmall txtGray "  style="font-size:0.6em;">Problème avec HAXM? Vous devez aller dans le BIOS pour allumer <span style="color:#c45331">Intel Virtualization Technology.</span></span>
 
 +++
 
