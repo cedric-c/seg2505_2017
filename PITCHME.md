@@ -193,6 +193,7 @@ Si les éléments prennent plus d'espace que disponible, une barre (trois points
 
 
 <!-- 18 -->
+
 +++
 
 ### Adaptateur personnalisé
@@ -202,6 +203,7 @@ Si les éléments prennent plus d'espace que disponible, une barre (trois points
 - Dans votre méthode `getView`, vous devez avoir un `LayoutInflater` (pour élargir les éléments de la liste).
 
 <!-- 19 -->
+
 +++
 
 ### Extrait `onCreate`
@@ -267,6 +269,7 @@ public class TeamArrayAdapter extends ArrayAdapter<String>  {
 
 
 <!-- 21 -->
+
 +++
 
 ### Résultat
@@ -297,7 +300,7 @@ Pour utiliser efficacement Singleton comme une solution pour votre projet, la re
 
 Après le codage des  classes qui nécessitent le stockage de données, vous pouvez créer des listes pour stocker les instances de vos classes dans le Singleton.
 
-++++
++++
 
 Vous pouvez utiliser Umple pour générer vos fichiers de classe.
 
