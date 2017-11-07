@@ -2,18 +2,18 @@
 
 Laboratoire Android 4 : Concepts UI supplémentaires et stockage
 
-SEG 2505 - Introduction au génie logiciel
+<span style="font-size:0.6em;color:gray">SEG 2505 - Introduction au génie logiciel</span>
 
-Automne 2017
+<span style="font-size:0.6em;color:gray">Automne 2017</span>
 
-Présenté par : Cédric Clément
+<span style="font-size:0.6em;color:gray">Présenté par : Cédric Clément</span>
 
 ---
 
 ### Agenda
 
-1. Conception de l'interface utilisateur
-2. Remarques sur la gestion de mémoire
+1. <span style="font-size:0.6em;color:gray">Conception de l'interface utilisateur</span>
+2. <span class="txtSmall txtGray ">Remarques sur la gestion de mémoire</span>
 3. Remarques supplémentaires et informations utiles
 4. Travail de laboratoire
 
