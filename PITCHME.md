@@ -199,7 +199,7 @@ listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
 
 ### Adaptateur personnalisé
 
-- <span class="txtSmall txtGray "  style="font-size:0.6em;">Pour créer une mise en page personnalisée, <span style="color:#c45331">vous devez créer un `CustomAdapter`</span> <span style="color:#00aa60">et</span> <span style="color:#a1617a">implémenter les méthodes requises</span>.</span>
+- <span class="txtSmall txtGray "  style="font-size:0.6em;">Pour créer une mise en page personnalisée, <span style="color:#c45331">vous devez créer un `CustomAdapter`</span> <span style="color:#00aa60">et</span> <span style="color:#e8bf6a">implémenter les méthodes requises</span>.</span>
 - <span class="txtSmall txtGray "  style="font-size:0.6em;">Votre `CustomAdapter` devrait étendre un des adaptateurs existants. N'oubliez pas la méthode `getView`.</span>
 - <span class="txtSmall txtGray "  style="font-size:0.6em;">Dans votre méthode <span style="color:#d0d0ff">`getView`</span>, vous devez avoir un <span style="color:#a1617a">`LayoutInflater`</span> (pour élargir les éléments de la liste).</span>
 
