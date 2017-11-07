@@ -13,7 +13,7 @@ Laboratoire Android 4 : Concepts UI supplémentaires et stockage
 ### Agenda
 
 1. <span style="font-size:0.6em;color:gray">Conception de l'interface utilisateur</span>
-2. <span class="txtSmall txtGray ">Remarques sur la gestion de mémoire</span>
+2. <span class="txtSmall txtGray" style="font-size:0.6em;">Remarques sur la gestion de mémoire</span>
 3. Remarques supplémentaires et informations utiles
 4. Travail de laboratoire
 
