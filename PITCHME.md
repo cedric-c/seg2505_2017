@@ -139,7 +139,7 @@ Laboratoire Android 4 : Concepts UI supplémentaires et stockage
 
 ```java
 // Get ListView object from xml layout
-listView = (ListView) findViewById(R.id.list);
+ListView listView = (ListView) findViewById(R.id.list);
 //Defining Array values to show in ListView
 String[] values = new String[] {
         "Item 01","Item 02","Item 03","Item 04","Item 05","Item 06","Item 07","Item 08"
@@ -199,7 +199,7 @@ listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
 
 ### Adaptateur personnalisé
 
-- <span class="txtSmall txtGray "  style="font-size:0.6em;">Pour créer une mise en page personnalisée, <span style="color:#c45331">vous devez créer un `CustomAdapter`</span> <span style="color:#00aa60">et</span> <span style="color:#e8bf6a">implémenter les méthodes requises</span>.</span>
+- <span class="txtSmall txtGray "  style="font-size:0.6em;">Pour créer une mise en page personnalisée, <span style="color:#c45331">vous devez créer un `CustomAdapter`</span> et <span style="color:#e8bf6a">implémenter les méthodes requises</span>.</span>
 - <span class="txtSmall txtGray "  style="font-size:0.6em;">Votre `CustomAdapter` devrait étendre un des adaptateurs existants. N'oubliez pas la méthode `getView`.</span>
 - <span class="txtSmall txtGray "  style="font-size:0.6em;">Dans votre méthode <span style="color:#d0d0ff">`getView`</span>, vous devez avoir un <span style="color:#a1617a">`LayoutInflater`</span> (pour élargir les éléments de la liste).</span>
 
