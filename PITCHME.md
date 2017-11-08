@@ -428,6 +428,6 @@ public class TeamArrayAdapter extends ArrayAdapter<String>  {
 
 ### Liens utiles
 
-- [Couleurs de l'Université](http: //www.uottawa.ca/brand/visual-identity/uottawa-colour-palettes
-)
-- [Conception matériel](https: //material.google.com/layout/principles.html)
+- [Couleurs de l'Université](http://www.uottawa.ca/brand/visual-identity/uottawa-colour-palettes)
+- [Conception matériel](https://material.google.com/layout/principles.html)
+- [Meilleur ami pour le laboratoire](https://developer.android.com/reference/android/content/Intent.html)
