@@ -4,7 +4,7 @@ Laboratoire Android 4 : Concepts UI supplémentaires et stockage
 
 <span style="color:gray">SEG 2505 - Introduction au génie logiciel</span>
 
-<span style="color:gray">Automne 2017</span>
+<span style="color:gray">Automne 2018</span>
 
 <span style="color:gray">Présenté par : Cédric Clément</span>
 
