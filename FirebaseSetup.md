@@ -6,15 +6,15 @@ Follow these steps in order to allow communication between Firebase and your And
 
 1. Create a project.
 2. Click on the hamburger menu in the top-left corner,
-    1. Click Database.
-    2. Click "Create Database".
-    3. Click "Start in Locked Mode".
-    4. Click "Enabled".
-5. Next to database, click "Cloud Firestore"
-    1. Click "Realtime Database"
-7. Click Rules
-    1. Change the "false" values to "true".
-8. Click Publish
+    1. Click **Database**.
+    2. Click **Create Database**.
+    3. Click **Start in Locked Mode**.
+    4. Click **Enabled**.
+5. Next to database, click **Cloud Firestore**
+    1. Click **Realtime Database**
+7. Click **Rules*
+    1. Change the **false** values to **true**.
+8. Click **Publish**
 
 Your Firebase database can (almost) now communicate with your Android application.
 
