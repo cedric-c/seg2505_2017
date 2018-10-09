@@ -12,7 +12,7 @@ Follow these steps in order to allow communication between Firebase and your And
     4. Click **Enabled**.
 5. Next to database, click **Cloud Firestore**
     1. Click **Realtime Database**
-7. Click **Rules*
+7. Click **Rules**
     1. Change the **false** values to **true**.
 8. Click **Publish**
 
