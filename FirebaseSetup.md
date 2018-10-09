@@ -27,7 +27,7 @@ In order to enable the communication between Firebase and your application, you 
     1. A menu will appear, select **Choose an existing Firebase or Google project**.
     2. Click **Connect to Firebase**.
 5. <font color=red>THEN click on **Add the Realtime Database to your app</font>**.
-    6. Click **Accept Changes**.
+6. Click **Accept Changes**.
 
 
 Your project is now linked.
