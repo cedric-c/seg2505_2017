@@ -1,4 +1,4 @@
-# Mise à jours du 22 avril 2021
+# Mise à jour du 22 avril 2021
 
 Le service GitPitch (la plateforme utilisée pour afficher les diapositives) [a arrêté d’offrir ses services](https://github.com/gitpitch/gitpitch/commit/16603efa4b514688bdefba519bf9b52d4f4599dd)
 
