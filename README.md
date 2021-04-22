@@ -1,3 +1,9 @@
+# Mise à jours du 22 avril 2021
+
+Le service GitPitch (la plateforme utilisée pour afficher les diapositives) [a arrêté d’offrir ses services](https://github.com/gitpitch/gitpitch/commit/16603efa4b514688bdefba519bf9b52d4f4599dd)
+
+Je travaille actuellement sur une solution Docker.
+
 # SEG 2505 Automne 2017
 
 Git repo pour les laboratoires.
